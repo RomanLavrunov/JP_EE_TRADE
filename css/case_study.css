@@ -97,6 +97,7 @@ header h1 em { font-style: normal; color: var(--accent); }
 
 /* MAIN GRID */
 main {
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 40px 96px;
   display: grid;
