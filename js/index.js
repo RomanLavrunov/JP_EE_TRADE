@@ -6,23 +6,21 @@
 
 'use strict';
 
-// ─────────────────────────────────────────────
 // 1. CONSTANTS
-// ─────────────────────────────────────────────
 
 const COLORS = {
-  accent:   '#c0392b',
-  accent2:  '#1d3557',
-  accent3:  '#2d6a4f',
-  ink:      '#1a1814',
-  ink3:     '#8a8478',
-  border:   '#d4cfc4',
-  surface:  '#edeae0',
-  up:       '#2d6a4f',
-  down:     '#c0392b',
-  exports:  '#1d3557',
-  imports:  '#c0392b',
-  balance:  '#2d6a4f',
+  accent: '#c0392b',
+  accent2: '#1d3557',
+  accent3: '#2d6a4f',
+  ink: '#1a1814',
+  ink3: '#8a8478',
+  border: '#d4cfc4',
+  surface: '#edeae0',
+  up: '#2d6a4f',
+  down: '#c0392b',
+  exports: '#1d3557',
+  imports: '#c0392b',
+  balance: '#2d6a4f',
 };
 
 const BREAKS = [
@@ -33,17 +31,30 @@ const BREAKS = [
 
 const BASE_FONT = { family: "'DM Mono', monospace", size: 11 };
 
-/** Palette for multi-series commodity charts */
+// Palette for multi-series commodity charts
 const CN_PALETTE = [
-  '#1d3557','#c0392b','#2d6a4f','#d35400','#457b9d',
-  '#6b4f3a','#8a2be2','#2e8b57','#b8860b','#4682b4','#708090',
+  '#1d3557', '#c0392b', '#2d6a4f', '#d35400', '#457b9d',
+  '#6b4f3a', '#8a2be2', '#2e8b57', '#b8860b', '#4682b4', '#708090',
 ];
 
 const DATA_PATH = 'data/';
 
-// ─────────────────────────────────────────────
+// Short readable names for CN commodity groups (used in tooltips and heatmap)
+const CN_NAMES = {
+  CN03: 'Fish & crustaceans',
+  CN04: 'Dairy produce & eggs',
+  CN08: 'Edible fruit & nuts',
+  CN27: 'Mineral fuels & oils',
+  CN28: 'Inorganic chemicals',
+  CN44: 'Wood & wood articles',
+  CN84: 'Machinery & boilers',
+  CN85: 'Electrical machinery',
+  CN90: 'Optical & precision instruments',
+  CN94: 'Furniture & lighting',
+  CN95: 'Toys & sports goods',
+};
+
 // 2. DATA LAYER
-// ─────────────────────────────────────────────
 
 /**
  * Fetch a JSON file from the data directory.
@@ -55,9 +66,7 @@ async function fetchData(filename) {
   return res.json();
 }
 
-/**
- * Group an array of records by a key, returning Map<key, record[]>
- */
+// Group an array of records by a key, returning Map<key, record[]>
 function groupBy(arr, keyFn) {
   return arr.reduce((map, item) => {
     const k = keyFn(item);
@@ -67,21 +76,19 @@ function groupBy(arr, keyFn) {
   }, new Map());
 }
 
-/**
- * Extract unique sorted values of a field from an array
- */
+// Extract unique sorted values of a field from an array
+
 function uniqueSorted(arr, field) {
   return [...new Set(arr.map(r => r[field]))].sort();
 }
 
-// ─────────────────────────────────────────────
 // 3. CHART BASE FACTORY
-// ─────────────────────────────────────────────
 
 /**
  * Returns the shared Chart.js default options object.
  * Plugins / scales can be merged on top.
  */
+
 function baseOptions(overrides = {}) {
   return Chart.helpers.merge({
     responsive: true,
@@ -127,14 +134,13 @@ function createChart(canvasId, type, data, options = {}) {
   return new Chart(ctx, { type, data, options: baseOptions(options) });
 }
 
-// ─────────────────────────────────────────────
 // 4. ANNOTATION HELPERS
-// ─────────────────────────────────────────────
 
 /**
  * Build Chart.js annotation plugin config for the three structural breaks.
  * Only include years that exist in the provided labels array.
  */
+
 function buildBreakAnnotations(labels) {
   const annotations = {};
   BREAKS.forEach(({ x, label, color }) => {
@@ -159,13 +165,10 @@ function buildBreakAnnotations(labels) {
   return annotations;
 }
 
-// ─────────────────────────────────────────────
 // 5. CHART BUILDERS — each builds one specific chart
-// ─────────────────────────────────────────────
 
-/**
- * Chart 1: Bilateral exports & imports over time
- */
+//Chart 1: Bilateral exports & imports over time
+
 function buildBilateralChart(bilateral) {
   const labels = bilateral.map(r => String(r.year));
 
@@ -208,9 +211,8 @@ function buildBilateralChart(bilateral) {
   });
 }
 
-/**
- * Chart 2: Japan's share in Estonia's total trade
- */
+// Chart 2: Japan's share in Estonia's total trade
+
 function buildShareChart(bilateral) {
   const labels = bilateral.map(r => String(r.year));
 
@@ -219,13 +221,13 @@ function buildShareChart(bilateral) {
     datasets: [
       {
         label: 'Export share',
-        data: bilateral.map(r => +(r.shareExp * 100).toFixed(2)),
+        data: bilateral.map(r => +(r.shareExp).toFixed(2)),
         backgroundColor: 'rgba(29,53,87,.75)',
         borderRadius: 2,
       },
       {
         label: 'Import share',
-        data: bilateral.map(r => +(r.shareImp * 100).toFixed(2)),
+        data: bilateral.map(r => +(r.shareImp).toFixed(2)),
         backgroundColor: 'rgba(192,57,43,.65)',
         borderRadius: 2,
       },
@@ -245,17 +247,16 @@ function buildShareChart(bilateral) {
   });
 }
 
-/**
- * Chart 3: Export growth index — Japan vs global
- */
+//Chart 3: Export growth index — Japan vs global
+
 function buildIndexChart(indexData, partnerData) {
   const years = uniqueSorted(indexData, 'year');
   const labels = years.map(String);
 
   // Japan & Global from japan_trade.json index
   const bySeriesJp = groupBy(indexData, r => r.series);
-  const jpExports  = years.map(y => bySeriesJp.get('Japan · Exports')?.find(r => r.year === y)?.index ?? null);
-  const glExports  = years.map(y => bySeriesJp.get('Global · Exports')?.find(r => r.year === y)?.index ?? null);
+  const jpExports = years.map(y => bySeriesJp.get('Japan · Exports')?.find(r => r.year === y)?.index ?? null);
+  const glExports = years.map(y => bySeriesJp.get('Global · Exports')?.find(r => r.year === y)?.index ?? null);
 
   // Partner countries from partner_countries.json
   const byCountry = groupBy(partnerData.index_exports, r => r.country);
@@ -317,13 +318,12 @@ function buildIndexChart(indexData, partnerData) {
   });
 }
 
-/**
- * Chart 4: Commodity export time series
- */
+// Chart 4: Commodity export time series
+ 
 function buildCommoditiesChart(exportsTs) {
-  const years  = uniqueSorted(exportsTs, 'year');
+  const years = uniqueSorted(exportsTs, 'year');
   const labels = years.map(String);
-  const byCN   = groupBy(exportsTs, r => r.cn_code);
+  const byCN = groupBy(exportsTs, r => r.cn_code);
 
   const datasets = [...byCN.entries()].map(([code, rows], i) => ({
     label: `${code} ${rows[0].cn_name.split(' ').slice(0, 3).join(' ')}…`,
@@ -341,7 +341,11 @@ function buildCommoditiesChart(exportsTs) {
       annotation: { annotations: buildBreakAnnotations(labels) },
       tooltip: {
         callbacks: {
-          label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y?.toFixed(2) ?? '—'} M€`,
+          label: ctx => {
+            const code = ctx.dataset.label.split(' ')[0];
+            const name = CN_NAMES[code] ? ` — ${CN_NAMES[code]}` : '';
+            return ` ${ctx.dataset.label}${name}: ${ctx.parsed.y?.toFixed(2) ?? '—'} M€`;
+          },
         },
       },
     },
@@ -351,30 +355,27 @@ function buildCommoditiesChart(exportsTs) {
   });
 }
 
-// ─────────────────────────────────────────────
 // 6. DOM BUILDERS — stats, table, treemap, slope, heatmap
-// ─────────────────────────────────────────────
 
-/**
- * Render the summary stat row from bilateral data
- */
+// Render the summary stat row from bilateral data
+
 function renderStatRow(bilateral) {
-  const pre  = bilateral.filter(r => r.year >= 2014 && r.year <= 2018);
+  const pre = bilateral.filter(r => r.year >= 2014 && r.year <= 2018);
   const post = bilateral.filter(r => r.year >= 2019 && r.year <= 2023);
 
   const avg = arr => arr.reduce((s, r) => s + r.exports, 0) / arr.length;
-  const preAvg  = avg(pre);
+  const preAvg = avg(pre);
   const postAvg = avg(post);
   const pctChange = ((postAvg - preAvg) / preAvg * 100).toFixed(0);
 
-  const peak   = bilateral.reduce((a, b) => a.exports > b.exports ? a : b);
+  const peak = bilateral.reduce((a, b) => a.exports > b.exports ? a : b);
   const latest = bilateral[bilateral.length - 1];
 
   const stats = [
-    { v: `${postAvg.toFixed(0)} M€`, cls: 'up',  l: 'Avg exports post-EPA\n(2019–2023)' },
-    { v: `+${pctChange}%`,           cls: 'up',  l: 'vs pre-EPA avg\n(2014–2018)' },
-    { v: `${peak.exports} M€`,       cls: 'neu', l: `Peak exports\n(${peak.year})` },
-    { v: `${latest.balance.toFixed(1)} M€`, cls: 'up', l: `Trade balance\n(${latest.year})` },
+    { v: `${postAvg.toFixed(0)} M€`, cls: 'up', l: 'Avg exports post-EPA\n(2019-2023)' },
+    { v: `+${pctChange}%`, cls: 'up', l: 'Export vs pre-EPA avg\n(2014-2018)' },
+    { v: `${peak.exports} M€`, cls: 'neu', l: `Peak exports\n(${peak.year})` },
+    { v: `${latest.balance.toFixed(1)} M€`, cls: 'up', l: `Trade balance\n (exoport - import)\n(${latest.year})` },
   ];
 
   const el = document.getElementById('statRow');
@@ -386,9 +387,8 @@ function renderStatRow(bilateral) {
     </div>`).join('');
 }
 
-/**
- * Render EPA comparison table
- */
+// Render EPA comparison table
+
 function renderEpaTable(epaData) {
   const tbody = document.getElementById('epaTableBody');
   if (!tbody) return;
@@ -399,7 +399,7 @@ function renderEpaTable(epaData) {
   tbody.innerHTML = epaData
     .sort((a, b) => b.post - a.post)
     .map(row => {
-      const dir   = row.direction === 'up' ? 'up' : 'down';
+      const dir = row.direction === 'up' ? 'up' : 'down';
       const arrow = row.direction === 'up' ? '▲' : '▼';
       return `
         <tr>
@@ -428,14 +428,14 @@ function renderTreemap(exportsTs, containerId) {
   const sorted = [...rows].sort((a, b) => (b.value || 0) - (a.value || 0));
 
   const PALETTE = [
-    '#a8c4d8','#c8dce8','#d4c5a9','#b5c9b5','#dbc6b5',
-    '#c5b8d4','#b8d4c5','#d4b8b8','#c8c8b8','#b8c8d4','#d4d4c8',
+    '#a8c4d8', '#c8dce8', '#d4c5a9', '#b5c9b5', '#dbc6b5',
+    '#c5b8d4', '#b8d4c5', '#d4b8b8', '#c8c8b8', '#b8c8d4', '#d4d4c8',
   ];
 
   // Pack into rows: greedy, target row weight ≈ 0.45 of total
   const TARGET = 0.45;
   const tmRows = [];
-  let current  = [];
+  let current = [];
   let currentW = 0;
 
   sorted.forEach(item => {
@@ -444,7 +444,7 @@ function renderTreemap(exportsTs, containerId) {
     currentW += w;
     if (currentW >= TARGET) {
       tmRows.push(current);
-      current  = [];
+      current = [];
       currentW = 0;
     }
   });
@@ -478,22 +478,21 @@ function renderTreemap(exportsTs, containerId) {
   cont.appendChild(outerEl);
 }
 
-/**
- * Build SVG slope chart across key years.
- */
+// Build SVG slope chart across key years.
+
 function renderSlopeChart(exportsTs, containerId) {
   const cont = document.getElementById(containerId);
   if (!cont) return;
 
   const KEY_YEARS = [2015, 2018, 2019, 2022, 2024];
-  const byCN      = groupBy(exportsTs, r => r.cn_code);
-  const codes     = [...byCN.keys()];
+  const byCN = groupBy(exportsTs, r => r.cn_code);
+  const codes = [...byCN.keys()];
 
   const W = Math.max(cont.clientWidth || 600, 400);
   const H = 300;
   const PAD = { top: 30, right: 60, bottom: 20, left: 50 };
   const innerW = W - PAD.left - PAD.right;
-  const innerH = H - PAD.top  - PAD.bottom;
+  const innerH = H - PAD.top - PAD.bottom;
 
   // Compute all values for y-scale
   const allVals = codes.flatMap(code =>
@@ -502,11 +501,11 @@ function renderSlopeChart(exportsTs, containerId) {
   const maxVal = Math.max(...allVals) * 1.1;
 
   const xScale = i => PAD.left + (i / (KEY_YEARS.length - 1)) * innerW;
-  const yScale = v => PAD.top  + innerH - (v / maxVal) * innerH;
+  const yScale = v => PAD.top + innerH - (v / maxVal) * innerH;
 
   const lines = codes.map((code, ci) => {
     const color = CN_PALETTE[ci % CN_PALETTE.length];
-    const pts   = KEY_YEARS.map((y, i) => {
+    const pts = KEY_YEARS.map((y, i) => {
       const val = byCN.get(code)?.find(r => r.year === y)?.value || 0;
       return [xScale(i), yScale(val)];
     });
@@ -532,47 +531,64 @@ function renderSlopeChart(exportsTs, containerId) {
     </svg>`;
 }
 
-/**
- * Build HTML heatmap table (growth index vs 2018)
- */
+// Build HTML heatmap table (growth index vs 2018)
+ 
 function renderHeatmap(indexVs2018, containerId) {
+
   const cont = document.getElementById(containerId);
   if (!cont) return;
 
   const years = uniqueSorted(indexVs2018, 'year');
   const codes = uniqueSorted(indexVs2018, 'cn_code');
-  const POST_EPA = new Set(['2019','2020','2021','2022','2023','2024']);
+  const POST_EPA = new Set(['2019', '2020', '2021', '2022', '2023', '2024']);
 
-  /** Map index value to background colour */
+  // Map index value to background colour
   function cellColor(idx) {
-    if (idx === null || idx === undefined) return '#edeae0';
-    const v = idx - 100; // deviation from baseline
-    if (v > 0) {
-      const intensity = Math.min(v / 200, 1);
-      const g = Math.round(106 + intensity * 50);
-      return `rgba(45,${g},79,${0.15 + intensity * 0.55})`;
+    if (idx == null || idx === undefined) return '#f8f7f2';
+
+    const v = (idx - 100) / 100;
+    const clamped = Math.max(-1, Math.min(1, v));
+    const intensity = Math.abs(clamped);
+
+    if (clamped >= 0) {
+
+      const r = Math.round(220 - intensity * 100);
+      const g = Math.round(235 - intensity * 55);
+      const b = Math.round(210 - intensity * 130);
+
+      return `rgba(${r},${g},${b},${0.45 + intensity * 0.55})`;
     } else {
-      const intensity = Math.min(Math.abs(v) / 100, 1);
-      return `rgba(192,57,43,${0.12 + intensity * 0.55})`;
+
+      const r = Math.round(245 - intensity * 35);
+      const g = Math.round(220 - intensity * 140);
+      const b = Math.round(210 - intensity * 140);
+
+      return `rgba(${r},${g},${b},${0.45 + intensity * 0.55})`;
     }
   }
-
+  
   const byKey = new Map(
     indexVs2018.map(r => [`${r.cn_code}_${r.year}`, r.index_vs_2018])
+  );
+
+  // Filter out rows where ALL values across all years are null
+  const filteredCodes = codes.filter(code =>
+    years.some(y => byKey.get(`${code}_${y}`) != null)
   );
 
   const headerCells = years.map(y =>
     `<th style="${POST_EPA.has(String(y)) ? 'font-weight:700;color:#1a1814' : ''}">${y}</th>`
   ).join('');
 
-  const bodyRows = codes.map(code => {
+  const bodyRows = filteredCodes.map(code => {
+    const name = CN_NAMES[code] ? ` · ${CN_NAMES[code]}` : '';
     const cells = years.map(y => {
       const val = byKey.get(`${code}_${y}`);
-      const bg  = cellColor(val);
+      const bg = cellColor(val);
       const txt = val != null ? val.toFixed(0) : '—';
       return `<td style="background:${bg}">${txt}</td>`;
     }).join('');
-    return `<tr><td class="rl">${code}</td>${cells}</tr>`;
+    return `<tr><td class="rl" title="${CN_NAMES[code] || code}">${code}<span style="color:#8a8478;font-weight:400">${name}</span></td>${cells}</tr>`;
   }).join('');
 
   cont.innerHTML = `
@@ -584,9 +600,7 @@ function renderHeatmap(indexVs2018, containerId) {
     </div>`;
 }
 
-// ─────────────────────────────────────────────
 // 7. PAGE ORCHESTRATOR
-// ─────────────────────────────────────────────
 
 async function initDashboard() {
   try {
@@ -620,13 +634,11 @@ async function initDashboard() {
   }
 }
 
-// ─────────────────────────────────────────────
 // 8. ACTIVE NAV HIGHLIGHT
-// ─────────────────────────────────────────────
 
 function initNavHighlight() {
   const sections = [...document.querySelectorAll('main section[id]')];
-  const links    = [...document.querySelectorAll('.page-nav a[href^="#"]')];
+  const links = [...document.querySelectorAll('.page-nav a[href^="#"]')];
   if (!sections.length || !links.length) return;
 
   const observer = new IntersectionObserver(entries => {
@@ -639,9 +651,7 @@ function initNavHighlight() {
   sections.forEach(s => observer.observe(s));
 }
 
-// ─────────────────────────────────────────────
 // 9. BOOT
-// ─────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
   initDashboard();

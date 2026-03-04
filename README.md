@@ -35,13 +35,6 @@ South Korea went through a similar process earlier — the EU–Korea EPA came i
 
 All data sourced from **Statistics Estonia (Statistikaamet)**, downloaded manually in Excel from the PxWeb database. Local source chosen over Eurostat — the focus is specifically on Estonia's bilateral trade.
 
-| File | Content | Period |
-|---|---|---|
-| VKK32_BY_COUNTRIES.xlsx | Export/import by partner country, 177 countries | 2004–2025 |
-| VKK30_JP.xlsx | Estonia–Japan trade by CN commodity group | 2004–2025 |
-| VKK30_TOTAL.xlsx | Estonia total world trade by CN group | 2004–2025 |
-| VKK30_PARTS_OF_WORLD.xlsx | Trade by world region | 2020–2025 |
-
 ### Business glossary
 
 | Term | Definition |
@@ -84,28 +77,6 @@ Data cleaning and transformation was done in two stages: structural fixes in Exc
 | R / `jsonlite` | Export to JSON for the HTML dashboard |
 | Chart.js | Interactive charts in the browser |
 
-### Key transformation steps
-
-```r
-# Core pattern used across all source files
-raw <- read_excel("VKK30_JP.xlsx", skip = 2, col_names = FALSE)
-colnames(raw) <- c("flow", "commodity", "country", years)
-
-df_clean <- raw %>%
-  fill(flow, .direction = "down") %>%                          # fill missing flow labels
-  pivot_longer(cols = all_of(years),
-               names_to = "year", values_to = "value") %>%
-  mutate(value = as.numeric(ifelse(value == "..", NA, value)), # handle suppressed values
-         year  = as.integer(year))
-
-# Derived: growth index (2019 = 100)
-df_index <- df_clean %>%
-  group_by(cn_code, flow) %>%
-  mutate(base = value[year == 2019],
-         index_2019 = value / base * 100)
-
-write_json(df_clean, "data/commodities.json", pretty = TRUE)
-```
 
 ### Repository structure
 

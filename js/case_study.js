@@ -5,9 +5,7 @@
 
 'use strict';
 
-// ─────────────────────────────────────────────
 // 1. CONSTANTS (shared with index.js conceptually; kept local for independence)
-// ─────────────────────────────────────────────
 
 const COLORS = {
   accent:  '#c0392b',
@@ -35,9 +33,22 @@ const CN_PALETTE = [
 
 const DATA_PATH = 'data/';
 
-// ─────────────────────────────────────────────
+// Short readable names for CN commodity groups (used in tooltips and heatmap)
+const CN_NAMES = {
+  CN03: 'Fish & crustaceans',
+  CN04: 'Dairy produce & eggs',
+  CN08: 'Edible fruit & nuts',
+  CN27: 'Mineral fuels & oils',
+  CN28: 'Inorganic chemicals',
+  CN44: 'Wood & wood articles',
+  CN84: 'Machinery & boilers',
+  CN85: 'Electrical machinery',
+  CN90: 'Optical & precision instruments',
+  CN94: 'Furniture & lighting',
+  CN95: 'Toys & sports goods',
+};
+
 // 2. DATA LAYER
-// ─────────────────────────────────────────────
 
 async function fetchData(filename) {
   const res = await fetch(DATA_PATH + filename);
@@ -58,9 +69,7 @@ function uniqueSorted(arr, field) {
   return [...new Set(arr.map(r => r[field]))].sort();
 }
 
-// ─────────────────────────────────────────────
 // 3. CHART BASE FACTORY
-// ─────────────────────────────────────────────
 
 function baseOptions(overrides = {}) {
   return Chart.helpers.merge({
@@ -98,9 +107,7 @@ function createChart(canvasId, type, data, options = {}) {
   return new Chart(canvas.getContext('2d'), { type, data, options: baseOptions(options) });
 }
 
-// ─────────────────────────────────────────────
 // 4. ANNOTATION HELPER
-// ─────────────────────────────────────────────
 
 function buildBreakAnnotations(labels) {
   return BREAKS
@@ -119,11 +126,9 @@ function buildBreakAnnotations(labels) {
     }, {});
 }
 
-// ─────────────────────────────────────────────
 // 5. REUSABLE DATASET FACTORIES
-// ─────────────────────────────────────────────
 
-/** Create a line dataset with sensible defaults */
+//Create a line dataset with sensible defaults
 function lineDataset(label, data, color, overrides = {}) {
   return {
     label, data,
@@ -137,14 +142,12 @@ function lineDataset(label, data, color, overrides = {}) {
   };
 }
 
-/** Create a bar dataset */
+//Create a bar dataset
 function barDataset(label, data, color, overrides = {}) {
   return { label, data, backgroundColor: color, borderRadius: 2, ...overrides };
 }
 
-// ─────────────────────────────────────────────
 // 6. CHART BUILDERS
-// ─────────────────────────────────────────────
 
 function buildBilateralChart(bilateral) {
   const labels = bilateral.map(r => String(r.year));
@@ -183,8 +186,8 @@ function buildShareBarChart(bilateral) {
   return createChart('csChartShareBar', 'bar', {
     labels,
     datasets: [
-      barDataset('Export share', bilateral.map(r => +(r.shareExp * 100).toFixed(2)), 'rgba(29,53,87,.75)'),
-      barDataset('Import share', bilateral.map(r => +(r.shareImp * 100).toFixed(2)), 'rgba(192,57,43,.65)'),
+      barDataset('Export share', bilateral.map(r => +(r.shareExp).toFixed(2)), 'rgba(29,53,87,.75)'),
+      barDataset('Import share', bilateral.map(r => +(r.shareImp).toFixed(2)), 'rgba(192,57,43,.65)'),
     ],
   }, {
     plugins: {
@@ -284,7 +287,18 @@ function buildTopCNChart(exportsTs) {
   );
 
   return createChart('csChartTopCN', 'line', { labels, datasets }, {
-    plugins: { annotation: { annotations: buildBreakAnnotations(labels) } },
+    plugins: {
+      annotation: { annotations: buildBreakAnnotations(labels) },
+      tooltip: {
+        callbacks: {
+          label: ctx => {
+            const code = ctx.dataset.label;
+            const name = CN_NAMES[code] ? ` — ${CN_NAMES[code]}` : '';
+            return ` ${code}${name}: ${ctx.parsed.y?.toFixed(2) ?? '—'} M€`;
+          },
+        },
+      },
+    },
     scales:  { y: { ticks: { callback: v => v + ' M€' } } },
   });
 }
@@ -299,7 +313,18 @@ function buildImportCNChart(importsTs) {
   );
 
   return createChart('csChartImportCN', 'line', { labels, datasets }, {
-    plugins: { annotation: { annotations: buildBreakAnnotations(labels) } },
+    plugins: {
+      annotation: { annotations: buildBreakAnnotations(labels) },
+      tooltip: {
+        callbacks: {
+          label: ctx => {
+            const code = ctx.dataset.label;
+            const name = CN_NAMES[code] ? ` — ${CN_NAMES[code]}` : '';
+            return ` ${code}${name}: ${ctx.parsed.y?.toFixed(2) ?? '—'} M€`;
+          },
+        },
+      },
+    },
     scales:  { y: { ticks: { callback: v => v + ' M€' } } },
   });
 }
@@ -314,7 +339,18 @@ function buildCNShareChart(shareData) {
   );
 
   return createChart('csChartCNShare', 'line', { labels, datasets }, {
-    plugins: { annotation: { annotations: buildBreakAnnotations(labels) } },
+    plugins: {
+      annotation: { annotations: buildBreakAnnotations(labels) },
+      tooltip: {
+        callbacks: {
+          label: ctx => {
+            const code = ctx.dataset.label;
+            const name = CN_NAMES[code] ? ` — ${CN_NAMES[code]}` : '';
+            return ` ${code}${name}: ${ctx.parsed.y?.toFixed(2) ?? '—'}%`;
+          },
+        },
+      },
+    },
     scales:  { y: { ticks: { callback: v => v + '%' } } },
   });
 }
@@ -349,7 +385,18 @@ function buildHeatIndexChart(indexVs2018) {
   );
 
   return createChart('csChartHeatIndex', 'line', { labels, datasets }, {
-    plugins: { annotation: { annotations: buildBreakAnnotations(labels) } },
+    plugins: {
+      annotation: { annotations: buildBreakAnnotations(labels) },
+      tooltip: {
+        callbacks: {
+          label: ctx => {
+            const code = ctx.dataset.label;
+            const name = CN_NAMES[code] ? ` — ${CN_NAMES[code]}` : '';
+            return ` ${code}${name}: ${ctx.parsed.y?.toFixed(1) ?? '—'}`;
+          },
+        },
+      },
+    },
     scales:  { y: { ticks: { callback: v => v } } },
   });
 }
@@ -377,9 +424,7 @@ function buildRegionalChart(canvasId, regionalData, cnCode) {
   });
 }
 
-// ─────────────────────────────────────────────
 // 7. DOM BUILDERS
-// ─────────────────────────────────────────────
 
 function renderEpaTable(epaData, tbodyId) {
   const tbody = document.getElementById(tbodyId);
@@ -506,28 +551,50 @@ function renderHeatmap(indexVs2018, containerId) {
   const codes = uniqueSorted(indexVs2018, 'cn_code');
   const POST_EPA = new Set(['2019','2020','2021','2022','2023','2024']);
 
+    // Map index value to background colour
   function cellColor(idx) {
-    if (idx == null) return '#edeae0';
-    const v = idx - 100;
-    if (v > 0) {
-      const t = Math.min(v / 200, 1);
-      return `rgba(45,${Math.round(106 + t * 50)},79,${(0.15 + t * 0.55).toFixed(2)})`;
+    if (idx == null || idx === undefined) return '#f8f7f2';
+
+    const v = (idx - 100) / 100;
+    const clamped = Math.max(-1, Math.min(1, v));
+    const intensity = Math.abs(clamped);
+
+    if (clamped >= 0) {
+
+      const r = Math.round(220 - intensity * 100);
+      const g = Math.round(235 - intensity * 55);
+      const b = Math.round(210 - intensity * 130);
+
+      return `rgba(${r},${g},${b},${0.45 + intensity * 0.55})`;
+    } else {
+
+      const r = Math.round(245 - intensity * 35);
+      const g = Math.round(220 - intensity * 140);
+      const b = Math.round(210 - intensity * 140);
+
+      return `rgba(${r},${g},${b},${0.45 + intensity * 0.55})`;
     }
-    return `rgba(192,57,43,${(0.12 + Math.min(Math.abs(v) / 100, 1) * 0.55).toFixed(2)})`;
   }
+  
 
   const byKey = new Map(indexVs2018.map(r => [`${r.cn_code}_${r.year}`, r.index_vs_2018]));
+
+  // Filter out rows where ALL values across all years are null
+  const filteredCodes = codes.filter(code =>
+    years.some(y => byKey.get(`${code}_${y}`) != null)
+  );
 
   const headers = years.map(y =>
     `<th style="${POST_EPA.has(String(y)) ? 'font-weight:700;color:#1a1814' : ''}">${y}</th>`
   ).join('');
 
-  const bodyRows = codes.map(code => {
+  const bodyRows = filteredCodes.map(code => {
+    const name = CN_NAMES[code] ? ` · ${CN_NAMES[code]}` : '';
     const cells = years.map(y => {
       const val = byKey.get(`${code}_${y}`);
       return `<td style="background:${cellColor(val)}">${val != null ? val.toFixed(0) : '—'}</td>`;
     }).join('');
-    return `<tr><td class="rl">${code}</td>${cells}</tr>`;
+    return `<tr><td class="rl" title="${CN_NAMES[code] || code}">${code}<span style="color:#8a8478;font-weight:400">${name}</span></td>${cells}</tr>`;
   }).join('');
 
   cont.innerHTML = `
@@ -539,9 +606,7 @@ function renderHeatmap(indexVs2018, containerId) {
     </div>`;
 }
 
-// ─────────────────────────────────────────────
 // 8. TOC ACTIVE HIGHLIGHT
-// ─────────────────────────────────────────────
 
 function initTocHighlight() {
   const sections = [...document.querySelectorAll('.content section[id]')];
@@ -573,9 +638,7 @@ function initNavHighlight() {
   sections.forEach(s => observer.observe(s));
 }
 
-// ─────────────────────────────────────────────
 // 9. ORCHESTRATOR
-// ─────────────────────────────────────────────
 
 async function initCaseStudy() {
   try {
@@ -618,9 +681,7 @@ async function initCaseStudy() {
   }
 }
 
-// ─────────────────────────────────────────────
 // 10. BOOT
-// ─────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
   initCaseStudy();
