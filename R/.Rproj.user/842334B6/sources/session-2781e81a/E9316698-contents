@@ -1,0 +1,274 @@
+# Estonia - Japan: Trade by CN Commodity Groups
+# Context: EU-Japan EPA (entered into force 01.02.2019)
+# Sources: VKK30_JP.xlsx, VKK30_PARTS_OF_WORLD.xlsx, VKK30_TOTAL.xlsx
+
+library(readxl)
+library(tidyverse)
+library(scales)
+library(ggplot2)
+library(ggrepel) 
+
+# 1. DATA LOADING AND CLEANING
+
+# 1.1 Trade with Japan (2004–2025)
+raw_jp <- read_excel("clean_data/VKK30_JP.xlsx", skip = 2, col_names = FALSE)
+years_jp <- as.character(2004:2025)
+colnames(raw_jp) <- c("flow", "commodity", "country", years_jp)
+
+raw_jp <- raw_jp %>%
+  fill(flow, .direction = "down") %>%
+  filter(!is.na(commodity)) %>%
+  select(-country)
+
+jp_long <- raw_jp %>%
+  pivot_longer(cols = all_of(years_jp), names_to = "year", values_to = "value") %>%
+  mutate(
+    year = as.integer(year),
+    value = suppressWarnings(as.numeric(ifelse(value == "..", NA, value))),
+    cn_code = str_extract(commodity, "^CN\\d+"),
+    cn_name = str_trim(str_replace(commodity, "^CN\\d+\\s*", ""))
+  ) %>%
+  filter(flow %in% c("Exports", "Imports by country of origin")) %>%
+  mutate(flow = recode(flow,
+                       "Exports" = "Export",
+                       "Imports by country of origin" = "Import"))
+
+# 1.2 Trade by world regions (2020–2025)
+raw_pow <- read_excel("clean_data/VKK30_PARTS_OF_WORLD.xlsx", skip = 2, col_names = FALSE)
+years_pow <- as.character(2020:2025)
+colnames(raw_pow) <- c("flow", "commodity", "region", years_pow)
+
+raw_pow <- raw_pow %>%
+  fill(flow, commodity, .direction = "down") %>%
+  filter(!is.na(region))
+
+pow_long <- raw_pow %>%
+  pivot_longer(cols = all_of(years_pow), names_to = "year", values_to = "value") %>%
+  mutate(
+    year = as.integer(year),
+    value = suppressWarnings(as.numeric(ifelse(value == "..", NA, value))),
+    cn_code = str_extract(commodity, "^CN\\d+"),
+    cn_name = str_trim(str_replace(commodity, "^CN\\d+\\s*", "")),
+    flow = recode(flow, "Exports" = "Export", "Imports by country of origin" = "Import")
+  )
+
+cat("Loaded world regions rows:", nrow(pow_long), "\n")
+
+# 1.3 Total trade (all countries, 2004–2025)
+raw_total <- read_excel("clean_data/VKK30_TOTAL.xlsx", skip = 2, col_names = FALSE)
+years_tot <- as.character(2004:2025)
+colnames(raw_total) <- c("flow", "commodity", years_tot)
+
+raw_total <- raw_total %>%
+  fill(flow, .direction = "down") %>%
+  filter(!is.na(commodity))
+
+total_long <- raw_total %>%
+  pivot_longer(cols = all_of(years_tot), names_to = "year", values_to = "value") %>%
+  mutate(
+    year = as.integer(year),
+    value = suppressWarnings(as.numeric(ifelse(value == "..", NA, value))),
+    cn_code = str_extract(commodity, "^CN\\d+"),
+    cn_name = str_trim(str_replace(commodity, "^CN\\d+\\s*", "")),
+    flow = recode(flow, "Exports" = "Export", "Imports by country of origin" = "Import")
+  )
+
+# 2. SELECTION OF COMMODITY GROUPS
+
+cn_coverage <- jp_long %>%
+  filter(!is.na(value), value > 0) %>%
+  group_by(cn_code, cn_name, flow) %>%
+  summarise(
+    n_years   = n_distinct(year),
+    total_eur = sum(value, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  arrange(flow, desc(total_eur))
+
+cat("Top-20 commodity groups by export volume to Japan:\n")
+print(head(filter(cn_coverage, flow == "Export"), 20))
+
+cat("\nTop-20 commodity groups by import volume from Japan:\n")
+print(head(filter(cn_coverage, flow == "Import"), 20))
+
+# Selected groups (adjust based on the top list above if needed)
+selected_cn <- c(
+  "CN03", "CN04", "CN08", "CN22", "CN27", "CN28", "CN29",
+  "CN39", "CN44", "CN84", "CN85", "CN90"
+)
+
+# 3. ANALYTICAL DATASETS
+
+jp_sel   <- jp_long   %>% filter(cn_code %in% selected_cn)
+pow_sel  <- pow_long  %>% filter(cn_code %in% selected_cn)
+total_sel <- total_long %>% filter(cn_code %in% selected_cn)
+
+# 4. KEY CALCULATIONS
+
+jp_share <- jp_long %>%
+  filter(cn_code %in% selected_cn, !is.na(value)) %>%
+  rename(value_jp = value) %>%
+  left_join(
+    total_long %>% select(cn_code, flow, year, value_world = value),
+    by = c("cn_code", "flow", "year")
+  ) %>%
+  mutate(jp_share_pct = 100 * value_jp / value_world)
+
+epa_effect <- jp_long %>%
+  filter(cn_code %in% selected_cn, !is.na(value)) %>%
+  group_by(cn_code, flow) %>%
+  mutate(
+    base_2018     = mean(value[year == 2018], na.rm = TRUE),
+    index_vs_2018 = 100 * value / base_2018
+  ) %>%
+  ungroup()
+
+cagr <- jp_long %>%
+  filter(cn_code %in% selected_cn, !is.na(value), value > 0) %>%
+  group_by(cn_code, cn_name, flow) %>%
+  summarise(
+    cagr_pre_epa = {
+      vals <- value[year %in% 2014:2018]
+      n <- length(vals)
+      if (n >= 2 && all(!is.na(vals))) (vals[n] / vals[1]) ^ (1 / (n - 1)) - 1 else NA_real_
+    },
+    cagr_post_epa = {
+      vals <- value[year %in% 2019:2023]
+      n <- length(vals)
+      if (n >= 2 && all(!is.na(vals))) (vals[n] / vals[1]) ^ (1 / (n - 1)) - 1 else NA_real_
+    },
+    .groups = "drop"
+  )
+
+cat("CAGR calculated for", nrow(cagr), "groups\n\n")
+
+# 5. VISUALISATIONS — build and immediately display
+
+epa_line  <- geom_vline(xintercept = 2019, linetype = "dashed", colour = "red", linewidth = 0.7)
+epa_label <- annotate("text", x = 2019.1, y = Inf, vjust = 1.5, hjust = 0,
+                      label = "EPA Feb 2019", colour = "red", size = 3.5)
+
+# 5.1 Export to Japan – top 6 groups
+
+if (nrow(jp_sel) > 0) {
+  top6_export_cn <- jp_long %>%
+    filter(cn_code %in% selected_cn, flow == "Export", !is.na(value)) %>%
+    group_by(cn_code) %>%
+    summarise(tot = sum(value, na.rm = TRUE)) %>%
+    slice_max(tot, n = 6) %>%
+    pull(cn_code)
+  
+  p1 <- jp_long %>%
+    filter(cn_code %in% top6_export_cn, flow == "Export") %>%
+    mutate(cn_short = paste0(cn_code, "\n", str_trunc(cn_name, 25))) %>%
+    ggplot(aes(x = year, y = value / 1e6, colour = cn_short)) +
+    geom_line(linewidth = 1.1, na.rm = TRUE) +
+    geom_point(size = 1.8, na.rm = TRUE) +
+    epa_line + epa_label +
+    scale_y_continuous(labels = label_comma(suffix = " M€")) +
+    scale_x_continuous(breaks = seq(2004, 2024, 4)) +
+    labs(title = "Estonia → Japan: Exports by commodity group",
+         subtitle = "Top-6 groups by total value, million EUR",
+         x = NULL, y = NULL, colour = NULL) +
+    theme_minimal(base_size = 12) +
+    theme(legend.position = "bottom")
+  
+  cat("Displaying plot 1: Exports to Japan (top-6)\n")
+  p1   # displays the plot
+} else {
+  cat("No data for exports → plot 1 skipped\n")
+}
+
+# 5.2 Import from Japan – top 6 groups
+if (nrow(jp_sel) > 0) {
+  top6_import_cn <- jp_long %>%
+    filter(cn_code %in% selected_cn, flow == "Import", !is.na(value)) %>%
+    group_by(cn_code) %>%
+    summarise(tot = sum(value, na.rm = TRUE)) %>%
+    slice_max(tot, n = 6) %>%
+    pull(cn_code)
+  
+  p2 <- jp_long %>%
+    filter(cn_code %in% top6_import_cn, flow == "Import") %>%
+    mutate(cn_short = paste0(cn_code, "\n", str_trunc(cn_name, 25))) %>%
+    ggplot(aes(x = year, y = value / 1e6, colour = cn_short)) +
+    geom_line(linewidth = 1.1, na.rm = TRUE) +
+    geom_point(size = 1.8, na.rm = TRUE) +
+    epa_line + epa_label +
+    scale_y_continuous(labels = label_comma(suffix = " M€")) +
+    scale_x_continuous(breaks = seq(2004, 2024, 4)) +
+    labs(title = "Japan → Estonia: Imports by commodity group",
+         subtitle = "Top-6 groups by total value, million EUR",
+         x = NULL, y = NULL, colour = NULL) +
+    theme_minimal(base_size = 12) +
+    theme(legend.position = "bottom")
+  
+  cat("Displaying plot 2: Imports from Japan (top-6)\n")
+  p2
+} else {
+  cat("No data for imports → plot 2 skipped\n")
+}
+
+# 5.3 Japan's share (3 key groups)
+if (nrow(jp_share) > 0) {
+  p3 <- jp_share %>%
+    filter(flow == "Export", cn_code %in% c("CN03", "CN44", "CN84")) %>%
+    ggplot(aes(x = year, y = jp_share_pct, colour = cn_code)) +
+    geom_line(linewidth = 1.1, na.rm = TRUE) +
+    geom_point(na.rm = TRUE) +
+    epa_line + epa_label +
+    scale_x_continuous(breaks = seq(2004, 2024, 4)) +
+    labs(title = "Japan's share in Estonia's exports (%)",
+         subtitle = "CN03 Fish | CN44 Wood | CN84 Machinery",
+         x = NULL, y = "% of world exports", colour = NULL) +
+    theme_minimal(base_size = 12)
+  
+  cat("Displaying plot 3: Japan's share in Estonia exports\n")
+  p3
+} else {
+  cat("No data for Japan's share → plot 3 skipped\n")
+}
+
+# 5.4 Regional structure – CN03 & CN84
+if (nrow(pow_sel) > 0) {
+  p4 <- pow_sel %>%
+    filter(flow == "Export", cn_code %in% c("CN03", "CN84"), !is.na(value)) %>%
+    ggplot(aes(x = year, y = value / 1e6, fill = region)) +
+    geom_col(position = "stack") +
+    facet_wrap(~cn_code, scales = "free_y") +
+    epa_line +
+    labs(title = "Export structure by region, 2020–2025",
+         subtitle = "CN03 Fish & CN84 Machinery, million EUR",
+         x = NULL, y = NULL, fill = "Region") +
+    theme_minimal(base_size = 11) +
+    theme(legend.position = "bottom")
+  
+  cat("Displaying plot 4: Export structure by region\n")
+  p4
+} else {
+  cat("No regional data → plot 4 skipped\n")
+}
+
+# 5.5 CAGR scatter
+if (nrow(cagr) > 0) {
+  p5 <- cagr %>%
+    filter(flow == "Export", !is.na(cagr_pre_epa), !is.na(cagr_post_epa)) %>%
+    mutate(cn_label = paste0(cn_code)) %>%
+    ggplot(aes(x = cagr_pre_epa * 100, y = cagr_post_epa * 100, label = cn_label)) +
+    geom_hline(yintercept = 0, linetype = "dotted") +
+    geom_vline(xintercept = 0, linetype = "dotted") +
+    geom_point(size = 3, colour = "#2c7bb6") +
+    geom_text_repel(size = 3.5) +
+    geom_abline(slope = 1, linetype = "dashed", colour = "grey50") +
+    labs(title = "CAGR of exports to Japan: pre-EPA (2014–2018) vs post-EPA (2019–2023)",
+         x = "CAGR pre-EPA, %",
+         y = "CAGR post-EPA, %",
+         caption = "Points above the diagonal = acceleration after EPA") +
+    theme_minimal(base_size = 12)
+  
+  cat("Displaying plot 5: CAGR pre- vs post-EPA\n")
+  p5
+} else {
+  cat("No CAGR data → plot 5 skipped\n")
+}
+

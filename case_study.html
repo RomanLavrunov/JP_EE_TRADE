@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study — Estonia × Japan Trade Analysis</title>
+  <link rel="stylesheet" href="css/case_study.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="eyebrow">Case Study · Full Methodology · Statistics Estonia 2025</div>
+    <h1>Estonia × Japan<br><em>Full Analysis</em></h1>
+    <div class="tag-row">
+      <span class="tag epa">▎ EPA EU–Japan · Feb 2019</span>
+      <span class="tag covid">▎ COVID-19 · 2020</span>
+      <span class="tag war">▎ Russia–Ukraine war · Feb 2022</span>
+    </div>
+  </header>
+
+  <nav class="page-nav">
+    <a href="index.html" class="back">← Summary</a>
+    <a href="#ask">Ask</a>
+    <a href="#prepare">Prepare</a>
+    <a href="#process">Process</a>
+    <a href="#analyze-a">Analyze</a>
+    <a href="#share">Share</a>
+    <a href="#act">Act</a>
+  </nav>
+
+  <main>
+
+    <aside class="toc">
+      <div class="toc-label">Contents</div>
+      <a href="#ask"><span class="toc-num">01</span> Ask</a>
+      <a href="#prepare"><span class="toc-num">02</span> Prepare</a>
+      <a href="#process"><span class="toc-num">03</span> Process</a>
+      <a href="#analyze-a"><span class="toc-num">04a</span> Japan dynamics</a>
+      <a href="#analyze-b"><span class="toc-num">04b</span> vs Partners</a>
+      <a href="#analyze-c"><span class="toc-num">04c</span> Commodities</a>
+      <a href="#analyze-d"><span class="toc-num">04d</span> External shocks</a>
+      <a href="#share"><span class="toc-num">05</span> Share</a>
+      <a href="#act"><span class="toc-num">06</span> Act</a>
+    </aside>
+
+    <div class="content">
+
+      <!-- ASK -->
+      <section id="ask">
+        <div class="sec-label">01 — Ask</div>
+        <h2>Defining the research question</h2>
+
+        <h3>Business context</h3>
+        <p>A mid-sized Estonian trading company began working with a Japanese supplier in late 2019 — coinciding with
+          the EU–Japan EPA coming into force. The company's strategy focuses on distant markets where logistics
+          complexity creates a natural barrier for smaller competitors. The EPA reduced that barrier significantly.</p>
+        <p>South Korea went through a similar process earlier — EU–Korea EPA came into force in 2011. Does the Korean
+          experience offer a preview of Japan's trajectory? And can such patterns be extrapolated to the EU–India FTA
+          currently under negotiation?</p>
+
+        <h3>Research questions</h3>
+        <ul>
+          <li>Did Estonia's trade with Japan increase after the EPA — and how did exports and imports behave separately?
+          </li>
+          <li>Which commodity groups grew in the 2019–2022 window, before geopolitical disruption set in?</li>
+          <li>How does the Estonia–Korea post-2011 pattern compare to Estonia–Japan post-2019?</li>
+          <li>How did COVID-19 and the war in Ukraine affect the data?</li>
+          <li>Can findings tentatively apply to the EU–India trade agreement?</li>
+        </ul>
+      </section>
+
+      <!-- PREPARE -->
+      <section id="prepare">
+        <div class="sec-label">02 — Prepare</div>
+        <h2>Data sources &amp; structure</h2>
+
+        <h3>Sources</h3>
+        <p>All data sourced from Statistics Estonia (Statistikaamet), downloaded manually in Excel from the PxWeb
+          database. Local source chosen over Eurostat — the focus is specifically on Estonia's bilateral trade, and
+          Statistics Estonia provides the most directly accessible data.</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>File</th>
+              <th>Content</th>
+              <th>Period</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>VKK32 BY COUNTRIES</td>
+              <td>Export/import by partner country, 177 countries</td>
+              <td>2004–2025</td>
+            </tr>
+            <tr>
+              <td>VKK30 JP</td>
+              <td>Estonia–Japan trade by CN commodity group</td>
+              <td>2004–2025</td>
+            </tr>
+            <tr>
+              <td>VKK30 TOTAL</td>
+              <td>Estonia total world trade by CN group</td>
+              <td>2004–2025</td>
+            </tr>
+            <tr>
+              <td>VKK30_PARTS OF WORLD</td>
+              <td>Trade by world region</td>
+              <td>2020–2025</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="comment">*all file names are written with an underscore "_" and .xlsx in the end</p>
+
+        <h3>Known data issues</h3>
+        <ul>
+          <li><strong>Wide format</strong> — years stored as columns, not rows</li>
+          <li><strong>Missing flow labels</strong> — "Exports"/"Imports" only in first row of each block</li>
+          <li><strong>".." placeholder</strong> — suppressed values coded as ".." rather than NA</li>
+          <li><strong>Regional data gap</strong> — VKK30_PARTS_OF_WORLD only available from 2020</li>
+        </ul>
+      </section>
+
+      <!-- PROCESS -->
+      <section id="process">
+        <div class="sec-label">03 — Process</div>
+        <h2>Data cleaning &amp; transformation</h2>
+
+        <p>Processing done in two stages: manual cleanup in Excel for structural issues, then systematic transformation
+          in R using <code>readxl</code>, <code>dplyr</code>, <code>tidyr</code>, and <code>jsonlite</code>.</p>
+
+        <div class="phase-grid">
+          <div class="phase-box">
+            <div class="ph-num">Step 1</div>
+            <h4>Fill flow labels</h4>
+            <p>fill() propagates "Exports"/"Imports" downward through each block</p>
+          </div>
+          <div class="phase-box">
+            <div class="ph-num">Step 2</div>
+            <h4>Handle ".."</h4>
+            <p>Replace ".." with NA; convert all value columns from character to numeric</p>
+          </div>
+          <div class="phase-box">
+            <div class="ph-num">Step 3</div>
+            <h4>Wide → Long</h4>
+            <p>pivot_longer() transforms years-as-columns into one row per observation</p>
+          </div>
+          <div class="phase-box">
+            <div class="ph-num">Step 4</div>
+            <h4>Derived variables</h4>
+            <p>balance = exports − imports · index_2019 = value / value_2019 × 100</p>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <span class="comment"># Core transformation pattern used across all three files</span>
+          raw <span class="kw">&lt;-</span> <span class="fn">read_excel</span>(<span class="str">"VKK30_JP.xlsx"</span>,
+          skip = 2, col_names = FALSE)
+          colnames(raw) <span class="kw">&lt;-</span> c(<span class="str">"flow"</span>, <span
+            class="str">"commodity"</span>, <span class="str">"country"</span>, years)
+
+          <span class="kw">&lt;-</span> raw <span class="kw">%&gt;%</span>
+          <span class="fn">fill</span>(flow, .direction = <span class="str">"down"</span>) <span
+            class="kw">%&gt;%</span>
+          <span class="fn">pivot_longer</span>(cols = all_of(years), names_to = <span class="str">"year"</span>,
+          values_to = <span class="str">"value"</span>) <span class="kw">%&gt;%</span>
+          <span class="fn">mutate</span>(value = <span class="fn">as.numeric</span>(<span class="fn">ifelse</span>(value
+          == <span class="str">".."</span>, NA, value)))
+
+          <span class="comment"># Export to JSON for HTML dashboard</span>
+          <span class="fn">write_json</span>(df_clean, <span class="str">"data/commodities.json"</span>, pretty = TRUE)
+        </div>
+      </section>
+
+      <!-- ANALYZE A -->
+      <section id="analyze-a">
+        <div class="sec-label">04a — Analyze · Japan dynamics</div>
+        <h2>Bilateral trade overview</h2>
+
+        <p>The EPA year (2019) brought a visible export uptick. The real surprise was 2022 — trade hit its all-time peak
+          at 150 M€, then fell sharply. The reason is logistics: Russia's airspace closure roughly doubled freight times
+          to Japan.</p>
+
+        <div class="chart-card">
+          <h4>Exports &amp; imports — absolute values, M€</h4>
+          <div class="sub">2010–2024 · Three structural breaks marked</div>
+          <div class="cw tall"><canvas id="csChartBilateral"></canvas></div>
+        </div>
+
+        <div class="two-charts">
+          <div class="chart-card">
+            <h4>Trade balance (exports − imports)</h4>
+            <div class="sub">M€ · Estonia consistently exports more to Japan</div>
+            <div class="cw med"><canvas id="csChartBalance"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h4>Japan's share in Estonia's total trade</h4>
+            <div class="sub">% · Flat post-EPA — no structural shift</div>
+            <div class="cw med"><canvas id="csChartShareBar"></canvas></div>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <h4>Growth index vs global trade (2019 = 100)</h4>
+          <div class="sub">Japan solid · Global dashed · Exports blue · Imports red</div>
+          <div class="cw"><canvas id="csChartIndexGlobal"></canvas></div>
+        </div>
+      </section>
+
+      <!-- ANALYZE B -->
+      <section id="analyze-b">
+        <div class="sec-label">04b — Analyze · Partner comparison</div>
+        <h2>Japan vs other trade partners</h2>
+
+        <p>Kazakhstan and Bulgaria show higher index growth than Japan — but as geopolitical artifacts, not trade policy
+          success stories. Singapore (EPA 2019) didn't grow like Japan — showing the EPA alone doesn't explain
+          everything. South Korea (EPA 2011) is the useful benchmark: 3–5 years to full effect.</p>
+
+        <div class="chart-card">
+          <h4>Export growth index by partner country (2019 = 100)</h4>
+          <div class="sub">Japan highlighted · EPA countries vs non-EPA benchmarks · 2010–2024</div>
+          <div class="cw tall"><canvas id="csChartPartners"></canvas></div>
+        </div>
+
+        <div class="chart-card">
+          <h4>Absolute export values — selected partners, M€</h4>
+          <div class="sub">Japan in context · Scale difference visible</div>
+          <div class="cw tall"><canvas id="csChartPartnersAbs"></canvas></div>
+        </div>
+      </section>
+
+      <!-- ANALYZE C -->
+      <section id="analyze-c">
+        <div class="sec-label">04c — Analyze · Commodity structure</div>
+        <h2>What actually grew — and what didn't</h2>
+
+        <p>CN44 Wood is ~50% of all exports — driven by Japan's demand for Nordic timber. The EPA gave it an extra push
+          (+40%) but didn't create the relationship. CN85 Electrical machinery is the cleaner signal: +58% on a
+          meaningful base. Counter-cases matter: Fish fell 48% post-EPA despite tariff liberalisation.</p>
+
+        <div class="chart-card">
+          <h4>Exports to Japan — top CN groups, M€</h4>
+          <div class="sub">2010–2024</div>
+          <div class="cw tall"><canvas id="csChartTopCN"></canvas></div>
+        </div>
+
+        <div class="two-charts">
+          <div class="chart-card">
+            <h4>Imports from Japan — top CN groups, M€</h4>
+            <div class="sub">What Estonia buys from Japan</div>
+            <div class="cw"><canvas id="csChartImportCN"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h4>Japan's share in Estonia's total exports by CN group</h4>
+            <div class="sub">% · CN44 Wood: Japan takes 4–6% of total Estonian wood export</div>
+            <div class="cw"><canvas id="csChartCNShare"></canvas></div>
+          </div>
+        </div>
+
+        <h3>Pre vs post-EPA</h3>
+        <p>Average annual exports (M€): 2014–2018 vs 2019–2023</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Group</th>
+              <th>Pre-EPA</th>
+              <th>Post-EPA</th>
+              <th>Change</th>
+            </tr>
+          </thead>
+          <tbody id="csEpaTableBody">
+            <tr>
+              <td colspan="4" style="padding:16px;color:var(--ink3);font-family:'DM Mono',monospace">Loading…</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="chart-card" style="margin-top:24px">
+          <h4>% change post-EPA vs pre-EPA</h4>
+          <div class="sub">Groups with near-zero pre-EPA base excluded</div>
+          <div class="cw med"><canvas id="csChartPctBar"></canvas></div>
+        </div>
+
+        <div class="chart-card">
+          <h4>Export structure — 2023 snapshot (Treemap)</h4>
+          <div class="sub">Cell area = export value · Hover for exact figures · CN44 Wood ≈ 40% of total</div>
+          <div id="csTmCont"></div>
+        </div>
+
+        <div class="chart-card">
+          <h4>How groups moved across key years (Slope chart)</h4>
+          <div class="sub">Each line = one CN group · 2015 → pre-EPA 2018 → EPA 2019 → peak 2022 → 2024</div>
+          <div style="overflow-x:auto" id="csSlopeCont"></div>
+        </div>
+
+        <div class="chart-card">
+          <h4>Growth index heatmap (2018 = 100)</h4>
+          <div class="sub">Green = above 2018 level · Red = below · Bold columns = post-EPA years</div>
+          <div style="overflow-x:auto" id="csHmCont"></div>
+        </div>
+
+        <div class="chart-card">
+          <h4>Index 2018 = 100 by CN group</h4>
+          <div class="sub">Shows which groups accelerated after EPA regardless of absolute size</div>
+          <div class="cw tall"><canvas id="csChartHeatIndex"></canvas></div>
+        </div>
+
+        <h3>Regional context</h3>
+        <div class="two-charts">
+          <div class="chart-card">
+            <h4>CN44 Wood — export destinations 2020–2024</h4>
+            <div class="sub">Japan is dominant non-European buyer</div>
+            <div class="cw"><canvas id="csChartRegWood"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h4>CN03 Fish — export destinations 2020–2024</h4>
+            <div class="sub">Japan is a thin slice — Europe dominates</div>
+            <div class="cw"><canvas id="csChartRegFish"></canvas></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ANALYZE D -->
+      <section id="analyze-d">
+        <div class="sec-label">04d — Analyze · External shocks</div>
+        <h2>COVID, war, and logistics</h2>
+
+        <p>COVID-19 in 2020 caused a brief dip — smaller than expected because wood exports proved resilient. The war
+          (February 2022) had a more lasting impact specifically on Japan: closure of Russian airspace eliminated
+          routing that cut freight times by 3–4 hours. Round-trip cargo times roughly doubled; maritime adds 4–6 weeks.
+        </p>
+        <p>Result: after the 2022 peak, Japan has been declining while most other non-European partners stabilised or
+          grew. This is the key confounding factor when assessing EPA impact in 2022–2024 data.</p>
+        <p>The paradox for business: logistics barriers that suppress overall trade volumes simultaneously raise the
+          competitive moat for those who can navigate them.</p>
+      </section>
+
+      <!-- SHARE -->
+      <section id="share">
+        <div class="sec-label">05 — Share</div>
+        <h2>Visualisation choices</h2>
+
+        <ul>
+          <li><strong>Line chart (bilateral)</strong> — baseline time series, three breaks marked</li>
+          <li><strong>Growth index (2019=100)</strong> — comparative view, Japan vs partners</li>
+          <li><strong>Treemap</strong> — 2023 export structure in one snapshot</li>
+          <li><strong>Slope chart</strong> — how groups moved across five key years</li>
+          <li><strong>Heatmap</strong> — all groups × all years, growth vs 2018 baseline</li>
+          <li><strong>Pre/post-EPA bar</strong> — % change per commodity group</li>
+          <li><strong>Regional stacked bars</strong> — Japan in global export destination context</li>
+          <li><strong>Summary table</strong> — pre/post EPA numbers side by side</li>
+        </ul>
+        <p>All charts built with Chart.js from JSON data generated by R scripts. Updating data requires only re-running
+          the R scripts and uploading new JSON files.</p>
+      </section>
+
+      <!-- ACT -->
+      <section id="act">
+        <div class="sec-label">06 — Act</div>
+        <h2>Conclusions</h2>
+
+        <div class="finding key">
+          <h4>EPA worked — moderately</h4>
+          <p>Post-EPA average exports +40% vs pre-EPA (36 M€ → 51 M€/year). Real growth in wood, chemicals (+95%),
+            electrical machinery (+58%). Consistent with policy intent.</p>
+        </div>
+        <div class="finding key">
+          <h4>Logistics beats tariffs post-2022</h4>
+          <p>Russia's airspace closure hit Japan harder than any other major partner. Trade peaked in 2022 then declined
+            even as the EPA remained in force.</p>
+        </div>
+        <div class="finding">
+          <h4>Japan ≠ Asia</h4>
+          <p>South Korea grew while Japan declined post-2022. Distance, routing, and freight infrastructure are
+            country-specific — treating Asian markets as one block leads to wrong conclusions.</p>
+        </div>
+        <div class="finding">
+          <h4>The Korea precedent</h4>
+          <p>EU–Korea EPA (2011) took 3–5 years to show full effect. Japan is at year 5–6 — the trajectory may not be
+            final, but requires logistics to stabilise first.</p>
+        </div>
+        <div class="finding">
+          <h4>Counter-cases are real</h4>
+          <p>Fish exports fell 48% post-EPA. Dairy flat. The EPA removes tariffs — it does not remove competition from
+            other EU suppliers.</p>
+        </div>
+        <div class="finding">
+          <h4>Current conditions = selective opportunity</h4>
+          <p>Declining volumes mean reduced competition for those who can navigate the logistics barrier. Niche,
+            high-value, non-time-sensitive goods are best positioned.</p>
+        </div>
+        <div class="finding">
+          <h4>India: use Japan as a baseline, not a guarantee</h4>
+          <p>EU–India FTA in negotiation. Japan's experience — slow start, sector-specific, logistics-dependent — is a
+            useful baseline. India presents even greater distance challenges.</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Data: Statistics Estonia · VKK30, VKK32 · 2004–2024 · R + Chart.js</p>
+    <a href="index.html">← Summary page</a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script src="js/case_study.js"></script>
+</body>
+
+</html>

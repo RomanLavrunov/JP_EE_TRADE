@@ -1,0 +1,27 @@
+{
+    "id": "6AEF7871",
+    "path": "~/dev/estonia_japan_trade/scripts/03_commodity_groups_cn.R",
+    "project_path": "scripts/03_commodity_groups_cn.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1772568185912.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "286,42",
+        "scrollLine": "194"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1772572971,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1772572971791,
+    "read_only": false,
+    "read_only_alternatives": []
+}

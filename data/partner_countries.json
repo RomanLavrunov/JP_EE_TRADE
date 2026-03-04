@@ -1,0 +1,2890 @@
+{
+  "index_exports": [
+    {
+      "year": 2010,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 28.4
+    },
+    {
+      "year": 2011,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 32.5
+    },
+    {
+      "year": 2012,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 33.1
+    },
+    {
+      "year": 2013,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 42
+    },
+    {
+      "year": 2014,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 42.3
+    },
+    {
+      "year": 2015,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 40.4
+    },
+    {
+      "year": 2016,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 56.1
+    },
+    {
+      "year": 2017,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 85.9
+    },
+    {
+      "year": 2018,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 97.9
+    },
+    {
+      "year": 2019,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 95.5
+    },
+    {
+      "year": 2021,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 173.9
+    },
+    {
+      "year": 2022,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 233.1
+    },
+    {
+      "year": 2023,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 145.7
+    },
+    {
+      "year": 2024,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 153
+    },
+    {
+      "year": 2010,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 67.5
+    },
+    {
+      "year": 2011,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 122.2
+    },
+    {
+      "year": 2012,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 60.9
+    },
+    {
+      "year": 2013,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 59.6
+    },
+    {
+      "year": 2014,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 83.8
+    },
+    {
+      "year": 2015,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 81.4
+    },
+    {
+      "year": 2016,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 100.9
+    },
+    {
+      "year": 2017,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 131.3
+    },
+    {
+      "year": 2018,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 111.1
+    },
+    {
+      "year": 2019,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 146.9
+    },
+    {
+      "year": 2021,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 117
+    },
+    {
+      "year": 2022,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 125.8
+    },
+    {
+      "year": 2023,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 151.8
+    },
+    {
+      "year": 2024,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 145.8
+    },
+    {
+      "year": 2010,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 34.1
+    },
+    {
+      "year": 2011,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 64.2
+    },
+    {
+      "year": 2012,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 100.3
+    },
+    {
+      "year": 2013,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 70.2
+    },
+    {
+      "year": 2014,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 74.6
+    },
+    {
+      "year": 2015,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 116.4
+    },
+    {
+      "year": 2016,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 130.8
+    },
+    {
+      "year": 2017,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 106.6
+    },
+    {
+      "year": 2018,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 159.5
+    },
+    {
+      "year": 2019,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 119.5
+    },
+    {
+      "year": 2021,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 180.4
+    },
+    {
+      "year": 2022,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 226.8
+    },
+    {
+      "year": 2023,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 147.1
+    },
+    {
+      "year": 2024,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 140.7
+    },
+    {
+      "year": 2010,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 59.9
+    },
+    {
+      "year": 2011,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 76.3
+    },
+    {
+      "year": 2012,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 82.8
+    },
+    {
+      "year": 2013,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 81.3
+    },
+    {
+      "year": 2014,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 75
+    },
+    {
+      "year": 2015,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 80.5
+    },
+    {
+      "year": 2016,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 91.2
+    },
+    {
+      "year": 2017,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 88.1
+    },
+    {
+      "year": 2018,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 88.8
+    },
+    {
+      "year": 2019,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 117.9
+    },
+    {
+      "year": 2021,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 146.6
+    },
+    {
+      "year": 2022,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 188.2
+    },
+    {
+      "year": 2023,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 141.8
+    },
+    {
+      "year": 2024,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 116.9
+    },
+    {
+      "year": 2010,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 41.3
+    },
+    {
+      "year": 2011,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 38.7
+    },
+    {
+      "year": 2012,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 94.4
+    },
+    {
+      "year": 2013,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 135
+    },
+    {
+      "year": 2014,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 132.7
+    },
+    {
+      "year": 2015,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 97.5
+    },
+    {
+      "year": 2016,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 89.9
+    },
+    {
+      "year": 2017,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 125.7
+    },
+    {
+      "year": 2018,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 115
+    },
+    {
+      "year": 2019,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 139.4
+    },
+    {
+      "year": 2021,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 96.7
+    },
+    {
+      "year": 2022,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 94.2
+    },
+    {
+      "year": 2023,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 94
+    },
+    {
+      "year": 2024,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 137.5
+    },
+    {
+      "year": 2010,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 3.4
+    },
+    {
+      "year": 2011,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 26.2
+    },
+    {
+      "year": 2012,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 37.4
+    },
+    {
+      "year": 2013,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 11.5
+    },
+    {
+      "year": 2014,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 7.5
+    },
+    {
+      "year": 2015,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 9.2
+    },
+    {
+      "year": 2016,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 18.9
+    },
+    {
+      "year": 2017,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 51.7
+    },
+    {
+      "year": 2018,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 297.1
+    },
+    {
+      "year": 2019,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 43.2
+    },
+    {
+      "year": 2021,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 179.3
+    },
+    {
+      "year": 2022,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 14.9
+    },
+    {
+      "year": 2023,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 204.7
+    },
+    {
+      "year": 2024,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 227.7
+    },
+    {
+      "year": 2010,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 54.5
+    },
+    {
+      "year": 2011,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 54.3
+    },
+    {
+      "year": 2012,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 65
+    },
+    {
+      "year": 2013,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 58.4
+    },
+    {
+      "year": 2014,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 76.5
+    },
+    {
+      "year": 2015,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 59.5
+    },
+    {
+      "year": 2016,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 54.2
+    },
+    {
+      "year": 2017,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 74.5
+    },
+    {
+      "year": 2018,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 107.6
+    },
+    {
+      "year": 2019,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 319
+    },
+    {
+      "year": 2021,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 280
+    },
+    {
+      "year": 2022,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 303.5
+    },
+    {
+      "year": 2023,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 91.6
+    },
+    {
+      "year": 2024,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 123.4
+    },
+    {
+      "year": 2010,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 34
+    },
+    {
+      "year": 2011,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 77
+    },
+    {
+      "year": 2012,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 60
+    },
+    {
+      "year": 2013,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 36.8
+    },
+    {
+      "year": 2014,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 46.4
+    },
+    {
+      "year": 2015,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 37.2
+    },
+    {
+      "year": 2016,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 32.4
+    },
+    {
+      "year": 2017,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 38.3
+    },
+    {
+      "year": 2018,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 95.4
+    },
+    {
+      "year": 2019,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 115.3
+    },
+    {
+      "year": 2021,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 171.9
+    },
+    {
+      "year": 2022,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 119
+    },
+    {
+      "year": 2023,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 51.3
+    },
+    {
+      "year": 2024,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 71.4
+    }
+  ],
+  "index_imports": [
+    {
+      "year": 2010,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 46.5
+    },
+    {
+      "year": 2011,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 79.9
+    },
+    {
+      "year": 2012,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 82.3
+    },
+    {
+      "year": 2013,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 99.1
+    },
+    {
+      "year": 2014,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 77.5
+    },
+    {
+      "year": 2015,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 83.4
+    },
+    {
+      "year": 2016,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 94.6
+    },
+    {
+      "year": 2017,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 93.5
+    },
+    {
+      "year": 2018,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 101.6
+    },
+    {
+      "year": 2019,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 145.7
+    },
+    {
+      "year": 2021,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 200.1
+    },
+    {
+      "year": 2022,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 196.1
+    },
+    {
+      "year": 2023,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 135.8
+    },
+    {
+      "year": 2024,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "index": 195.1
+    },
+    {
+      "year": 2010,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 51.4
+    },
+    {
+      "year": 2011,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 83.1
+    },
+    {
+      "year": 2012,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 87.6
+    },
+    {
+      "year": 2013,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 83.5
+    },
+    {
+      "year": 2014,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 88.7
+    },
+    {
+      "year": 2015,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 94.7
+    },
+    {
+      "year": 2016,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 101.4
+    },
+    {
+      "year": 2017,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 108.6
+    },
+    {
+      "year": 2018,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 108.4
+    },
+    {
+      "year": 2019,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 118
+    },
+    {
+      "year": 2021,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 129.8
+    },
+    {
+      "year": 2022,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 174.1
+    },
+    {
+      "year": 2023,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 135.4
+    },
+    {
+      "year": 2024,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "index": 133.2
+    },
+    {
+      "year": 2010,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 34.2
+    },
+    {
+      "year": 2011,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 58.7
+    },
+    {
+      "year": 2012,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 69.7
+    },
+    {
+      "year": 2013,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 59.1
+    },
+    {
+      "year": 2014,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 46.1
+    },
+    {
+      "year": 2015,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 57.2
+    },
+    {
+      "year": 2016,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 74.5
+    },
+    {
+      "year": 2017,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 72.1
+    },
+    {
+      "year": 2018,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 69.9
+    },
+    {
+      "year": 2019,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 66.5
+    },
+    {
+      "year": 2021,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 89.9
+    },
+    {
+      "year": 2022,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 206.1
+    },
+    {
+      "year": 2023,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 92.3
+    },
+    {
+      "year": 2024,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 179.6
+    },
+    {
+      "year": 2010,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 58.3
+    },
+    {
+      "year": 2011,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 53.5
+    },
+    {
+      "year": 2012,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 79.1
+    },
+    {
+      "year": 2013,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 55.7
+    },
+    {
+      "year": 2014,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 49.7
+    },
+    {
+      "year": 2015,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 42.2
+    },
+    {
+      "year": 2016,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 46.3
+    },
+    {
+      "year": 2017,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 57.3
+    },
+    {
+      "year": 2018,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 94.1
+    },
+    {
+      "year": 2019,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 84.1
+    },
+    {
+      "year": 2021,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 91.3
+    },
+    {
+      "year": 2022,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 189.8
+    },
+    {
+      "year": 2023,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 104.3
+    },
+    {
+      "year": 2024,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 112
+    },
+    {
+      "year": 2010,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 23.2
+    },
+    {
+      "year": 2011,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 40.6
+    },
+    {
+      "year": 2012,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 50.7
+    },
+    {
+      "year": 2013,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 60.9
+    },
+    {
+      "year": 2014,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 72.5
+    },
+    {
+      "year": 2015,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 61.6
+    },
+    {
+      "year": 2016,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 86.3
+    },
+    {
+      "year": 2017,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 90.5
+    },
+    {
+      "year": 2018,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 90.9
+    },
+    {
+      "year": 2019,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 104.9
+    },
+    {
+      "year": 2021,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 87.7
+    },
+    {
+      "year": 2022,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 128
+    },
+    {
+      "year": 2023,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 173.4
+    },
+    {
+      "year": 2024,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 144.5
+    },
+    {
+      "year": 2010,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 29.6
+    },
+    {
+      "year": 2011,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 29.3
+    },
+    {
+      "year": 2012,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 35.3
+    },
+    {
+      "year": 2013,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 64.6
+    },
+    {
+      "year": 2014,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 21.5
+    },
+    {
+      "year": 2015,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 21.8
+    },
+    {
+      "year": 2016,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 25.6
+    },
+    {
+      "year": 2017,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 29.5
+    },
+    {
+      "year": 2018,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 28.1
+    },
+    {
+      "year": 2019,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 63.8
+    },
+    {
+      "year": 2021,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 76
+    },
+    {
+      "year": 2022,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 88.7
+    },
+    {
+      "year": 2023,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 46.7
+    },
+    {
+      "year": 2024,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 82.5
+    },
+    {
+      "year": 2010,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 56.9
+    },
+    {
+      "year": 2011,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 106.3
+    },
+    {
+      "year": 2012,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 101.2
+    },
+    {
+      "year": 2013,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 117.7
+    },
+    {
+      "year": 2014,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 139.3
+    },
+    {
+      "year": 2015,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 122.5
+    },
+    {
+      "year": 2016,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 119.3
+    },
+    {
+      "year": 2017,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 109.5
+    },
+    {
+      "year": 2018,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 111.6
+    },
+    {
+      "year": 2019,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 95.7
+    },
+    {
+      "year": 2021,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 112.4
+    },
+    {
+      "year": 2022,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 168.4
+    },
+    {
+      "year": 2023,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 95.8
+    },
+    {
+      "year": 2024,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "index": 85.9
+    },
+    {
+      "year": 2010,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 40.6
+    },
+    {
+      "year": 2011,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 61.6
+    },
+    {
+      "year": 2012,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 51.1
+    },
+    {
+      "year": 2013,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 60.4
+    },
+    {
+      "year": 2014,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 66.2
+    },
+    {
+      "year": 2015,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 77.2
+    },
+    {
+      "year": 2016,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 84.4
+    },
+    {
+      "year": 2017,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 64.6
+    },
+    {
+      "year": 2018,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 85.8
+    },
+    {
+      "year": 2019,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 107.4
+    },
+    {
+      "year": 2021,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 141.8
+    },
+    {
+      "year": 2022,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 136.8
+    },
+    {
+      "year": 2023,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 137.7
+    },
+    {
+      "year": 2024,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 137.5
+    }
+  ],
+  "abs_exports": [
+    {
+      "year": 2010,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 30.9
+    },
+    {
+      "year": 2011,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 35.41
+    },
+    {
+      "year": 2012,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 35.98
+    },
+    {
+      "year": 2013,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 45.72
+    },
+    {
+      "year": 2014,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 46.08
+    },
+    {
+      "year": 2015,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 43.97
+    },
+    {
+      "year": 2016,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 61.02
+    },
+    {
+      "year": 2017,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 93.46
+    },
+    {
+      "year": 2018,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 106.58
+    },
+    {
+      "year": 2019,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 108.85
+    },
+    {
+      "year": 2020,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 103.92
+    },
+    {
+      "year": 2021,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 189.31
+    },
+    {
+      "year": 2022,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 253.78
+    },
+    {
+      "year": 2023,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 158.56
+    },
+    {
+      "year": 2024,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 166.54
+    },
+    {
+      "year": 2010,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 112.15
+    },
+    {
+      "year": 2011,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 203.09
+    },
+    {
+      "year": 2012,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 101.18
+    },
+    {
+      "year": 2013,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 99.04
+    },
+    {
+      "year": 2014,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 139.27
+    },
+    {
+      "year": 2015,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 135.33
+    },
+    {
+      "year": 2016,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 167.73
+    },
+    {
+      "year": 2017,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 218.21
+    },
+    {
+      "year": 2018,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 184.57
+    },
+    {
+      "year": 2019,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 166.2
+    },
+    {
+      "year": 2020,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 244.23
+    },
+    {
+      "year": 2021,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 194.38
+    },
+    {
+      "year": 2022,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 209.15
+    },
+    {
+      "year": 2023,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 252.29
+    },
+    {
+      "year": 2024,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 242.28
+    },
+    {
+      "year": 2010,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 18.46
+    },
+    {
+      "year": 2011,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 34.77
+    },
+    {
+      "year": 2012,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 54.36
+    },
+    {
+      "year": 2013,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 38.03
+    },
+    {
+      "year": 2014,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 40.42
+    },
+    {
+      "year": 2015,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 63.07
+    },
+    {
+      "year": 2016,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 70.88
+    },
+    {
+      "year": 2017,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 57.75
+    },
+    {
+      "year": 2018,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 86.44
+    },
+    {
+      "year": 2019,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 54.19
+    },
+    {
+      "year": 2020,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 64.77
+    },
+    {
+      "year": 2021,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 97.79
+    },
+    {
+      "year": 2022,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 122.93
+    },
+    {
+      "year": 2023,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 79.7
+    },
+    {
+      "year": 2024,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 76.24
+    },
+    {
+      "year": 2010,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 47.75
+    },
+    {
+      "year": 2011,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 60.84
+    },
+    {
+      "year": 2012,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 66.06
+    },
+    {
+      "year": 2013,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 64.89
+    },
+    {
+      "year": 2014,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 59.83
+    },
+    {
+      "year": 2015,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 64.19
+    },
+    {
+      "year": 2016,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 72.73
+    },
+    {
+      "year": 2017,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 70.29
+    },
+    {
+      "year": 2018,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 70.8
+    },
+    {
+      "year": 2019,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 79.77
+    },
+    {
+      "year": 2020,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 94.02
+    },
+    {
+      "year": 2021,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 116.91
+    },
+    {
+      "year": 2022,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 150.13
+    },
+    {
+      "year": 2023,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 113.12
+    },
+    {
+      "year": 2024,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 93.27
+    },
+    {
+      "year": 2010,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 21.15
+    },
+    {
+      "year": 2011,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 19.87
+    },
+    {
+      "year": 2012,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 48.38
+    },
+    {
+      "year": 2013,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 69.21
+    },
+    {
+      "year": 2014,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 68.02
+    },
+    {
+      "year": 2015,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 49.98
+    },
+    {
+      "year": 2016,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 46.09
+    },
+    {
+      "year": 2017,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 64.46
+    },
+    {
+      "year": 2018,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 58.98
+    },
+    {
+      "year": 2019,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 51.27
+    },
+    {
+      "year": 2020,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 71.45
+    },
+    {
+      "year": 2021,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 49.59
+    },
+    {
+      "year": 2022,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 48.31
+    },
+    {
+      "year": 2023,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 48.19
+    },
+    {
+      "year": 2024,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 70.5
+    },
+    {
+      "year": 2010,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 3.04
+    },
+    {
+      "year": 2011,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 23.72
+    },
+    {
+      "year": 2012,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 33.83
+    },
+    {
+      "year": 2013,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 10.42
+    },
+    {
+      "year": 2014,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 6.79
+    },
+    {
+      "year": 2015,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 8.29
+    },
+    {
+      "year": 2016,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 17.12
+    },
+    {
+      "year": 2017,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 46.81
+    },
+    {
+      "year": 2018,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 268.97
+    },
+    {
+      "year": 2019,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 90.54
+    },
+    {
+      "year": 2020,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 39.14
+    },
+    {
+      "year": 2021,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 162.34
+    },
+    {
+      "year": 2022,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 13.49
+    },
+    {
+      "year": 2023,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 185.34
+    },
+    {
+      "year": 2024,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 206.19
+    },
+    {
+      "year": 2010,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 4.16
+    },
+    {
+      "year": 2011,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 4.14
+    },
+    {
+      "year": 2012,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 4.96
+    },
+    {
+      "year": 2013,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 4.46
+    },
+    {
+      "year": 2014,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 5.84
+    },
+    {
+      "year": 2015,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 4.55
+    },
+    {
+      "year": 2016,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 4.14
+    },
+    {
+      "year": 2017,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 5.69
+    },
+    {
+      "year": 2018,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 8.21
+    },
+    {
+      "year": 2019,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 7.63
+    },
+    {
+      "year": 2020,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 24.35
+    },
+    {
+      "year": 2021,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 21.37
+    },
+    {
+      "year": 2022,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 23.17
+    },
+    {
+      "year": 2023,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 7
+    },
+    {
+      "year": 2024,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 9.42
+    },
+    {
+      "year": 2010,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 330.87
+    },
+    {
+      "year": 2011,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 749.85
+    },
+    {
+      "year": 2012,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 584.03
+    },
+    {
+      "year": 2013,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 358.1
+    },
+    {
+      "year": 2014,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 451.55
+    },
+    {
+      "year": 2015,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 362.23
+    },
+    {
+      "year": 2016,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 315.75
+    },
+    {
+      "year": 2017,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 373.41
+    },
+    {
+      "year": 2018,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 928.61
+    },
+    {
+      "year": 2019,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 973.89
+    },
+    {
+      "year": 2020,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 1123.07
+    },
+    {
+      "year": 2021,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 1673.64
+    },
+    {
+      "year": 2022,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 1158.51
+    },
+    {
+      "year": 2023,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 499.42
+    },
+    {
+      "year": 2024,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 695.64
+    }
+  ],
+  "abs_imports": [
+    {
+      "year": 2010,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 57.98
+    },
+    {
+      "year": 2011,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 99.77
+    },
+    {
+      "year": 2012,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 102.71
+    },
+    {
+      "year": 2013,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 123.69
+    },
+    {
+      "year": 2014,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 96.7
+    },
+    {
+      "year": 2015,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 104.04
+    },
+    {
+      "year": 2016,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 118.05
+    },
+    {
+      "year": 2017,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 116.7
+    },
+    {
+      "year": 2018,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 126.84
+    },
+    {
+      "year": 2019,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 124.81
+    },
+    {
+      "year": 2020,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 181.86
+    },
+    {
+      "year": 2021,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 249.71
+    },
+    {
+      "year": 2022,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 244.71
+    },
+    {
+      "year": 2023,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 169.54
+    },
+    {
+      "year": 2024,
+      "country": "CH Switzerland",
+      "epa_status": "No EPA",
+      "value_mln": 243.55
+    },
+    {
+      "year": 2010,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 281.63
+    },
+    {
+      "year": 2011,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 455.68
+    },
+    {
+      "year": 2012,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 480.54
+    },
+    {
+      "year": 2013,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 457.86
+    },
+    {
+      "year": 2014,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 486.63
+    },
+    {
+      "year": 2015,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 519.54
+    },
+    {
+      "year": 2016,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 555.97
+    },
+    {
+      "year": 2017,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 595.54
+    },
+    {
+      "year": 2018,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 594.49
+    },
+    {
+      "year": 2019,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 548.38
+    },
+    {
+      "year": 2020,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 647.05
+    },
+    {
+      "year": 2021,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 711.77
+    },
+    {
+      "year": 2022,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 954.66
+    },
+    {
+      "year": 2023,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 742.75
+    },
+    {
+      "year": 2024,
+      "country": "CN China",
+      "epa_status": "No EPA",
+      "value_mln": 730.37
+    },
+    {
+      "year": 2010,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 15.61
+    },
+    {
+      "year": 2011,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 26.76
+    },
+    {
+      "year": 2012,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 31.8
+    },
+    {
+      "year": 2013,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 26.94
+    },
+    {
+      "year": 2014,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 21.03
+    },
+    {
+      "year": 2015,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 26.11
+    },
+    {
+      "year": 2016,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 34
+    },
+    {
+      "year": 2017,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 32.87
+    },
+    {
+      "year": 2018,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 31.87
+    },
+    {
+      "year": 2019,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 45.61
+    },
+    {
+      "year": 2020,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 30.33
+    },
+    {
+      "year": 2021,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 40.98
+    },
+    {
+      "year": 2022,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 94
+    },
+    {
+      "year": 2023,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 42.1
+    },
+    {
+      "year": 2024,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 81.9
+    },
+    {
+      "year": 2010,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 27.07
+    },
+    {
+      "year": 2011,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 24.86
+    },
+    {
+      "year": 2012,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 36.73
+    },
+    {
+      "year": 2013,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 25.86
+    },
+    {
+      "year": 2014,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 23.08
+    },
+    {
+      "year": 2015,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 19.61
+    },
+    {
+      "year": 2016,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 21.49
+    },
+    {
+      "year": 2017,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 26.61
+    },
+    {
+      "year": 2018,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 43.72
+    },
+    {
+      "year": 2019,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 46.46
+    },
+    {
+      "year": 2020,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 39.08
+    },
+    {
+      "year": 2021,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 42.43
+    },
+    {
+      "year": 2022,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 88.16
+    },
+    {
+      "year": 2023,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 48.46
+    },
+    {
+      "year": 2024,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 52.01
+    },
+    {
+      "year": 2010,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 15.48
+    },
+    {
+      "year": 2011,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 27.04
+    },
+    {
+      "year": 2012,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 33.75
+    },
+    {
+      "year": 2013,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 40.52
+    },
+    {
+      "year": 2014,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 48.28
+    },
+    {
+      "year": 2015,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 41.05
+    },
+    {
+      "year": 2016,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 57.46
+    },
+    {
+      "year": 2017,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 60.25
+    },
+    {
+      "year": 2018,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 60.54
+    },
+    {
+      "year": 2019,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 66.59
+    },
+    {
+      "year": 2020,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 69.85
+    },
+    {
+      "year": 2021,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 58.41
+    },
+    {
+      "year": 2022,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 85.21
+    },
+    {
+      "year": 2023,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 115.46
+    },
+    {
+      "year": 2024,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 96.2
+    },
+    {
+      "year": 2010,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 5.7
+    },
+    {
+      "year": 2011,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 5.64
+    },
+    {
+      "year": 2012,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 6.81
+    },
+    {
+      "year": 2013,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 12.45
+    },
+    {
+      "year": 2014,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 4.14
+    },
+    {
+      "year": 2015,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 4.2
+    },
+    {
+      "year": 2016,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 4.92
+    },
+    {
+      "year": 2017,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 5.68
+    },
+    {
+      "year": 2018,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 5.41
+    },
+    {
+      "year": 2019,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 19.26
+    },
+    {
+      "year": 2020,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 12.3
+    },
+    {
+      "year": 2021,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 14.64
+    },
+    {
+      "year": 2022,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 17.08
+    },
+    {
+      "year": 2023,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 8.99
+    },
+    {
+      "year": 2024,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 15.89
+    },
+    {
+      "year": 2010,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 26.53
+    },
+    {
+      "year": 2011,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 49.6
+    },
+    {
+      "year": 2012,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 47.21
+    },
+    {
+      "year": 2013,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 54.91
+    },
+    {
+      "year": 2014,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 64.99
+    },
+    {
+      "year": 2015,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 57.17
+    },
+    {
+      "year": 2016,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 55.67
+    },
+    {
+      "year": 2017,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 51.09
+    },
+    {
+      "year": 2018,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 52.1
+    },
+    {
+      "year": 2019,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 46.67
+    },
+    {
+      "year": 2020,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 44.68
+    },
+    {
+      "year": 2021,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 52.47
+    },
+    {
+      "year": 2022,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 78.59
+    },
+    {
+      "year": 2023,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 44.72
+    },
+    {
+      "year": 2024,
+      "country": "TW Taiwan (CN)",
+      "epa_status": "No EPA",
+      "value_mln": 40.08
+    },
+    {
+      "year": 2010,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 92.83
+    },
+    {
+      "year": 2011,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 141.1
+    },
+    {
+      "year": 2012,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 116.91
+    },
+    {
+      "year": 2013,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 138.2
+    },
+    {
+      "year": 2014,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 151.5
+    },
+    {
+      "year": 2015,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 176.63
+    },
+    {
+      "year": 2016,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 193.09
+    },
+    {
+      "year": 2017,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 147.87
+    },
+    {
+      "year": 2018,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 196.41
+    },
+    {
+      "year": 2019,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 228.9
+    },
+    {
+      "year": 2020,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 245.74
+    },
+    {
+      "year": 2021,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 324.63
+    },
+    {
+      "year": 2022,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 313.15
+    },
+    {
+      "year": 2023,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 315.22
+    },
+    {
+      "year": 2024,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 314.78
+    }
+  ]
+}

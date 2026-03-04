@@ -1,0 +1,119 @@
+# TRADE ANALYSIS: JAPAN & GLOBAL
+# RELATIVE INDEX (2019 = 100%) SIMPLE PLOT
+
+#1. Load libraries
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(scales)
+
+#2. Load Japan export/import data
+df_exp_imp_jp <- read_excel(
+  "clean_data/VKK32_export_import_japan.xlsx",
+  sheet = "TRD_VAL"
+) %>%  
+  mutate(
+    year = as.integer(year),
+    across(c(export_to_japan_eur, import_from_japan_eur), as.numeric)
+  )
+
+#3. Load Global export/import data
+df_exp_imp_global <- read_excel(
+  "clean_data/VKK32_global_import_export.xlsx",
+  sheet = "TRD_VAL"
+) %>%  
+  mutate(
+    year = as.integer(year),
+    across(c(export_global, import_global), as.numeric)
+  )
+
+#4. Convert datasets to long format
+df_jap_long <- df_exp_imp_jp %>%
+  pivot_longer(
+    cols = c(export_to_japan_eur, import_from_japan_eur),
+    names_to = "type",
+    values_to = "value"
+  ) %>%
+  mutate(region = "Japan")
+
+df_glob_long <- df_exp_imp_global %>%
+  pivot_longer(
+    cols = c(export_global, import_global),
+    names_to = "type",
+    values_to = "value"
+  ) %>%
+  mutate(region = "Global")
+
+#5. Combine datasets
+df_trade <- bind_rows(df_jap_long, df_glob_long)
+
+#6. Rename types for clarity
+df_trade <- df_trade %>%
+  mutate(type = case_when(
+    type %in% c("export_to_japan_eur", "export_global") ~ "Exports",
+    type %in% c("import_from_japan_eur", "import_global") ~ "Imports"
+  ))
+
+#7. Compute relative index (2019 = 100%)
+df_trade_index <- df_trade %>%
+  group_by(region, type) %>%
+  mutate(base_2019 = value[year == 2019],
+         index = (value / base_2019) * 100) %>%
+  ungroup()
+
+#8. Define colors: pastel for Global, saturated for Japan
+colors_manual <- c(
+  "Japan.Exports"  = "#1D3557",       
+  "Japan.Imports"  = "#E63946",     
+  "Global.Exports" = "#A8DADC80",     
+  "Global.Imports" = "#F4A26180"      
+)
+
+#9. Plot
+ggplot(df_trade_index %>% filter(year >= 2010),
+       aes(x = year, y = index,
+           color = interaction(region, type),
+           linetype = type)) +
+  
+  # Key events
+  geom_vline(xintercept = 2019, linetype = "dashed", color = "grey40", linewidth = 0.8) +
+  geom_vline(xintercept = 2020, linetype = "dotted", color = "grey60", linewidth = 0.8) +
+  geom_vline(xintercept = 2022, linetype = "dotdash", color = "red", linewidth = 0.8) +
+  
+  # Lines
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 2.5) +
+  
+  # Colors and legend
+  scale_color_manual(
+    values = colors_manual,
+    labels = c(
+      "Japan.Exports"  = "Japan Exports",
+      "Japan.Imports"  = "Japan Imports",
+      "Global.Exports" = "Global Exports",
+      "Global.Imports" = "Global Imports"
+    ),
+    name = "Trade Flow"
+  ) +
+  scale_linetype_manual(values = c("Exports" = "solid", "Imports" = "solid"),
+                        name = "Trade Type") +
+  
+  # Axes
+  scale_y_continuous(labels = scales::comma) +
+  scale_x_continuous(breaks = seq(2010, 2024, 2)) +
+  
+  # Titles
+  labs(
+    title = "Trade Index: Japan vs Global",
+    subtitle = "Exports and Imports (2019 = 100%)",
+    x = NULL,
+    y = "Index (2019 = 100%)"
+  ) +
+  
+  # Theme
+  theme_minimal(base_size = 13) +
+  theme(
+    legend.position = "right",
+    panel.grid.minor = element_blank()
+  )

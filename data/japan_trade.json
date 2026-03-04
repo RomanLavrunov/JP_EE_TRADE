@@ -1,0 +1,426 @@
+{
+  "bilateral": [
+    {
+      "year": 2010,
+      "exports": 47.75,
+      "imports": 27.07,
+      "balance": 20.68,
+      "shareExp": 0.55,
+      "shareImp": 0.29
+    },
+    {
+      "year": 2011,
+      "exports": 60.84,
+      "imports": 24.86,
+      "balance": 35.98,
+      "shareExp": 0.51,
+      "shareImp": 0.2
+    },
+    {
+      "year": 2012,
+      "exports": 66.06,
+      "imports": 36.73,
+      "balance": 29.33,
+      "shareExp": 0.53,
+      "shareImp": 0.26
+    },
+    {
+      "year": 2013,
+      "exports": 64.89,
+      "imports": 25.86,
+      "balance": 39.03,
+      "shareExp": 0.53,
+      "shareImp": 0.19
+    },
+    {
+      "year": 2014,
+      "exports": 59.83,
+      "imports": 23.08,
+      "balance": 36.75,
+      "shareExp": 0.5,
+      "shareImp": 0.17
+    },
+    {
+      "year": 2015,
+      "exports": 64.19,
+      "imports": 19.61,
+      "balance": 44.59,
+      "shareExp": 0.55,
+      "shareImp": 0.15
+    },
+    {
+      "year": 2016,
+      "exports": 72.73,
+      "imports": 21.49,
+      "balance": 51.24,
+      "shareExp": 0.61,
+      "shareImp": 0.16
+    },
+    {
+      "year": 2017,
+      "exports": 70.29,
+      "imports": 26.61,
+      "balance": 43.68,
+      "shareExp": 0.55,
+      "shareImp": 0.18
+    },
+    {
+      "year": 2018,
+      "exports": 70.8,
+      "imports": 43.72,
+      "balance": 27.08,
+      "shareExp": 0.49,
+      "shareImp": 0.27
+    },
+    {
+      "year": 2019,
+      "exports": 79.77,
+      "imports": 46.46,
+      "balance": 33.31,
+      "shareExp": 0.55,
+      "shareImp": 0.29
+    },
+    {
+      "year": 2020,
+      "exports": 94.02,
+      "imports": 39.08,
+      "balance": 54.94,
+      "shareExp": 0.66,
+      "shareImp": 0.26
+    },
+    {
+      "year": 2021,
+      "exports": 116.91,
+      "imports": 42.43,
+      "balance": 74.48,
+      "shareExp": 0.64,
+      "shareImp": 0.21
+    },
+    {
+      "year": 2022,
+      "exports": 150.13,
+      "imports": 88.16,
+      "balance": 61.97,
+      "shareExp": 0.69,
+      "shareImp": 0.35
+    },
+    {
+      "year": 2023,
+      "exports": 113.12,
+      "imports": 48.46,
+      "balance": 64.66,
+      "shareExp": 0.62,
+      "shareImp": 0.23
+    },
+    {
+      "year": 2024,
+      "exports": 93.27,
+      "imports": 52.01,
+      "balance": 41.26,
+      "shareExp": 0.54,
+      "shareImp": 0.25
+    }
+  ],
+  "index": [
+    {
+      "year": 2010,
+      "series": "Japan · Exports",
+      "index": 59.9
+    },
+    {
+      "year": 2010,
+      "series": "Japan · Imports",
+      "index": 58.3
+    },
+    {
+      "year": 2011,
+      "series": "Japan · Exports",
+      "index": 76.3
+    },
+    {
+      "year": 2011,
+      "series": "Japan · Imports",
+      "index": 53.5
+    },
+    {
+      "year": 2012,
+      "series": "Japan · Exports",
+      "index": 82.8
+    },
+    {
+      "year": 2012,
+      "series": "Japan · Imports",
+      "index": 79.1
+    },
+    {
+      "year": 2013,
+      "series": "Japan · Exports",
+      "index": 81.3
+    },
+    {
+      "year": 2013,
+      "series": "Japan · Imports",
+      "index": 55.7
+    },
+    {
+      "year": 2014,
+      "series": "Japan · Exports",
+      "index": 75
+    },
+    {
+      "year": 2014,
+      "series": "Japan · Imports",
+      "index": 49.7
+    },
+    {
+      "year": 2015,
+      "series": "Japan · Exports",
+      "index": 80.5
+    },
+    {
+      "year": 2015,
+      "series": "Japan · Imports",
+      "index": 42.2
+    },
+    {
+      "year": 2016,
+      "series": "Japan · Exports",
+      "index": 91.2
+    },
+    {
+      "year": 2016,
+      "series": "Japan · Imports",
+      "index": 46.3
+    },
+    {
+      "year": 2017,
+      "series": "Japan · Exports",
+      "index": 88.1
+    },
+    {
+      "year": 2017,
+      "series": "Japan · Imports",
+      "index": 57.3
+    },
+    {
+      "year": 2018,
+      "series": "Japan · Exports",
+      "index": 88.8
+    },
+    {
+      "year": 2018,
+      "series": "Japan · Imports",
+      "index": 94.1
+    },
+    {
+      "year": 2019,
+      "series": "Japan · Exports",
+      "index": 100
+    },
+    {
+      "year": 2019,
+      "series": "Japan · Imports",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "series": "Japan · Exports",
+      "index": 117.9
+    },
+    {
+      "year": 2020,
+      "series": "Japan · Imports",
+      "index": 84.1
+    },
+    {
+      "year": 2021,
+      "series": "Japan · Exports",
+      "index": 146.6
+    },
+    {
+      "year": 2021,
+      "series": "Japan · Imports",
+      "index": 91.3
+    },
+    {
+      "year": 2022,
+      "series": "Japan · Exports",
+      "index": 188.2
+    },
+    {
+      "year": 2022,
+      "series": "Japan · Imports",
+      "index": 189.8
+    },
+    {
+      "year": 2023,
+      "series": "Japan · Exports",
+      "index": 141.8
+    },
+    {
+      "year": 2023,
+      "series": "Japan · Imports",
+      "index": 104.3
+    },
+    {
+      "year": 2024,
+      "series": "Japan · Exports",
+      "index": 116.9
+    },
+    {
+      "year": 2024,
+      "series": "Japan · Imports",
+      "index": 112
+    },
+    {
+      "year": 2010,
+      "series": "Global · Exports",
+      "index": 60.8
+    },
+    {
+      "year": 2010,
+      "series": "Global · Imports",
+      "index": 57.6
+    },
+    {
+      "year": 2011,
+      "series": "Global · Exports",
+      "index": 83.5
+    },
+    {
+      "year": 2011,
+      "series": "Global · Imports",
+      "index": 79
+    },
+    {
+      "year": 2012,
+      "series": "Global · Exports",
+      "index": 87.1
+    },
+    {
+      "year": 2012,
+      "series": "Global · Imports",
+      "index": 87.5
+    },
+    {
+      "year": 2013,
+      "series": "Global · Exports",
+      "index": 85.4
+    },
+    {
+      "year": 2013,
+      "series": "Global · Imports",
+      "index": 86.3
+    },
+    {
+      "year": 2014,
+      "series": "Global · Exports",
+      "index": 83.5
+    },
+    {
+      "year": 2014,
+      "series": "Global · Imports",
+      "index": 85.6
+    },
+    {
+      "year": 2015,
+      "series": "Global · Exports",
+      "index": 80.5
+    },
+    {
+      "year": 2015,
+      "series": "Global · Imports",
+      "index": 81.3
+    },
+    {
+      "year": 2016,
+      "series": "Global · Exports",
+      "index": 82.7
+    },
+    {
+      "year": 2016,
+      "series": "Global · Imports",
+      "index": 83.9
+    },
+    {
+      "year": 2017,
+      "series": "Global · Exports",
+      "index": 89.5
+    },
+    {
+      "year": 2017,
+      "series": "Global · Imports",
+      "index": 91.7
+    },
+    {
+      "year": 2018,
+      "series": "Global · Exports",
+      "index": 100.3
+    },
+    {
+      "year": 2018,
+      "series": "Global · Imports",
+      "index": 100.7
+    },
+    {
+      "year": 2019,
+      "series": "Global · Exports",
+      "index": 100
+    },
+    {
+      "year": 2019,
+      "series": "Global · Imports",
+      "index": 100
+    },
+    {
+      "year": 2020,
+      "series": "Global · Exports",
+      "index": 99.2
+    },
+    {
+      "year": 2020,
+      "series": "Global · Imports",
+      "index": 94
+    },
+    {
+      "year": 2021,
+      "series": "Global · Exports",
+      "index": 126.9
+    },
+    {
+      "year": 2021,
+      "series": "Global · Imports",
+      "index": 124.1
+    },
+    {
+      "year": 2022,
+      "series": "Global · Exports",
+      "index": 151.1
+    },
+    {
+      "year": 2022,
+      "series": "Global · Imports",
+      "index": 158
+    },
+    {
+      "year": 2023,
+      "series": "Global · Exports",
+      "index": 126.2
+    },
+    {
+      "year": 2023,
+      "series": "Global · Imports",
+      "index": 131.3
+    },
+    {
+      "year": 2024,
+      "series": "Global · Exports",
+      "index": 120.7
+    },
+    {
+      "year": 2024,
+      "series": "Global · Imports",
+      "index": 128.9
+    }
+  ]
+}
