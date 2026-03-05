@@ -11,12 +11,13 @@
 <header>
   <div class="eyebrow">Data Analysis · Statistics Estonia · 2025</div>
   <h1>Estonia × Japan<br><em>Did the EPA work?</em></h1>
-  <p>An analysis of Estonia's trade with Japan 2010–2024, examining the impact of the EU–Japan Economic Partnership Agreement that came into force in February 2019.</p>
+  <p>An analysis of Estonia's trade with Japan 2010-2024, examining the impact of the EU-Japan Economic Partnership Agreement that came into force in February 2019.</p>
   <div class="tag-row">
-    <span class="tag epa">▎ EPA EU–Japan · Feb 2019</span>
+    <span class="tag epa">▎ EPA EU-Japan · Feb 2019</span>
     <span class="tag covid">▎ COVID-19 · 2020</span>
-    <span class="tag war">▎ Russia–Ukraine war · Feb 2022</span>
+    <span class="tag war">▎ Russia-Ukraine war · Feb 2022</span>
   </div>
+  <p style="margin-top:18px;font-size:13px;color:var(--ink3);font-family:'DM Mono',monospace;line-height:1.65"><strong style="color:var(--ink2)">EPA</strong> — Economic Partnership Agreement. A bilateral trade deal between the EU and Japan that reduced or eliminated tariffs on most goods categories. It is the central event this analysis examines. Estonia's population is ~1.3 million — exports to Japan at 90–150 M€/year are a meaningful figure at that scale.</p>
 </header>
 
 <nav class="page-nav">
@@ -33,7 +34,8 @@
   <section id="overview">
     <div class="sec-label">01 — Overview</div>
     <h2>Trade grew — but the story is more complicated</h2>
-    <p>The EPA created a real tailwind. Post-EPA average exports rose 40% vs the pre-EPA baseline. But a 2022 peak followed by a sharp decline shows that external factors — especially the closure of Russian airspace — matter as much as trade policy.</p>
+    <p style="font-size:13px;color:var(--ink3);font-family:'DM Mono',monospace;margin-bottom:18px">This page is a summary dashboard. For full methodology, data sources, and detailed chart-by-chart analysis → <a href="case_study.html" style="color:var(--accent)">Full Case Study</a></p>
+    <p>The EPA created a real tailwind: post-EPA average exports rose 40% vs the pre-EPA baseline. But a 2022 peak followed by a sharp decline shows that external factors — specifically the closure of Russian airspace, which roughly doubled freight times to Japan — matter as much as trade policy. The EPA is still in force; logistics is currently winning.</p>
 
     <div class="stat-row" id="statRow">
       <div class="stat-cell"><div class="loading" style="height:60px">loading…</div></div>
@@ -41,7 +43,7 @@
 
     <div class="chart-card">
       <h3>Exports &amp; imports — absolute values</h3>
-      <div class="sub">Million EUR · 2010–2024 · Three structural breaks marked</div>
+      <div class="sub">Million EUR · 2010-2024 · Three structural breaks marked</div>
       <div class="cw"><canvas id="chartBilateral"></canvas></div>
     </div>
 
@@ -55,29 +57,31 @@
   <section id="comparison">
     <div class="sec-label">02 — Comparative context</div>
     <h2>Japan vs partner countries</h2>
-    <p>Growth index (2019 = 100) shows Japan's post-EPA trajectory against EPA peers and non-EPA benchmarks. South Korea (EPA 2011) is the key reference — its effect took 3–5 years. Kazakhstan and Bulgaria grew faster but for geopolitical reasons unrelated to trade agreements.</p>
+    <p>Growth index (2019 = 100) shows Japan's post-EPA trajectory against EPA peers and non-EPA benchmarks. Kazakhstan and Bulgaria outperform Japan on the index — but for geopolitical reasons unrelated to trade agreements. South Korea (EPA 2011) is the more honest comparison: its effect took 3–5 years to materialise. Japan is at year 5–6, and the picture may not be final.</p>
 
     <div class="chart-card">
       <h3>Export growth index by partner country</h3>
       <div class="sub">Index 2019 = 100 · Japan highlighted red · EPA countries labelled</div>
       <div class="cw tall"><canvas id="chartIndex"></canvas></div>
+      <p class="comment" style="margin-top:12px">How to read: 2019 = 100 is the baseline. A value of 150 means exports are 50% higher than in 2019. A value of 80 means 20% lower. All countries use the same baseline, making growth rates directly comparable regardless of absolute size.</p>
     </div>
   </section>
 
   <section id="commodities">
     <div class="sec-label">03 — Commodity groups</div>
     <h2>What Estonia actually sells to Japan</h2>
-    <p>CN44 Wood dominates at ~50% of exports — a pre-existing relationship that the EPA amplified (+40%). CN85 Electrical machinery shows the cleaner EPA signal: +58% on a meaningful base. Counter-cases — Fish (−48%), Dairy (flat) — show that tariff removal doesn't override competition.</p>
+    <p>CN44 Wood dominates at ~50% of exports — a pre-existing relationship that the EPA amplified, not created. CN85 Electrical machinery is the cleaner post-EPA signal: +58% on a real base. Counter-cases — Fish (−48%), Dairy (flat) — are a reminder that tariff removal doesn't override competition. The EPA opens a door; it doesn't push you through it.</p>
 
     <div class="chart-card">
       <h3>Exports to Japan — top commodity groups</h3>
-      <div class="sub">Million EUR · 2010–2024</div>
+      <div class="sub">Million EUR · 2010-2024</div>
       <div class="cw tall"><canvas id="chartCommodities"></canvas></div>
+      <p class="comment" style="margin-top:12px">CN — Combined Nomenclature, the EU system for classifying goods in international trade. Each CN code is a product category: CN44 = wood and wood articles, CN85 = electrical machinery, CN84 = mechanical machinery, CN28 = inorganic chemicals, CN03 = fish, CN04 = dairy. Hover over a line to see the full group name.</p>
     </div>
 
     <div class="chart-card">
       <h3>Pre vs post-EPA: average annual exports (M€)</h3>
-      <div class="sub">Average 2014–2018 vs average 2019–2023</div>
+      <div class="sub">Average 2014-2018 vs average 2019-2023</div>
       <table class="epa-table">
         <thead><tr><th>Commodity group</th><th>Pre-EPA avg</th><th>Post-EPA avg</th><th>Change</th></tr></thead>
         <tbody id="epaTableBody">
@@ -102,12 +106,15 @@
       <h3>How groups moved across key years (Slope chart)</h3>
       <div class="sub">Each line = one CN group · 2015 → pre-EPA 2018 → EPA 2019 → peak 2022 → 2024</div>
       <div class="slope-wrap" id="slopeCont"></div>
+      <p class="comment" style="margin-top:12px">CN44 Wood · CN85 Electrical machinery · CN84 Machinery · CN28 Inorganic chemicals · CN03 Fish · CN04 Dairy · CN90 Optical instruments · CN27 Mineral fuels · CN94 Furniture · CN95 Toys</p>
     </div>
 
     <div class="chart-card">
       <h3>Growth index heatmap (2018 = 100)</h3>
-      <div class="sub">Green = above 2018 level · Red = below · Bold red columns = post-EPA years</div>
+      <div class="sub">Green = above 2018 level · Red = below · Bold columns = post-EPA years</div>
+      <p class="comment" style="margin-bottom:10px">← Scroll the table right to see all years →</p>
       <div style="overflow-x:auto" id="heatmapCont"></div>
+      <p class="comment" style="margin-top:12px">Extreme values (e.g. CN03 Fish showing 800+ in earlier years) reflect a very low 2018 baseline for that group — not a data error. The index measures change relative to 2018 only.</p>
     </div>
   </section>
 
@@ -130,7 +137,7 @@
       </div>
       <div class="conclusion-item">
         <h4>The Korea precedent</h4>
-        <p>EU–Korea EPA (2011) took 3–5 years to show full effect. Japan is at year 5–6 — the trajectory may not be final.</p>
+        <p>EU-Korea EPA (2011) took 3-5 years to show full effect. Japan is at year 5-6 — the trajectory may not be final.</p>
       </div>
       <div class="conclusion-item">
         <h4>Current conditions = opportunity</h4>
@@ -138,7 +145,7 @@
       </div>
       <div class="conclusion-item">
         <h4>India: watch this space</h4>
-        <p>EU–India FTA in negotiation. Japan's experience — slow start, sector-specific, logistics-dependent — is a useful baseline.</p>
+        <p>EU-India FTA in negotiation. Japan's experience — slow start, sector-specific, logistics-dependent — is a useful baseline.</p>
       </div>
     </div>
   </section>
@@ -146,7 +153,7 @@
 </main>
 
 <footer>
-  <p>Data: Statistics Estonia · VKK30, VKK32 · 2004–2024 · R + Chart.js</p>
+  <p>Data: Statistics Estonia · VKK30, VKK32 · 2004-2024 · R + Chart.js</p>
   <a href="case_study.html">Full methodology &amp; analysis →</a>
 </footer>
 
