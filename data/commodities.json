@@ -2428,578 +2428,695 @@
     {
       "year": 2014,
       "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
       "index_vs_2018": 9.9
     },
     {
       "year": 2015,
       "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
       "index_vs_2018": 121.6
     },
     {
       "year": 2016,
       "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
       "index_vs_2018": 813.7
     },
     {
       "year": 2017,
       "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
       "index_vs_2018": 931.9
     },
     {
       "year": 2018,
       "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
       "index_vs_2018": 100
     },
     {
       "year": 2019,
       "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
       "index_vs_2018": 231.2
     },
     {
       "year": 2020,
       "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
       "index_vs_2018": 81.3
     },
     {
       "year": 2021,
       "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
       "index_vs_2018": 343.9
     },
     {
       "year": 2022,
       "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
       "index_vs_2018": 258.2
     },
     {
       "year": 2023,
       "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
       "index_vs_2018": 110.9
     },
     {
       "year": 2024,
       "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
       "index_vs_2018": 190.4
     },
     {
       "year": 2015,
       "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
       "index_vs_2018": 28.6
     },
     {
       "year": 2016,
       "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
       "index_vs_2018": 9.1
     },
     {
       "year": 2017,
       "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
       "index_vs_2018": 77.3
     },
     {
       "year": 2018,
       "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
       "index_vs_2018": 100
     },
     {
       "year": 2019,
       "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
       "index_vs_2018": 71.5
     },
     {
       "year": 2020,
       "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
       "index_vs_2018": 83.3
     },
     {
       "year": 2021,
       "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
       "index_vs_2018": 29.7
     },
     {
       "year": 2022,
       "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
       "index_vs_2018": 56.5
     },
     {
       "year": 2023,
       "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
       "index_vs_2018": 42.4
     },
     {
       "year": 2024,
       "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
       "index_vs_2018": 9.1
     },
     {
       "year": 2015,
-      "cn_code": "CN08"
+      "cn_code": "CN08",
+      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
     },
     {
       "year": 2016,
-      "cn_code": "CN08"
+      "cn_code": "CN08",
+      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
     },
     {
       "year": 2019,
-      "cn_code": "CN08"
+      "cn_code": "CN08",
+      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
     },
     {
       "year": 2020,
-      "cn_code": "CN08"
+      "cn_code": "CN08",
+      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
     },
     {
       "year": 2021,
-      "cn_code": "CN08"
+      "cn_code": "CN08",
+      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
     },
     {
       "year": 2022,
-      "cn_code": "CN08"
+      "cn_code": "CN08",
+      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
     },
     {
       "year": 2023,
-      "cn_code": "CN08"
+      "cn_code": "CN08",
+      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
     },
     {
       "year": 2024,
-      "cn_code": "CN08"
+      "cn_code": "CN08",
+      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
     },
     {
       "year": 2014,
       "cn_code": "CN27",
+      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
       "index_vs_2018": 113.4
     },
     {
       "year": 2015,
       "cn_code": "CN27",
+      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
       "index_vs_2018": 203.6
     },
     {
       "year": 2016,
       "cn_code": "CN27",
+      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
       "index_vs_2018": 148.9
     },
     {
       "year": 2017,
       "cn_code": "CN27",
+      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
       "index_vs_2018": 130.2
     },
     {
       "year": 2018,
       "cn_code": "CN27",
+      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
       "index_vs_2018": 100
     },
     {
       "year": 2019,
       "cn_code": "CN27",
+      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
       "index_vs_2018": 41.2
     },
     {
       "year": 2020,
       "cn_code": "CN27",
+      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
       "index_vs_2018": 65.9
     },
     {
       "year": 2021,
       "cn_code": "CN27",
+      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
       "index_vs_2018": 137
     },
     {
       "year": 2022,
       "cn_code": "CN27",
+      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
       "index_vs_2018": 231.8
     },
     {
       "year": 2023,
       "cn_code": "CN27",
+      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
       "index_vs_2018": 131.2
     },
     {
       "year": 2024,
       "cn_code": "CN27",
+      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
       "index_vs_2018": 116
     },
     {
       "year": 2014,
       "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
       "index_vs_2018": 112.7
     },
     {
       "year": 2015,
       "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
       "index_vs_2018": 57.7
     },
     {
       "year": 2016,
       "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
       "index_vs_2018": 114.3
     },
     {
       "year": 2017,
       "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
       "index_vs_2018": 73.3
     },
     {
       "year": 2018,
       "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
       "index_vs_2018": 100
     },
     {
       "year": 2019,
       "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
       "index_vs_2018": 61.4
     },
     {
       "year": 2020,
       "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
       "index_vs_2018": 26.4
     },
     {
       "year": 2021,
       "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
       "index_vs_2018": 75.3
     },
     {
       "year": 2022,
       "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
       "index_vs_2018": 291.7
     },
     {
       "year": 2023,
       "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
       "index_vs_2018": 437.9
     },
     {
       "year": 2024,
       "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
       "index_vs_2018": 87.1
     },
     {
       "year": 2014,
       "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
       "index_vs_2018": 75.3
     },
     {
       "year": 2015,
       "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
       "index_vs_2018": 79.9
     },
     {
       "year": 2016,
       "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
       "index_vs_2018": 87.9
     },
     {
       "year": 2017,
       "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
       "index_vs_2018": 101
     },
     {
       "year": 2018,
       "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
       "index_vs_2018": 100
     },
     {
       "year": 2019,
       "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
       "index_vs_2018": 101.1
     },
     {
       "year": 2020,
       "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
       "index_vs_2018": 96.2
     },
     {
       "year": 2021,
       "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
       "index_vs_2018": 153.6
     },
     {
       "year": 2022,
       "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
       "index_vs_2018": 183.8
     },
     {
       "year": 2023,
       "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
       "index_vs_2018": 88.8
     },
     {
       "year": 2024,
       "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
       "index_vs_2018": 95.4
     },
     {
       "year": 2014,
       "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
       "index_vs_2018": 5.6
     },
     {
       "year": 2015,
       "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
       "index_vs_2018": 39.3
     },
     {
       "year": 2016,
       "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
       "index_vs_2018": 17.8
     },
     {
       "year": 2017,
       "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
       "index_vs_2018": 19.4
     },
     {
       "year": 2018,
       "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
       "index_vs_2018": 100
     },
     {
       "year": 2019,
       "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
       "index_vs_2018": 392.4
     },
     {
       "year": 2020,
       "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
       "index_vs_2018": 166.5
     },
     {
       "year": 2021,
       "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
       "index_vs_2018": 214.5
     },
     {
       "year": 2022,
       "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
       "index_vs_2018": 131
     },
     {
       "year": 2023,
       "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
       "index_vs_2018": 53.9
     },
     {
       "year": 2024,
       "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
       "index_vs_2018": 63.4
     },
     {
       "year": 2014,
       "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
       "index_vs_2018": 143.6
     },
     {
       "year": 2015,
       "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
       "index_vs_2018": 183.6
     },
     {
       "year": 2016,
       "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
       "index_vs_2018": 185.4
     },
     {
       "year": 2017,
       "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
       "index_vs_2018": 88.4
     },
     {
       "year": 2018,
       "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
       "index_vs_2018": 100
     },
     {
       "year": 2019,
       "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
       "index_vs_2018": 61.3
     },
     {
       "year": 2020,
       "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
       "index_vs_2018": 289.6
     },
     {
       "year": 2021,
       "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
       "index_vs_2018": 196.9
     },
     {
       "year": 2022,
       "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
       "index_vs_2018": 339.4
     },
     {
       "year": 2023,
       "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
       "index_vs_2018": 223.7
     },
     {
       "year": 2024,
       "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
       "index_vs_2018": 87.5
     },
     {
       "year": 2014,
       "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 144.6
     },
     {
       "year": 2015,
       "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 166.7
     },
     {
       "year": 2016,
       "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 182.5
     },
     {
       "year": 2017,
       "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 121.7
     },
     {
       "year": 2018,
       "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 100
     },
     {
       "year": 2019,
       "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 152.7
     },
     {
       "year": 2020,
       "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 244.7
     },
     {
       "year": 2021,
       "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 146.8
     },
     {
       "year": 2022,
       "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 251.9
     },
     {
       "year": 2023,
       "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 161.8
     },
     {
       "year": 2024,
       "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 137.9
     },
     {
       "year": 2014,
       "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
       "index_vs_2018": 140.4
     },
     {
       "year": 2015,
       "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
       "index_vs_2018": 120.9
     },
     {
       "year": 2016,
       "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
       "index_vs_2018": 120.9
     },
     {
       "year": 2017,
       "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
       "index_vs_2018": 85
     },
     {
       "year": 2018,
       "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
       "index_vs_2018": 100
     },
     {
       "year": 2019,
       "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
       "index_vs_2018": 123.8
     },
     {
       "year": 2020,
       "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
       "index_vs_2018": 110.2
     },
     {
       "year": 2021,
       "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
       "index_vs_2018": 161.3
     },
     {
       "year": 2022,
       "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
       "index_vs_2018": 165.9
     },
     {
       "year": 2023,
       "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
       "index_vs_2018": 152.2
     },
     {
       "year": 2024,
       "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
       "index_vs_2018": 159.6
     },
     {
       "year": 2014,
       "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 91.1
     },
     {
       "year": 2015,
       "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 87
     },
     {
       "year": 2016,
       "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 109.5
     },
     {
       "year": 2017,
       "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 85.7
     },
     {
       "year": 2018,
       "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 100
     },
     {
       "year": 2019,
       "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 160.6
     },
     {
       "year": 2020,
       "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 199
     },
     {
       "year": 2021,
       "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 418.8
     },
     {
       "year": 2022,
       "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 246.8
     },
     {
       "year": 2023,
       "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 180.1
     },
     {
       "year": 2024,
       "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
       "index_vs_2018": 231.8
     }
   ],

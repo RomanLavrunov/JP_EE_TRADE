@@ -269,6 +269,7 @@ commodities_json <- list(
     transmute(
       year          = year,
       cn_code       = cn_code,
+      cn_name       = cn_name,
       index_vs_2018 = round(index_vs_2018, 1)
     ),
   
