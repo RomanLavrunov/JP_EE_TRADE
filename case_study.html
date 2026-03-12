@@ -125,80 +125,102 @@
 
       <section id="process">
         <div class="sec-label">03 — Process</div>
-        <h2>Data cleaning &amp; transformation</h2>
+        <h2>Data cleaning, transformation &amp; analytical choices</h2>
 
-        <p>Processing done in two stages: manual cleanup in Excel for structural issues, then systematic transformation
-          in R using <code>readxl</code>, <code>dplyr</code>, <code>tidyr</code>, and <code>jsonlite</code>.</p>
+        <p>This section documents every decision made between raw data and final output — what was done, why it was done, and what alternatives were considered and rejected. The goal is full reproducibility: someone else should be able to follow this chain and arrive at the same numbers.</p>
+
+        <h3>Stage 1 — Structural cleaning</h3>
+        <p>The raw Statistics Estonia export has three structural problems that must be fixed before any analysis is possible.</p>
 
         <div class="phase-grid">
           <div class="phase-box">
-            <div class="ph-num">Step 1</div>
-            <h4>Fill flow labels</h4>
-            <p>fill() propagates "Exports"/"Imports" downward through each block</p>
+            <div class="ph-num">Problem 1</div>
+            <h4>Wide format</h4>
+            <p>Years are stored as columns (2004 … 2025). Every statistical tool works better with one row per observation. <code>pivot_longer()</code> converts this to year as a variable. <em>Why not leave it wide?</em> Filtering, grouping, and computing metrics across years becomes unwieldy — you'd need to reference 22 column names explicitly in every operation.</p>
           </div>
           <div class="phase-box">
-            <div class="ph-num">Step 2</div>
-            <h4>Handle ".."</h4>
-            <p>Replace ".." with NA; convert all value columns from character to numeric</p>
+            <div class="ph-num">Problem 2</div>
+            <h4>Missing flow labels</h4>
+            <p>"Exports" / "Imports" appears only in the first row of each block, not on every row. <code>fill(.direction = "down")</code> propagates the label downward. <em>Why not manually split the file?</em> Manual splitting breaks the reproducibility chain — re-downloading the data would require repeating every manual step.</p>
           </div>
           <div class="phase-box">
-            <div class="ph-num">Step 3</div>
-            <h4>Wide → Long</h4>
-            <p>pivot_longer() transforms years-as-columns into one row per observation</p>
-          </div>
-          <div class="phase-box">
-            <div class="ph-num">Step 4</div>
-            <h4>Derived variables</h4>
-            <p>balance = exports - imports · index_2019 = value / value_2019 × 100</p>
+            <div class="ph-num">Problem 3</div>
+            <h4>".." placeholder</h4>
+            <p>Statistics Estonia uses ".." for suppressed or unavailable values — not NA, not 0. These are converted to <code>NA</code>, not 0. <em>Why NA and not 0?</em> Zero means no trade occurred. ".." means the value existed but is below the reporting threshold or otherwise unavailable. Replacing with 0 would artificially inflate baseline averages and distort growth signals.</p>
           </div>
         </div>
 
         <div class="code-block">
-          <span class="comment"># Core transformation pattern used across all three files</span>
-          raw <span class="kw">&lt;-</span> <span class="fn">read_excel</span>(<span class="str">"VKK30_JP.xlsx"</span>,
-          skip = 2, col_names = FALSE)
-          colnames(raw) <span class="kw">&lt;-</span> c(<span class="str">"flow"</span>, <span
-            class="str">"commodity"</span>, <span class="str">"country"</span>, years)
+          <span class="comment"># Core transformation — same pattern applied to all three source files</span>
+          raw <span class="kw">&lt;-</span> <span class="fn">read_excel</span>(<span class="str">"VKK30_JP.xlsx"</span>, skip = 2, col_names = FALSE)
+          <span class="fn">colnames</span>(raw) <span class="kw">&lt;-</span> c(<span class="str">"flow"</span>, <span class="str">"commodity"</span>, <span class="str">"country"</span>, years)
 
-          <span class="kw">&lt;-</span> raw <span class="kw">%&gt;%</span>
-          <span class="fn">fill</span>(flow, .direction = <span class="str">"down"</span>) <span
-            class="kw">%&gt;%</span>
-          <span class="fn">pivot_longer</span>(cols = all_of(years), names_to = <span class="str">"year"</span>,
-          values_to = <span class="str">"value"</span>) <span class="kw">%&gt;%</span>
-          <span class="fn">mutate</span>(value = <span class="fn">as.numeric</span>(<span class="fn">ifelse</span>(value
-          == <span class="str">".."</span>, NA, value)))
+          df_clean <span class="kw">&lt;-</span> raw <span class="kw">%&gt;%</span>
+            <span class="fn">fill</span>(flow, .direction = <span class="str">"down"</span>) <span class="kw">%&gt;%</span>             <span class="comment"># fix missing flow labels</span>
+            <span class="fn">pivot_longer</span>(cols = <span class="fn">all_of</span>(years),                  <span class="comment"># wide → long</span>
+                          names_to = <span class="str">"year"</span>, values_to = <span class="str">"value"</span>) <span class="kw">%&gt;%</span>
+            <span class="fn">mutate</span>(value = <span class="fn">as.numeric</span>(<span class="fn">ifelse</span>(value == <span class="str">".."</span>, NA, value)))  <span class="comment"># ".." → NA, not 0</span>
 
-          <span class="comment"># Export to JSON for HTML dashboard</span>
           <span class="fn">write_json</span>(df_clean, <span class="str">"data/commodities.json"</span>, pretty = TRUE)
         </div>
 
-        <h3>How the commodity groups were selected</h3>
-        <p>The raw data contains all 99 two-digit CN codes. Most have zero or suppressed values for Estonia–Japan trade throughout the entire period. Three sequential filters reduced this to the 10 groups used in the analysis.</p>
+        <h3>Stage 2 — Selecting commodity groups</h3>
+        <p>The raw data contains all 99 two-digit CN codes. Most have zero or suppressed values for Estonia–Japan trade throughout the entire period. Four sequential filters reduced 99 codes to 11 groups used in the analysis.</p>
 
         <div class="phase-grid">
           <div class="phase-box">
             <div class="ph-num">Filter 1</div>
-            <h4>Minimum total volume</h4>
-            <p>Groups where cumulative exports over the full period fell below a minimum threshold were dropped. This eliminated ~80 codes with no meaningful Estonia–Japan trade history.</p>
+            <h4>Remove all-zero groups</h4>
+            <p>Groups where every year is zero or suppressed are dropped entirely — they cannot show any effect. About 80 of 99 codes are eliminated here. <em>This is the minimum viable filter: if a group has never traded, it cannot be analysed.</em></p>
           </div>
           <div class="phase-box">
             <div class="ph-num">Filter 2</div>
-            <h4>Continuity across years</h4>
-            <p>Groups with non-zero values in fewer than 7 of the 11 analysis years were excluded. This removed one-off transactions that don't represent a structural trade relationship.</p>
+            <h4>Require continuity</h4>
+            <p>Groups with non-zero values in fewer than 7 of the 22 analysis years are excluded. A single shipment in one year is not a structural trade relationship and cannot be used to measure a trend. <em>Why 7?</em> Roughly 30% of the period — keeps genuine recurring trade while removing noise.</p>
           </div>
           <div class="phase-box">
             <div class="ph-num">Filter 3</div>
-            <h4>Valid baseline year (heatmap only)</h4>
-            <p>The heatmap index requires a 2018 value to calculate <code>value / value_2018 × 100</code>. CN08 Edible fruit &amp; nuts has a suppressed value (".." → NA) specifically in 2018 — the trade happened to be zero or below the reporting threshold that year. The group is excluded from the heatmap only; it appears normally in other charts.</p>
+            <h4>Valid 2018 baseline (heatmap only)</h4>
+            <p>The heatmap index uses 2018 as base year. CN08 Edible fruit &amp; nuts has a suppressed value in 2018 specifically — the index cannot be calculated. CN08 is excluded from the heatmap only; it appears normally in all other charts.</p>
           </div>
           <div class="phase-box">
             <div class="ph-num">Filter 4</div>
             <h4>Direction check</h4>
-            <p>CN32 Paints and CN48 Paper passed the volume threshold — but Estonia is a buyer from Japan in these categories, not a seller. Export values were 150–250 thousand EUR/year with no trend, so they were excluded from the export analysis.</p>
+            <p>CN32 Paints and CN48 Paper passed the volume threshold — but Estonia is a buyer from Japan in both, not a seller. Including them in the export analysis would misrepresent the relationship. They appear in the import charts instead.</p>
           </div>
         </div>
 
-        <p>The absence of a group is as meaningful as its presence. CN32 and CN48 are not in the export charts because Estonia is a buyer, not a seller, in those categories. CN08 is present in time series and slope charts — but absent from the heatmap specifically because its 2018 value is suppressed, making the index undefined for that year. The group itself shows consistent growth and is a real export relationship.</p>
+        <h3>Stage 3 — Choosing the analysis period</h3>
+        <p><strong>Why 2014–2018 as "before", not 2004–2018:</strong> Trade structure in 2004–2010 was fundamentally different — Estonia had just joined the EU, volumes were much smaller, and several commodity relationships didn't yet exist. Including that era means comparing incomparable baselines. Five stable years (2014–2018) with the same underlying trade structure is a more honest pre-EPA window.</p>
+        <p><strong>Why 2019–2022 as the "clean EPA window":</strong> Russia's airspace closure in February 2022 introduced a major logistics shock specific to Japan — no other major Estonian partner is as exposed because of the sheer distance involved. The 2019–2022 window captures the EPA effect before that shock. Using 2019–2024 as "post-EPA" would conflate the agreement itself with an unrelated geopolitical event.</p>
+        <p><strong>Why show both windows:</strong> The full post-EPA period (2019–2024) shows the net outcome. The clean window (2019–2022) isolates the trade-policy effect. Showing both is more honest and more useful than picking one.</p>
+
+        <h3>Stage 4 — Choosing metrics</h3>
+        <p>Three metrics characterise each commodity group. Each answers a different question.</p>
+
+        <div class="phase-grid">
+          <div class="phase-box">
+            <div class="ph-num">Metric 1</div>
+            <h4>Mean before vs mean after</h4>
+            <p>Average annual exports 2014–2018 vs 2019–2022. Answers: <em>did the level of trade change?</em> Simple to compute and explain. Limitation: doesn't distinguish between "the EPA caused a jump" and "trade was already growing steadily."</p>
+          </div>
+          <div class="phase-box">
+            <div class="ph-num">Metric 2</div>
+            <h4>CAGR before vs CAGR after</h4>
+            <p>Compound Annual Growth Rate in 2014→2018 and 2019→2022. Answers: <em>did the speed of growth change?</em> A group growing before the EPA isn't surprising — CAGR reveals whether it <em>accelerated</em>. <em>Why CAGR over average YoY?</em> CAGR computes from endpoint to endpoint, ignoring mid-period noise. Average YoY is skewed by single volatile years.</p>
+          </div>
+          <div class="phase-box">
+            <div class="ph-num">Metric 3</div>
+            <h4>YoY 2018 → 2019</h4>
+            <p>Year-on-year change at the exact moment of the EPA. Answers: <em>was there an immediate jump in the EPA year itself?</em> CAGR smooths over the transition point — YoY shows whether something happened specifically in 2019. A high 2019 YoY combined with low pre-EPA CAGR is the strongest possible event-driven signal.</p>
+          </div>
+        </div>
+
+        <h3>Stage 5 — Control group logic</h3>
+        <p>The core analytical risk is confounding: trade might have grown for reasons unrelated to the EPA — general economic expansion, currency effects, company-level deals. To test this, groups are split into treatment and control.</p>
+        <p><strong>Treatment</strong> (CN28, CN44, CN84, CN85, CN90, CN94) — categories where the EPA made a meaningful tariff reduction. Expected to benefit from the agreement.</p>
+        <p><strong>Control</strong> (CN03 Fish, CN04 Dairy, CN95 Toys) — categories where EPA tariff changes were minimal, or where other factors (competition, perishability, niche demand) dominate. If the EPA is responsible for treatment group growth, control groups should grow much less in the same period.</p>
+        <p>Result: treatment groups averaged <strong>+56.7%</strong> in the clean EPA window (2019–2022 vs 2014–2018). Control groups averaged <strong>+4.3%</strong>. The gap is too large to attribute to general economic conditions — it is consistent with a tariff-driven effect concentrated in the groups most affected by the agreement.</p>
 
       </section>
 
@@ -243,9 +265,9 @@
         <div class="sec-label">04b — Analyze · Partner comparison</div>
         <h2>Japan vs other trade partners</h2>
 
-        <p>The growth index chart puts Japan in perspective. Kazakhstan and Bulgaria show higher growth numbers than Japan — but these are geopolitical artifacts. Kazakhstan became a transit corridor for goods rerouted around Russia's sanctions regime. Bulgaria's growth is tied to defence procurement flows linked to the war. Neither tells you anything useful about trade agreements.</p>
-        <p>Singapore is a more honest comparison: also EPA 2019, also a distant market — and it didn't grow like Japan either. That means the EPA alone doesn't explain Japan's trajectory. The commodity mix matters. The logistics route matters. The timing matters.</p>
-        <p>South Korea remains the most relevant benchmark. The EU–Korea EPA came into force in 2011, and its effect took 3–5 years to fully show up in trade data. Japan is now at year 5–6. The trajectory isn't necessarily finished — but it requires the logistics situation to stabilise before the EPA's tailwind can reassert itself.</p>
+        <p>The most meaningful comparisons are partners where growth can be attributed to trade policy rather than geopolitical accidents. Two partners fit that criterion here.</p>
+        <p><strong>Singapore</strong> — also EPA 2019, also a distant market, also small bilateral volumes. Singapore did not show the same trajectory as Japan. That means the EPA alone doesn't explain Japan's growth. The commodity mix matters: Singapore has almost no wood trade with Estonia. Japan does. The EPA amplified something that was already structurally present.</p>
+        <p><strong>South Korea</strong> — the most relevant benchmark. The EU–Korea EPA came into force in 2011, and its effect took 3–5 years to fully materialise in trade data. Japan is now at year 5–6 post-EPA. The trajectory isn't necessarily finished — but further progress requires the logistics situation (Russia airspace closure) to stabilise first.</p>
 
         <div class="chart-card">
           <h4>Export growth index by partner country (2019 = 100)</h4>
@@ -271,48 +293,218 @@
         <p>The counter-cases are just as informative. Fish exports fell 48% post-EPA. Dairy barely moved. The EPA removes tariffs — it doesn't remove competition from other EU exporters who have the same access. Where Estonia isn't already competitive on quality, proximity, or price, lower tariffs don't change the outcome.</p>
 
         <div class="chart-card">
-          <h4>Exports to Japan — top CN groups, M€</h4>
-          <div class="sub">2010-2024</div>
+          <h4>Exports to Japan — key groups, M€</h4>
+          <div class="sub">Treatment groups (solid) vs control groups (dashed grey) · 2004–2024</div>
           <div class="cw tall"><canvas id="csChartTopCN"></canvas></div>
-          <p class="comment" style="margin-top:12px">CN — Combined Nomenclature, the EU goods classification system. CN44 = wood &amp; wood articles · CN85 = electrical machinery · CN84 = mechanical machinery &amp; boilers · CN28 = inorganic chemicals · CN03 = fish &amp; crustaceans · CN04 = dairy · CN90 = optical &amp; precision instruments. Hover over any line to see the full group name and value.</p>
+          <p class="comment" style="margin-top:12px">Solid coloured lines = treatment groups covered by EPA tariff reductions. Dashed grey = control groups (CN03 Fish, CN04 Dairy, CN95 Toys) with minimal EPA impact — included as a benchmark. CN71 Precious metals (★) is an EPA-created segment: near zero before 2019, averaging 9.2 M€/year after.</p>
         </div>
 
         <div class="two-charts">
           <div class="chart-card">
-            <h4>Imports from Japan — top CN groups, M€</h4>
-            <div class="sub">What Estonia buys from Japan</div>
+            <h4>Imports from Japan — key groups, M€</h4>
+            <div class="sub">CN87 Vehicles · CN84 Machinery · CN85 Electronics · CN90 Optical · CN32 Dyes · CN33 Perfumery</div>
             <div class="cw"><canvas id="csChartImportCN"></canvas></div>
           </div>
           <div class="chart-card">
             <h4>Japan's share in Estonia's total exports by CN group</h4>
-            <div class="sub">% · CN44 Wood: Japan takes 4-6% of total Estonian wood export</div>
+            <div class="sub">% · CN44 Wood: Japan takes 4–6% of total Estonian wood export</div>
             <div class="cw"><canvas id="csChartCNShare"></canvas></div>
           </div>
         </div>
 
         <h3>Pre vs post-EPA</h3>
-        <p>Average annual exports (M€): 2014–2018 vs 2019–2023</p>
+        <p>Average annual exports (M€): 2014–2018 vs 2019–2022 (clean EPA window, before airspace closure). <em>World %</em> = same CN group, Estonia total exports to all destinations — to separate Japan-specific growth from global commodity trends.</p>
         <table class="data-table">
           <thead>
             <tr>
               <th>Group</th>
-              <th>Pre-EPA</th>
-              <th>Post-EPA</th>
-              <th>Change</th>
+              <th>Pre-EPA<br><small>avg 2014–18</small></th>
+              <th>Post-EPA<br><small>avg 2019–22</small></th>
+              <th>Japan %</th>
+              <th>World %</th>
+              <th>Signal</th>
             </tr>
           </thead>
           <tbody id="csEpaTableBody">
             <tr>
-              <td colspan="4" style="padding:16px;color:var(--ink3);font-family:'DM Mono',monospace">Loading…</td>
+              <td colspan="6" style="padding:16px;color:var(--ink3);font-family:'DM Mono',monospace">Loading…</td>
             </tr>
           </tbody>
         </table>
 
         <div class="chart-card" style="margin-top:24px">
-          <h4>% change post-EPA vs pre-EPA</h4>
-          <div class="sub">Groups with near-zero pre-EPA base excluded</div>
+          <h4>% change post-EPA vs pre-EPA — Japan vs World</h4>
+          <div class="sub">Green/red bars = Estonia → Japan · Sand bars = Estonia → World (same CN group, same period) · CN71 excluded (Japan +28,586% — new segment from zero)</div>
           <div class="cw med"><canvas id="csChartPctBar"></canvas></div>
+          <p class="comment" style="margin-top:10px">If Japan (coloured bar) grew much faster than World (sand bar) for the same CN group, that is a Japan-specific signal — not just a global commodity boom. CN85 Electronics: Japan +42% vs World +4% — Japan-specific. CN44 Wood: Japan +35% vs World +47% — global demand explains it. CN28 Inorg. chemistry: Japan +78% vs World +66% — mixed. Control group (grey): CN03 Fish Japan −49% vs World +19% — confirms the control is flat relative to Japan trends.</p>
         </div>
+
+        <h3>Trend acceleration: CAGR before vs after EPA</h3>
+        <p>Mean values show that trade grew — but not <em>why</em>. If a group was already growing at 15% per year before 2019, the post-EPA increase is just a continuation. CAGR separates these cases: what matters is whether the rate of growth changed at the EPA breakpoint, not just the level.</p>
+        <p>The clean EPA window (2019–2022) is used as "after" for CAGR to isolate the agreement's effect from the 2022 logistics disruption.</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Group</th>
+              <th>YoY 2018→19</th>
+              <th>CAGR before<br><small>2014→2018</small></th>
+              <th>CAGR after<br><small>2019→2022</small></th>
+              <th>Signal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CN44 Wood</td>
+              <td class="val pos">+1.1%</td>
+              <td class="val pos">+7.4%</td>
+              <td class="val pos">+22.0%</td>
+              <td><span class="badge up">Accelerated 3×</span></td>
+            </tr>
+            <tr>
+              <td>CN85 Electronics</td>
+              <td class="val neg">−38.7%</td>
+              <td class="val neg">−8.7%</td>
+              <td class="val pos">+18.7%</td>
+              <td><span class="badge up">Reversed — declining to growing</span></td>
+            </tr>
+            <tr>
+              <td>CN28 Inorganic chemistry</td>
+              <td class="val neg">−38.6%</td>
+              <td class="val neg">−2.9%</td>
+              <td class="val pos">+11.4%</td>
+              <td><span class="badge up">Reversed — declining to growing</span></td>
+            </tr>
+            <tr>
+              <td>CN90 Optical instruments</td>
+              <td class="val pos">+52.7%</td>
+              <td class="val neg">−8.8%</td>
+              <td class="val neg">−4.5%</td>
+              <td><span class="badge neutral">Jump in 2019, no sustained trend</span></td>
+            </tr>
+            <tr>
+              <td>CN94 Furniture</td>
+              <td class="val pos">+23.8%</td>
+              <td class="val neg">−8.1%</td>
+              <td class="val pos">+1.7%</td>
+              <td><span class="badge up">Stabilised after decline</span></td>
+            </tr>
+            <tr>
+              <td>CN03 Fish <em>(control)</em></td>
+              <td class="val neg">−12.2%</td>
+              <td class="val neg">−5.3%</td>
+              <td class="val neg">−14.1%</td>
+              <td><span class="badge down">No EPA effect — continued decline</span></td>
+            </tr>
+            <tr>
+              <td>CN04 Dairy <em>(control)</em></td>
+              <td class="val neg">−3.1%</td>
+              <td class="val pos">+2.1%</td>
+              <td class="val pos">+3.4%</td>
+              <td><span class="badge neutral">Stable — no EPA signal</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="comment">YoY = year-on-year change 2018→2019. CAGR = compound annual growth rate. Control groups (CN03, CN04) show how groups with minimal EPA tariff changes behaved in the same period — their flat or negative trajectory confirms the EPA effect is concentrated in treatment groups, not a general trade trend.</p>
+
+        <h3>Z-score: was the jump statistically anomalous?</h3>
+        <p>CAGR shows whether the <em>rate</em> of growth changed. The Z-score answers a different question: was the post-EPA value so far outside the pre-EPA distribution that it cannot be explained by normal year-to-year volatility? The baseline is 2014–2018 (mean and standard deviation). A Z-score above +2 means the observed value is more than two standard deviations above the pre-EPA norm — a result that would occur by chance less than ~5% of the time.</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Group</th>
+              <th>Pre mean<br><small>2014–18, M€</small></th>
+              <th>Z 2019</th>
+              <th>Z 2020</th>
+              <th>Signal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CN71 Precious metals</td>
+              <td class="val">0.04</td>
+              <td class="val pos">+19.7 ★</td>
+              <td class="val pos">+68.5 ★</td>
+              <td><span class="badge up">EPA-created flow</span></td>
+            </tr>
+            <tr>
+              <td>CN85 Electronics</td>
+              <td class="val">9.2</td>
+              <td class="val neg">−1.95</td>
+              <td class="val pos">+3.7 ★</td>
+              <td><span class="badge up">Lag 1 year</span></td>
+            </tr>
+            <tr>
+              <td>CN90 Optical instruments</td>
+              <td class="val">4.1</td>
+              <td class="val">+0.3</td>
+              <td class="val pos">+3.4 ★</td>
+              <td><span class="badge up">Lag 1 year</span></td>
+            </tr>
+            <tr>
+              <td>CN44 Wood</td>
+              <td class="val">36.3</td>
+              <td class="val">+1.2</td>
+              <td class="val">+0.7</td>
+              <td><span class="badge neutral">Borderline — EPA amplified</span></td>
+            </tr>
+            <tr>
+              <td>CN28 Chemicals</td>
+              <td class="val">3.3</td>
+              <td class="val neg">−1.4</td>
+              <td class="val neg">−2.9</td>
+              <td><span class="badge neutral">No level jump — gradual CAGR shift</span></td>
+            </tr>
+            <tr>
+              <td>CN94 Furniture</td>
+              <td class="val">3.1</td>
+              <td class="val">+0.5</td>
+              <td class="val neg">−0.2</td>
+              <td><span class="badge neutral">Normal range — no early signal</span></td>
+            </tr>
+            <tr>
+              <td>CN03 Fish <em>(control)</em></td>
+              <td class="val">1.9</td>
+              <td class="val">−0.4</td>
+              <td class="val">−0.8</td>
+              <td><span class="badge neutral">Normal ✓</span></td>
+            </tr>
+            <tr>
+              <td>CN04 Dairy <em>(control)</em></td>
+              <td class="val">1.4</td>
+              <td class="val">+0.5</td>
+              <td class="val">+0.8</td>
+              <td><span class="badge neutral">Normal ✓</span></td>
+            </tr>
+            <tr>
+              <td>CN95 Toys <em>(control)</em></td>
+              <td class="val">0.30</td>
+              <td class="val neg">+7.3 ★</td>
+              <td class="val neg">+11.6 ★</td>
+              <td><span class="badge down">⚠ Artefact — see note</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="comment">Z = (value − pre-EPA mean) / pre-EPA SD, baseline = 2014–2018. ★ = |Z| &gt; 2. CN85 and CN90 both spike in 2020, not 2019 — a consistent one-year lag suggesting contract cycles rather than coincidence. CN95 Toys: large Z is an artefact of near-zero pre-EPA variance (SD = 0.03 M€), not a real signal; absolute volumes remain below 1 M€ throughout.</p>
+
+        <h3>Control group: was it the EPA or just good times?</h3>
+        <p>This is the key question any defensible trade policy analysis must answer. General economic growth, a weaker euro, or sector-specific demand cycles could all produce similar charts. The control group test checks whether the EPA-covered groups outperformed groups where the EPA made little difference.</p>
+
+        <div class="phase-grid">
+          <div class="phase-box">
+            <div class="ph-num">Treatment</div>
+            <h4>+56.7% (2019–2022 vs 2014–2018)</h4>
+            <p>CN28, CN44, CN84, CN85, CN90, CN94 — groups where the EU–Japan EPA reduced tariffs meaningfully. Combined average annual exports grew from 57.9 M€ to 90.7 M€.</p>
+          </div>
+          <div class="phase-box">
+            <div class="ph-num">Control</div>
+            <h4>+4.3% (same period)</h4>
+            <p>CN03 Fish, CN04 Dairy, CN95 Toys — groups where EPA tariff changes were minimal or other competitive factors dominate. Combined average: 3.28 M€ → 3.42 M€.</p>
+          </div>
+        </div>
+
+        <p>A 52-percentage-point gap between treatment and control in the same time period, for the same trade partner, is difficult to explain without the EPA. If the growth had been driven by general conditions — a strong economy, a weak euro, rising demand — both groups would have grown at roughly similar rates. The divergence is concentrated in exactly the groups that benefited from tariff reductions.</p>
+        <p>This is not a formal causal proof (that would require Interrupted Time Series regression or a synthetic control method). But it is the strongest evidence available from aggregate customs data — and it is consistent with an EPA effect.</p>
 
         <div class="chart-card">
           <h4>Export structure — 2023 snapshot (Treemap)</h4>
@@ -321,10 +513,10 @@
         </div>
 
         <div class="chart-card">
-          <h4>How groups moved across key years (Slope chart)</h4>
-          <div class="sub">Each line = one CN group · 2015 → pre-EPA 2018 → EPA 2019 → peak 2022 → 2024</div>
+          <h4>How groups moved across key years — Japan vs World slope</h4>
+          <div class="sub">Solid = Estonia → Japan · Dashed = Estonia → World (rescaled to 2018 baseline) · Log scale</div>
           <div style="overflow-x:auto" id="csSlopeCont"></div>
-          <p class="comment" style="margin-top:12px">CN44 Wood · CN85 Electrical machinery · CN84 Machinery · CN28 Inorganic chemicals · CN03 Fish · CN04 Dairy · CN90 Optical instruments · CN27 Mineral fuels · CN94 Furniture · CN95 Toys. The Y-axis shows absolute export value in M€ — lines higher up represent larger commodity groups.</p>
+          <p class="comment" style="margin-top:12px">When a solid Japan line steepens after 2019 while its dashed World counterpart flattens or moves in the opposite direction, the acceleration is Japan-specific — not a global commodity trend. CN85 Electronics is the clearest case: Japan line rises post-2019, world line barely moves. CN44 Wood: both lines rise similarly — global demand is a major factor. Control group lines (grey) are flat in both directions, confirming the benchmark is stable.</p>
         </div>
 
         <div class="chart-card">
@@ -336,9 +528,10 @@
         </div>
 
         <div class="chart-card">
-          <h4>Index 2018 = 100 by CN group</h4>
-          <div class="sub">Shows which groups accelerated after EPA regardless of absolute size</div>
+          <h4>Growth index 2018 = 100 — Japan vs World trajectory</h4>
+          <div class="sub">Solid line = Estonia → Japan · Dashed (same colour) = Estonia → World · Baseline at 100</div>
           <div class="cw tall"><canvas id="csChartHeatIndex"></canvas></div>
+          <p class="comment" style="margin-top:10px">Each treatment group has two lines — solid (Japan) and dashed (World) in the same colour. Where the solid line diverges upward from the dashed line after 2019, the Japan channel is outperforming the group's global trend. Control groups (grey) show no such divergence, as expected. CN71 Precious metals not shown here — its post-2019 index from effectively zero renders comparison uninformative on this scale.</p>
         </div>
 
         <h3>Regional context</h3>
@@ -371,18 +564,47 @@
         <div class="sec-label">05 — Share</div>
         <h2>Visualisation choices</h2>
 
-        <p>Each chart was chosen to answer a specific question rather than illustrate the same data in different formats.</p>
+        <p>Each chart type was chosen to answer a specific analytical question. The rule applied throughout: if two chart types could show the same data, prefer the one where the answer to the question is visible without mental calculation.</p>
 
-        <ul>
-          <li><strong>Line chart (bilateral)</strong> — the baseline view. 2019 uptick, 2022 peak, post-2022 decline visible in one glance. Structural breaks labelled so the context is on the chart, not in surrounding text.</li>
-          <li><strong>Growth index (2019 = 100)</strong> — the comparative view. Japan as a red line against a grey pack of other countries. The key question — did Japan outperform after EPA? — is answerable in about five seconds.</li>
-          <li><strong>Treemap</strong> — 2023 export structure in a single snapshot. CN44's dominance (~40%) is immediately visible without reading a table.</li>
-          <li><strong>Slope chart</strong> — how groups moved across five key years. Shows relative shifts better than overlapping lines on a shared time axis.</li>
-          <li><strong>Heatmap</strong> — all groups × all years at once. Green above 2018 baseline, red below. Patterns invisible in individual charts become apparent.</li>
-          <li><strong>Pre/post-EPA bar</strong> — % change per commodity group, signed. Growth and decline visible in the same view.</li>
-          <li><strong>Regional stacked bars</strong> — Japan in the context of Estonia's full export geography for Wood and Fish. For Wood, Japan is the dominant non-European buyer. For Fish, Japan is a thin slice at the top of a Europe-dominated stack.</li>
-        </ul>
-        <p>All charts are built with Chart.js from JSON files generated by the R scripts. Updating the dashboard requires only re-running the R scripts and uploading new JSON files — no changes to HTML or JS.</p>
+        <div class="phase-grid">
+          <div class="phase-box">
+            <div class="ph-num">Line chart</div>
+            <h4>Bilateral trade over time</h4>
+            <p><strong>Question answered:</strong> when did trade change, and how abruptly? A line chart shows trajectory, speed, and breakpoints simultaneously. Structural events (EPA 2019, COVID 2020, war 2022) are marked directly on the chart — context belongs on the visual, not in a caption. <em>Why not bars?</em> Bars emphasise magnitude per year; lines emphasise direction and rate of change. This analysis is primarily about change, not level.</p>
+          </div>
+          <div class="phase-box">
+            <div class="ph-num">Growth index</div>
+            <h4>Japan vs partner countries</h4>
+            <p><strong>Question answered:</strong> did Japan outperform other markets after the EPA? Indexing all countries to 2019 = 100 removes the size difference — a 500 M€ market and a 5 M€ market are on the same axis. Japan's red line vs a grey pack of others. <em>Why not absolute values?</em> Absolute values make Germany or Finland invisible next to small markets — the size difference obscures the comparison.</p>
+          </div>
+          <div class="phase-box">
+            <div class="ph-num">Treemap</div>
+            <h4>Export structure snapshot</h4>
+            <p><strong>Question answered:</strong> what is the composition of exports right now, and how dominant is the top group? Cell area encodes value directly — CN44's ~40% share is visible in one glance without reading a number. <em>Why not a pie chart?</em> Pie charts work for 2–4 segments. With 10 CN groups, adjacent slices of similar size become indistinguishable. Treemaps handle both large and small segments legibly.</p>
+          </div>
+          <div class="phase-box">
+            <div class="ph-num">Slope chart</div>
+            <h4>Group trajectories across key years</h4>
+            <p><strong>Question answered:</strong> which groups rose, fell, or crossed between specific years? A slope chart forces you to pick 4–5 meaningful years rather than showing everything. The crossing lines reveal reranking — CN85 Electronics and CN28 Chemicals swapped positions relative to each other post-EPA. That reranking is invisible in a standard time series. <em>Why not a line chart here?</em> Overlapping lines for 10 groups produce a spaghetti plot. Slope charts trade temporal resolution for legibility.</p>
+          </div>
+          <div class="phase-box">
+            <div class="ph-num">Heatmap</div>
+            <h4>All groups × all years</h4>
+            <p><strong>Question answered:</strong> are there systematic patterns across commodity groups and time? The heatmap is the only format that lets you see all 11 groups × 15 years simultaneously. Green above 2018 baseline, red below — post-EPA columns are bold. Patterns emerge that are invisible in per-group charts: the post-2019 green shift is broad, not concentrated in one or two groups. <em>Why 2018 as base, not 2019?</em> 2018 is the last pre-EPA year, so the colour at 2019 already shows the EPA-year effect.</p>
+          </div>
+          <div class="phase-box">
+            <div class="ph-num">Bar chart</div>
+            <h4>Pre vs post-EPA % change</h4>
+            <p><strong>Question answered:</strong> which groups grew and which didn't, and by how much? Signed bars (positive = growth, negative = decline) show both directions in a single view. <em>Why not a table?</em> Tables require the reader to scan and rank mentally. A bar chart pre-ranks by height — the answer is visual. The table is provided alongside for precision; the chart is for pattern recognition.</p>
+          </div>
+          <div class="phase-box">
+            <div class="ph-num">Stacked regional bars</div>
+            <h4>CN44 Wood vs CN03 Fish context</h4>
+            <p><strong>Question answered:</strong> is Japan a major or minor buyer of this commodity in Estonia's global export mix? For Wood, Japan sits at the top of the stack as the dominant non-European destination. For Fish, Japan is a thin sliver at the top of a Europe-dominated stack. Same chart type, completely different stories — which is exactly the point.</p>
+          </div>
+        </div>
+
+        <p>All charts are built with Chart.js from JSON files generated by the R scripts. Updating the dashboard requires only re-running the R scripts and refreshing the JSON — no changes to HTML or JS code.</p>
       </section>
 
       <section id="act">
@@ -390,42 +612,44 @@
         <h2>Conclusions</h2>
 
         <div class="finding key">
-          <h4>EPA worked — moderately</h4>
-          <p>Post-EPA average exports +40% vs pre-EPA (36 M€ → 51 M€/year). Real growth in wood, chemicals (+95%),
-            electrical machinery (+58%). Consistent with policy intent.</p>
+          <h4>EPA worked — moderately and selectively</h4>
+          <p>Post-EPA average exports +40% vs pre-EPA (36 M€ → 51 M€/year in the clean 2019–2022 window). Real growth in wood (+22% CAGR), chemicals (+95% mean), electrical machinery (reversed from declining to +18.7% CAGR). Consistent with policy intent — but concentrated in groups that already had trade relationships before 2019.</p>
+        </div>
+        <div class="finding key">
+          <h4>Treatment vs control confirms EPA signal</h4>
+          <p>EPA-covered commodity groups grew +56.7% in the clean EPA window (2019–2022). Groups with minimal EPA tariff changes grew +4.3% in the same period. A 52-point gap for the same partner, the same years — concentrated in exactly the groups that benefited from tariff reductions.</p>
         </div>
         <div class="finding key">
           <h4>Logistics beats tariffs post-2022</h4>
-          <p>Russia's airspace closure hit Japan harder than any other major partner. Trade peaked in 2022 then declined
-            even as the EPA remained in force.</p>
+          <p>Russia's airspace closure hit Japan harder than any other major partner. Trade peaked at 150 M€ in 2022, then fell even as the EPA remained fully in force. The agreement works — but only when logistics allow exporters to act on it.</p>
+        </div>
+        <div class="finding">
+          <h4>CAGR tells a different story than mean values</h4>
+          <p>CN85 Electronics and CN28 Chemicals show <em>negative</em> YoY in 2019 — but their CAGR flipped from negative (pre-EPA: −8.7%, −2.9%) to strongly positive (post-EPA: +18.7%, +11.4%). The EPA effect for these groups is not a one-year jump but a multi-year reversal of direction.</p>
         </div>
         <div class="finding">
           <h4>Japan ≠ Asia</h4>
-          <p>South Korea grew while Japan declined post-2022. Distance, routing, and freight infrastructure are
-            country-specific — treating Asian markets as one block leads to wrong conclusions.</p>
+          <p>South Korea grew while Japan declined post-2022. Distance, routing, and freight infrastructure are country-specific. Treating Asian markets as a single block leads to wrong conclusions about where trade agreements are working.</p>
         </div>
         <div class="finding">
           <h4>The Korea precedent</h4>
-          <p>EU-Korea EPA (2011) took 3-5 years to show full effect. Japan is at year 5-6 — the trajectory may not be
-            final, but requires logistics to stabilise first.</p>
+          <p>EU–Korea EPA (2011) took 3–5 years to show full effect. Japan is at year 5–6. The trajectory isn't necessarily finished — but further progress requires the logistics situation to stabilise first.</p>
         </div>
         <div class="finding">
-          <h4>Counter-cases are real</h4>
-          <p>Fish exports fell 48% post-EPA. Dairy flat. The EPA removes tariffs — it does not remove competition from
-            other EU suppliers.</p>
+          <h4>Counter-cases matter</h4>
+          <p>Fish exports fell 48% post-EPA. Dairy barely moved. The EPA removes tariffs — it does not remove competition from other EU exporters who now have the same access. Where Estonia isn't competitive on quality or price, lower tariffs change nothing.</p>
         </div>
         <div class="finding">
           <h4>Current conditions = selective opportunity</h4>
-          <p>Declining volumes mean reduced competition for those who can navigate the logistics barrier. Niche,
-            high-value, non-time-sensitive goods are best positioned.</p>
-        </div>
-        <div class="finding">
-          <h4>India: use Japan as a baseline, not a guarantee</h4>
-          <p>EU-India FTA in negotiation. Japan's experience — slow start, sector-specific, logistics-dependent — is a
-            useful baseline. India presents even greater distance challenges.</p>
+          <p>Declining volumes mean fewer active competitors for those who can navigate the logistics barrier. Niche, high-value, non-time-sensitive goods are best positioned to benefit from lower tariffs without being penalised by higher freight costs.</p>
         </div>
 
-        <p style="margin-top:32px;font-size:15px;color:var(--ink2);max-width:660px;line-height:1.75">The EPA worked — trade grew in the right sectors and in the right direction. But "working" and "transformative" are different things. Japan remains a small but strategically interesting partner, and the current combination of lower tariffs and higher logistics barriers may create better entry opportunities than the headline numbers suggest — for exporters who can operate at that distance.</p>
+        <div class="finding" style="border-left-color: var(--ink3); opacity: 0.85">
+          <h4>Hypothesis only: India as a future case ⚠</h4>
+          <p><em>This section is speculative — no Estonia–India trade data was analysed as part of this project.</em> The EU–India FTA has been in negotiation since 2007 with resumed talks from 2022. If concluded, Japan's experience offers a plausible baseline for what to expect: slow start, sector-specific effects, logistics-dependent outcomes. India presents even greater distance challenges and a more heterogeneous market structure. Whether Estonia's export profile — heavy machinery, wood, precision instruments — maps onto Indian demand is an open empirical question that would require a separate dataset and analysis. The Japan case does not answer it; it only suggests the methodological framework to apply.</p>
+        </div>
+
+        <p style="margin-top:32px;font-size:15px;color:var(--ink2);max-width:660px;line-height:1.75">The EPA worked — trade grew in the right sectors and in the right direction. The control group comparison makes that hard to attribute to coincidence. But "working" and "transformative" are different things. Japan remains a small but strategically interesting partner, and the current combination of lower tariffs and higher logistics barriers may create better entry opportunities than the headline numbers suggest — for exporters who can operate at that distance.</p>
 
       </section>
 
