@@ -36,7 +36,7 @@
     <div class="sec-label">01 — Overview</div>
     <h2>Trade grew — but the story is more complicated</h2>
     <p style="font-size:13px;color:var(--ink3);font-family:'DM Mono',monospace;margin-bottom:18px">This page is a summary dashboard. For full methodology, data sources, and detailed chart-by-chart analysis → <a href="case_study.html" style="color:var(--accent)">Full Case Study</a></p>
-    <p>The EPA created a real tailwind: post-EPA average exports rose 40% vs the pre-EPA baseline. But a 2022 peak followed by a sharp decline shows that external factors — specifically the closure of Russian airspace, which roughly doubled freight times to Japan — matter as much as trade policy. The EPA is still in force; logistics is currently winning.</p>
+    <p>The EPA created a real tailwind: post-EPA average exports rose 40% vs the pre-EPA baseline (2014–2018 vs 2019–2023). If the window is extended to include 2024, the figure rises to +64% — the difference is that 2022 was a peak year that pulls the longer average up. The 2022 spike was followed by a sharp decline driven by Russia's airspace closure, which roughly doubled freight times to Japan. The EPA is still in force; logistics is currently the binding constraint.</p>
 
     <div class="stat-row" id="statRow">
       <div class="stat-cell"><div class="loading" style="height:60px">loading…</div></div>
@@ -58,7 +58,7 @@
   <section id="comparison">
     <div class="sec-label">02 — Comparative context</div>
     <h2>Japan vs partner countries</h2>
-    <p>Growth index (2019 = 100) shows Japan's post-EPA trajectory against EPA peers and non-EPA benchmarks. Kazakhstan and Bulgaria outperform Japan on the index — but for geopolitical reasons unrelated to trade agreements. South Korea (EPA 2011) is the more honest comparison: its effect took 3–5 years to materialise. Japan is at year 5–6, and the picture may not be final.</p>
+    <p>Growth index (2019 = 100) shows Japan's post-EPA trajectory against EPA peers and non-EPA benchmarks. Some countries dramatically outperform Japan on the index — Kazakhstan and Bulgaria, for instance — but their growth is driven by re-routing of Russian trade after 2022 sanctions, not by trade agreements. South Korea is the more honest comparison: it signed its EPA with the EU in 2011, a structurally similar agreement, and its full effect took 3–5 years to materialise. Japan is at year 5–6 of its own EPA — the trajectory may not be final.</p>
 
     <div class="chart-card">
       <h3>Export growth index by partner country</h3>
@@ -71,7 +71,7 @@
   <section id="commodities">
     <div class="sec-label">03 — Commodity groups</div>
     <h2>What Estonia actually sells to Japan</h2>
-    <p>CN44 Wood dominates at ~50% of exports — a pre-existing relationship that the EPA amplified, not created. CN85 Electrical machinery is the cleaner post-EPA signal: +58% on a real base. Counter-cases — Fish (−48%), Dairy (flat) — are a reminder that tariff removal doesn't override competition. The EPA opens a door; it doesn't push you through it.</p>
+    <p>CN44 Wood dominates at ~50% of exports — a pre-existing relationship that the EPA amplified, not created. CN85 Electrical machinery is the cleaner post-EPA signal: +42% on a stable base. The outlier is CN71 Precious metals &amp; stones: essentially zero before 2019, it jumped to an average of 10+ M€/year post-EPA — a trade flow that did not exist before the agreement. Counter-cases — Fish (−48%), Dairy (flat) — are a reminder that tariff removal doesn't override competition. The EPA opens a door; it doesn't push you through it.</p>
 
     <div class="chart-card">
       <h3>Exports to Japan — top commodity groups</h3>
@@ -82,11 +82,11 @@
 
     <div class="chart-card">
       <h3>Pre vs post-EPA: average annual exports (M€)</h3>
-      <div class="sub">Average 2014-2018 vs average 2019-2023</div>
+      <div class="sub">Average 2014–2018 vs 2019–2024 · World % = change in Estonia's exports of the same group to all countries (not just Japan) — context for isolating the EPA effect</div>
       <table class="epa-table">
-        <thead><tr><th>Commodity group</th><th>Pre-EPA avg</th><th>Post-EPA avg</th><th>Change</th></tr></thead>
+        <thead><tr><th>Commodity group</th><th>Pre-EPA avg, M€</th><th>Post-EPA avg, M€</th><th>Japan %</th><th>World % <span style="font-weight:400;font-style:italic">(all destinations)</span></th></tr></thead>
         <tbody id="epaTableBody">
-          <tr><td colspan="4" style="padding:18px;color:var(--ink3);font-family:'DM Mono',monospace;font-size:12px">Loading…</td></tr>
+          <tr><td colspan="5" style="padding:18px;color:var(--ink3);font-family:'DM Mono',monospace;font-size:12px">Loading…</td></tr>
         </tbody>
       </table>
     </div>
@@ -115,7 +115,7 @@
       <div class="sub">Green = above 2018 level · Red = below · Bold columns = post-EPA years</div>
       <p class="comment" style="margin-bottom:10px">← Scroll the table right to see all years →</p>
       <div style="overflow-x:auto" id="heatmapCont"></div>
-      <p class="comment" style="margin-top:12px">Extreme values (e.g. CN03 Fish showing 800+ in earlier years) reflect a very low 2018 baseline for that group — not a data error. The index measures change relative to 2018 only.</p>
+      <p class="comment" style="margin-top:12px">Note on extreme values: CN03 Fish shows very high index values in some years (e.g. 800+ in 2017) and very low in others. This reflects that 2018 — the baseline year — was an unusually poor year for fish exports to Japan (≈0.5 M€). Any year with normal volumes appears extreme relative to that depressed baseline. This is a data characteristic, not an error.</p>
     </div>
   </section>
 

@@ -1,6 +1,42 @@
 {
   "exports_timeseries": [
     {
+      "year": 2004,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 1.706
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 1.104
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 1.153
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 0.735
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 0.966
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 0.113
+    },
+    {
       "year": 2010,
       "cn_code": "CN03",
       "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
@@ -21,7 +57,8 @@
     {
       "year": 2013,
       "cn_code": "CN03",
-      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES"
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": null
     },
     {
       "year": 2014,
@@ -90,29 +127,70 @@
       "value": 0.914
     },
     {
+      "year": 2004,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 0.141
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
+    },
+    {
       "year": 2010,
       "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED"
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
     },
     {
       "year": 2011,
       "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED"
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
     },
     {
       "year": 2012,
       "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED"
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
     },
     {
       "year": 2013,
       "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED"
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
     },
     {
       "year": 2014,
       "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED"
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
     },
     {
       "year": 2015,
@@ -175,178 +253,40 @@
       "value": 0.229
     },
     {
-      "year": 2010,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0.207
+      "year": 2004,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 0.091
     },
     {
-      "year": 2011,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
+      "year": 2005,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 1.444
     },
     {
-      "year": 2012,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
+      "year": 2006,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 4.467
     },
     {
-      "year": 2013,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
+      "year": 2007,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 3.67
     },
     {
-      "year": 2014,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
+      "year": 2008,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 3.002
     },
     {
-      "year": 2015,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0.238
-    },
-    {
-      "year": 2017,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 1.526
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 3.168
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 4.683
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 2.877
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 3.797
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 6.069
-    },
-    {
-      "year": 2010,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.689
-    },
-    {
-      "year": 2011,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.873
-    },
-    {
-      "year": 2012,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.824
-    },
-    {
-      "year": 2013,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 1.219
-    },
-    {
-      "year": 2014,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 1.012
-    },
-    {
-      "year": 2015,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 1.817
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 1.329
-    },
-    {
-      "year": 2017,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 1.162
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.893
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.367
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.588
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 1.222
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 2.069
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 1.171
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 1.035
+      "year": 2009,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 2.28
     },
     {
       "year": 2010,
@@ -439,6 +379,42 @@
       "value": 3.13
     },
     {
+      "year": 2004,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 6.721
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 11.261
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 28.696
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 28.751
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 25.889
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 25.067
+    },
+    {
       "year": 2010,
       "cn_code": "CN44",
       "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
@@ -529,94 +505,166 @@
       "value": 38.924
     },
     {
+      "year": 2004,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": null
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": null
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": null
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": null
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": null
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": null
+    },
+    {
       "year": 2010,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "value": 0.196
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": null
     },
     {
       "year": 2011,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "value": 0.231
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": null
     },
     {
       "year": 2012,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "value": 0.682
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": null
     },
     {
       "year": 2013,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "value": 0.117
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 0.058
     },
     {
       "year": 2014,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "value": 0.094
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": null
     },
     {
       "year": 2015,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "value": 0.66
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 0.003
     },
     {
       "year": 2016,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "value": 0.3
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 0.006
     },
     {
       "year": 2017,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "value": 0.326
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 0.012
     },
     {
       "year": 2018,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "value": 1.681
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 0.129
     },
     {
       "year": 2019,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "value": 6.596
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 1.079
     },
     {
       "year": 2020,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "value": 2.798
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 3.665
     },
     {
       "year": 2021,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "value": 3.605
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 11.735
     },
     {
       "year": 2022,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "value": 2.201
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 12.477
     },
     {
       "year": 2023,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "value": 0.906
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 20.461
     },
     {
       "year": 2024,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "value": 1.066
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 14.267
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 0.24
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 0.168
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 0.659
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 0.152
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 0.247
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 0.115
     },
     {
       "year": 2010,
@@ -709,6 +757,42 @@
       "value": 5.758
     },
     {
+      "year": 2004,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.192
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.154
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.527
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.505
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.988
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 1.08
+    },
+    {
       "year": 2010,
       "cn_code": "CN90",
       "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
@@ -799,6 +883,42 @@
       "value": 3.962
     },
     {
+      "year": 2004,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 2.461
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 2.328
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 3.348
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 2.454
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 2.751
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 2.928
+    },
+    {
       "year": 2010,
       "cn_code": "CN94",
       "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
@@ -887,6 +1007,42 @@
       "cn_code": "CN94",
       "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
       "value": 4.361
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.38
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.541
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.767
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.739
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.302
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.478
     },
     {
       "year": 2010,
@@ -981,16 +1137,52 @@
   ],
   "imports_timeseries": [
     {
+      "year": 2004,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": null
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": null
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": null
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": null
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": null
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": null
+    },
+    {
       "year": 2010,
       "cn_code": "CN03",
       "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
-      "value": 0
+      "value": 0.0
     },
     {
       "year": 2011,
       "cn_code": "CN03",
       "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
-      "value": 0
+      "value": 0.0
     },
     {
       "year": 2012,
@@ -1071,6 +1263,42 @@
       "value": 0.023
     },
     {
+      "year": 2004,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
+    },
+    {
       "year": 2010,
       "cn_code": "CN04",
       "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
@@ -1086,430 +1314,367 @@
       "year": 2012,
       "cn_code": "CN04",
       "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "value": 0
+      "value": 0.0
     },
     {
       "year": 2013,
       "cn_code": "CN04",
       "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "value": 0
+      "value": 0.0
     },
     {
       "year": 2014,
       "cn_code": "CN04",
       "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "value": 0
+      "value": 0.0
     },
     {
       "year": 2015,
       "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED"
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
     },
     {
       "year": 2016,
       "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED"
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
     },
     {
       "year": 2017,
       "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED"
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
     },
     {
       "year": 2018,
       "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED"
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
     },
     {
       "year": 2019,
       "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED"
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
     },
     {
       "year": 2020,
       "cn_code": "CN04",
       "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "value": 0
+      "value": 0.0
     },
     {
       "year": 2021,
       "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED"
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
     },
     {
       "year": 2022,
       "cn_code": "CN04",
       "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "value": 0
+      "value": 0.0
     },
     {
       "year": 2023,
       "cn_code": "CN04",
       "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "value": 0
+      "value": 0.0
     },
     {
       "year": 2024,
       "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED"
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": null
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 1.632
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 2.442
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 2.564
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 4.375
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 7.718
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 1.828
     },
     {
       "year": 2010,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0.001
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 1.338
     },
     {
       "year": 2011,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0.001
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 1.553
     },
     {
       "year": 2012,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0.001
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 2.117
     },
     {
       "year": 2013,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 2.334
     },
     {
       "year": 2014,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0.001
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 1.852
     },
     {
       "year": 2015,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0.002
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 1.509
     },
     {
       "year": 2016,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0.001
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 1.385
     },
     {
       "year": 2017,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 1.604
     },
     {
       "year": 2018,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0.002
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 3.558
     },
     {
       "year": 2019,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0.004
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 6.304
     },
     {
       "year": 2020,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0.007
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 8.161
     },
     {
       "year": 2021,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 5.722
     },
     {
       "year": 2022,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0.003
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 4.752
     },
     {
       "year": 2023,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 5.447
     },
     {
       "year": 2024,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0.009
+      "cn_code": "CN32",
+      "cn_name": "TANNING OR DYEING EXTRACTS; TANNINS AND THEIR DERIVATIVES; DYES, PIGMENTS AND OTHER COLOURING MATTER; PAINTS AND VARNISHES; PUTTY AND OTHER MASTICS; INKS",
+      "value": 3.444
     },
     {
-      "year": 2010,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.054
+      "year": 2004,
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 0.202
     },
     {
-      "year": 2011,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.073
+      "year": 2005,
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 0.156
     },
     {
-      "year": 2012,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.093
+      "year": 2006,
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 0.218
     },
     {
-      "year": 2013,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.121
+      "year": 2007,
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 0.188
     },
     {
-      "year": 2014,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.053
-    },
-    {
-      "year": 2015,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.055
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.088
-    },
-    {
-      "year": 2017,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.071
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.085
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.124
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.105
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.112
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.078
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.073
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "value": 0.057
-    },
-    {
-      "year": 2010,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "value": 0.244
-    },
-    {
-      "year": 2011,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "value": 0.23
-    },
-    {
-      "year": 2012,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "value": 0.175
-    },
-    {
-      "year": 2013,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "value": 0.132
-    },
-    {
-      "year": 2014,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "value": 0.263
-    },
-    {
-      "year": 2015,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "value": 0.256
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "value": 0.249
-    },
-    {
-      "year": 2017,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "value": 0.335
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "value": 0.272
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "year": 2008,
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
       "value": 0.228
     },
     {
-      "year": 2020,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "value": 0.316
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "value": 0.189
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "value": 0.811
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "value": 0.558
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "value": 0.143
+      "year": 2009,
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 0.15
     },
     {
       "year": 2010,
-      "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "value": 0.006
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 0.124
     },
     {
       "year": 2011,
-      "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "value": 0.013
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 0.158
     },
     {
       "year": 2012,
-      "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "value": 0.011
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 0.209
     },
     {
       "year": 2013,
-      "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "value": 0.017
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 0.244
     },
     {
       "year": 2014,
-      "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "value": 0.046
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 0.255
     },
     {
       "year": 2015,
-      "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "value": 0.009
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 0.315
     },
     {
       "year": 2016,
-      "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "value": 0.009
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 1.318
     },
     {
       "year": 2017,
-      "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "value": 0.007
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 1.829
     },
     {
       "year": 2018,
-      "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "value": 0.012
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 2.727
     },
     {
       "year": 2019,
-      "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "value": 0.01
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 2.789
     },
     {
       "year": 2020,
-      "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "value": 0.002
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 1.49
     },
     {
       "year": 2021,
-      "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "value": 0.009
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 1.594
     },
     {
       "year": 2022,
-      "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "value": 0.005
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 2.516
     },
     {
       "year": 2023,
-      "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "value": 0.007
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 3.212
     },
     {
       "year": 2024,
-      "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "value": 0.007
+      "cn_code": "CN33",
+      "cn_name": "ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS",
+      "value": 3.803
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
+      "value": 15.832
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
+      "value": 24.439
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
+      "value": 33.115
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
+      "value": 41.906
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
+      "value": 43.166
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN84",
+      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
+      "value": 21.745
     },
     {
       "year": 2010,
@@ -1602,6 +1767,42 @@
       "value": 78.314
     },
     {
+      "year": 2004,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 106.39
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 159.06
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 111.621
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 58.423
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 35.23
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 15.877
+    },
+    {
       "year": 2010,
       "cn_code": "CN85",
       "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
@@ -1690,6 +1891,168 @@
       "cn_code": "CN85",
       "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
       "value": 20.442
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 118.883
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 143.767
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 242.618
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 255.18
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 132.105
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 54.885
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 64.433
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 99.898
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 108.713
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 102.059
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 118.548
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 106.451
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 130.567
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 137.822
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 156.278
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 200.949
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 158.236
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 184.139
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 215.395
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 272.308
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN87",
+      "cn_name": "VEHICLES OTHER THAN RAILWAY OR TRAMWAY ROLLING STOCK, AND PARTS AND ACCESSORIES THEREOF",
+      "value": 279.314
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 6.143
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 8.278
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 12.172
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 6.863
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 6.93
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 4.112
     },
     {
       "year": 2010,
@@ -1782,94 +2145,40 @@
       "value": 9.536
     },
     {
-      "year": 2010,
-      "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "value": 0.155
+      "year": 2004,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.129
     },
     {
-      "year": 2011,
-      "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "value": 0.073
+      "year": 2005,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.111
     },
     {
-      "year": 2012,
-      "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "value": 0.051
+      "year": 2006,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.109
     },
     {
-      "year": 2013,
-      "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "value": 0.079
+      "year": 2007,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.119
     },
     {
-      "year": 2014,
-      "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "value": 0.072
+      "year": 2008,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.257
     },
     {
-      "year": 2015,
-      "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "value": 0.103
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "value": 0.144
-    },
-    {
-      "year": 2017,
-      "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "value": 0.088
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "value": 0.202
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "value": 1.027
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "value": 0.21
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "value": 0.139
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "value": 0.449
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "value": 0.187
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "value": 0.299
+      "year": 2009,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 0.436
     },
     {
       "year": 2010,
@@ -1964,149 +2273,34 @@
   ],
   "share": [
     {
-      "year": 2010,
-      "cn_code": "CN03",
-      "jp_share_pct": 0.59
+      "year": 2004,
+      "cn_code": "CN44",
+      "jp_share_pct": 1.1
     },
     {
-      "year": 2011,
-      "cn_code": "CN03",
-      "jp_share_pct": 0.52
+      "year": 2005,
+      "cn_code": "CN44",
+      "jp_share_pct": 1.61
     },
     {
-      "year": 2012,
-      "cn_code": "CN03",
-      "jp_share_pct": 0.11
+      "year": 2006,
+      "cn_code": "CN44",
+      "jp_share_pct": 3.92
     },
     {
-      "year": 2014,
-      "cn_code": "CN03",
-      "jp_share_pct": 0.03
+      "year": 2007,
+      "cn_code": "CN44",
+      "jp_share_pct": 3.52
     },
     {
-      "year": 2015,
-      "cn_code": "CN03",
-      "jp_share_pct": 0.39
+      "year": 2008,
+      "cn_code": "CN44",
+      "jp_share_pct": 3.6
     },
     {
-      "year": 2016,
-      "cn_code": "CN03",
-      "jp_share_pct": 3.5
-    },
-    {
-      "year": 2017,
-      "cn_code": "CN03",
-      "jp_share_pct": 3.86
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN03",
-      "jp_share_pct": 0.42
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN03",
-      "jp_share_pct": 0.76
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN03",
-      "jp_share_pct": 0.31
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN03",
-      "jp_share_pct": 1.19
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN03",
-      "jp_share_pct": 0.74
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN03",
-      "jp_share_pct": 0.33
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN03",
-      "jp_share_pct": 0.48
-    },
-    {
-      "year": 2010,
-      "cn_code": "CN28",
-      "jp_share_pct": 10.23
-    },
-    {
-      "year": 2011,
-      "cn_code": "CN28",
-      "jp_share_pct": 11.65
-    },
-    {
-      "year": 2012,
-      "cn_code": "CN28",
-      "jp_share_pct": 19.11
-    },
-    {
-      "year": 2013,
-      "cn_code": "CN28",
-      "jp_share_pct": 4.76
-    },
-    {
-      "year": 2014,
-      "cn_code": "CN28",
-      "jp_share_pct": 9.01
-    },
-    {
-      "year": 2015,
-      "cn_code": "CN28",
-      "jp_share_pct": 4.66
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN28",
-      "jp_share_pct": 11.44
-    },
-    {
-      "year": 2017,
-      "cn_code": "CN28",
-      "jp_share_pct": 5.33
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN28",
-      "jp_share_pct": 5.9
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN28",
-      "jp_share_pct": 3
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN28",
-      "jp_share_pct": 1.29
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN28",
-      "jp_share_pct": 2.83
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN28",
-      "jp_share_pct": 9.78
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN28",
-      "jp_share_pct": 19.96
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN28",
-      "jp_share_pct": 7.57
+      "year": 2009,
+      "cn_code": "CN44",
+      "jp_share_pct": 4.47
     },
     {
       "year": 2010,
@@ -2181,82 +2375,37 @@
     {
       "year": 2024,
       "cn_code": "CN44",
-      "jp_share_pct": 2
+      "jp_share_pct": 2.0
     },
     {
-      "year": 2010,
-      "cn_code": "CN84",
+      "year": 2004,
+      "cn_code": "CN85",
+      "jp_share_pct": 0.02
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN85",
+      "jp_share_pct": 0.01
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN85",
       "jp_share_pct": 0.04
     },
     {
-      "year": 2011,
-      "cn_code": "CN84",
-      "jp_share_pct": 0.03
-    },
-    {
-      "year": 2012,
-      "cn_code": "CN84",
-      "jp_share_pct": 0.06
-    },
-    {
-      "year": 2013,
-      "cn_code": "CN84",
+      "year": 2007,
+      "cn_code": "CN85",
       "jp_share_pct": 0.01
     },
     {
-      "year": 2014,
-      "cn_code": "CN84",
+      "year": 2008,
+      "cn_code": "CN85",
+      "jp_share_pct": 0.02
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN85",
       "jp_share_pct": 0.01
-    },
-    {
-      "year": 2015,
-      "cn_code": "CN84",
-      "jp_share_pct": 0.08
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN84",
-      "jp_share_pct": 0.03
-    },
-    {
-      "year": 2017,
-      "cn_code": "CN84",
-      "jp_share_pct": 0.03
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN84",
-      "jp_share_pct": 0.14
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN84",
-      "jp_share_pct": 0.5
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN84",
-      "jp_share_pct": 0.23
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN84",
-      "jp_share_pct": 0.26
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN84",
-      "jp_share_pct": 0.13
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN84",
-      "jp_share_pct": 0.05
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN84",
-      "jp_share_pct": 0.07
     },
     {
       "year": 2010,
@@ -2332,792 +2481,1791 @@
       "year": 2024,
       "cn_code": "CN85",
       "jp_share_pct": 0.22
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN28",
+      "jp_share_pct": 0.36
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN28",
+      "jp_share_pct": 5.38
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN28",
+      "jp_share_pct": 14.03
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN28",
+      "jp_share_pct": 11.4
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN28",
+      "jp_share_pct": 6.16
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN28",
+      "jp_share_pct": 16.32
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN28",
+      "jp_share_pct": 10.23
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN28",
+      "jp_share_pct": 11.65
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN28",
+      "jp_share_pct": 19.11
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN28",
+      "jp_share_pct": 4.76
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN28",
+      "jp_share_pct": 9.01
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN28",
+      "jp_share_pct": 4.66
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN28",
+      "jp_share_pct": 11.45
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN28",
+      "jp_share_pct": 5.33
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN28",
+      "jp_share_pct": 5.9
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN28",
+      "jp_share_pct": 3.0
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN28",
+      "jp_share_pct": 1.29
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN28",
+      "jp_share_pct": 2.83
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN28",
+      "jp_share_pct": 9.78
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN28",
+      "jp_share_pct": 19.96
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN28",
+      "jp_share_pct": 7.57
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN71",
+      "jp_share_pct": 0.03
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN71",
+      "jp_share_pct": 0.0
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN71",
+      "jp_share_pct": 0.0
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN71",
+      "jp_share_pct": 0.01
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN71",
+      "jp_share_pct": 0.09
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN71",
+      "jp_share_pct": 0.51
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN71",
+      "jp_share_pct": 1.22
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN71",
+      "jp_share_pct": 3.79
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN71",
+      "jp_share_pct": 4.11
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN71",
+      "jp_share_pct": 8.35
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN71",
+      "jp_share_pct": 4.7
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN90",
+      "jp_share_pct": 0.21
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN90",
+      "jp_share_pct": 0.14
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN90",
+      "jp_share_pct": 0.46
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN90",
+      "jp_share_pct": 0.42
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN90",
+      "jp_share_pct": 0.7
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN90",
+      "jp_share_pct": 0.95
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN90",
+      "jp_share_pct": 1.22
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN90",
+      "jp_share_pct": 1.24
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN90",
+      "jp_share_pct": 1.95
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN90",
+      "jp_share_pct": 1.44
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN90",
+      "jp_share_pct": 1.42
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN90",
+      "jp_share_pct": 1.47
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN90",
+      "jp_share_pct": 1.42
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN90",
+      "jp_share_pct": 0.98
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN90",
+      "jp_share_pct": 0.71
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN90",
+      "jp_share_pct": 0.96
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN90",
+      "jp_share_pct": 1.35
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN90",
+      "jp_share_pct": 0.93
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN90",
+      "jp_share_pct": 1.33
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN90",
+      "jp_share_pct": 0.84
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN90",
+      "jp_share_pct": 0.7
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.6
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.52
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.67
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.44
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.51
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.62
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.57
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.47
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.57
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.56
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.47
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.35
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.34
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.23
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.25
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.3
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.29
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.35
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.34
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.38
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN94",
+      "jp_share_pct": 0.45
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN03",
+      "jp_share_pct": 2.82
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN03",
+      "jp_share_pct": 1.63
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN03",
+      "jp_share_pct": 1.38
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN03",
+      "jp_share_pct": 1.04
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN03",
+      "jp_share_pct": 1.48
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN03",
+      "jp_share_pct": 0.15
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN03",
+      "jp_share_pct": 0.59
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN03",
+      "jp_share_pct": 0.52
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN03",
+      "jp_share_pct": 0.11
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN03",
+      "jp_share_pct": 0.03
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN03",
+      "jp_share_pct": 0.39
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN03",
+      "jp_share_pct": 3.5
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN03",
+      "jp_share_pct": 3.86
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN03",
+      "jp_share_pct": 0.42
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN03",
+      "jp_share_pct": 0.76
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN03",
+      "jp_share_pct": 0.31
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN03",
+      "jp_share_pct": 1.19
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN03",
+      "jp_share_pct": 0.74
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN03",
+      "jp_share_pct": 0.33
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN03",
+      "jp_share_pct": 0.48
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN04",
+      "jp_share_pct": 0.11
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN04",
+      "jp_share_pct": 0.49
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN04",
+      "jp_share_pct": 0.16
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN04",
+      "jp_share_pct": 1.04
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN04",
+      "jp_share_pct": 1.32
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN04",
+      "jp_share_pct": 0.87
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN04",
+      "jp_share_pct": 0.98
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN04",
+      "jp_share_pct": 0.32
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN04",
+      "jp_share_pct": 0.44
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN04",
+      "jp_share_pct": 0.34
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN04",
+      "jp_share_pct": 0.06
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN95",
+      "jp_share_pct": 1.33
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN95",
+      "jp_share_pct": 1.59
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN95",
+      "jp_share_pct": 1.72
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN95",
+      "jp_share_pct": 1.4
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN95",
+      "jp_share_pct": 0.57
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN95",
+      "jp_share_pct": 1.09
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN95",
+      "jp_share_pct": 0.84
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN95",
+      "jp_share_pct": 0.48
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN95",
+      "jp_share_pct": 0.56
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN95",
+      "jp_share_pct": 0.63
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN95",
+      "jp_share_pct": 0.42
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN95",
+      "jp_share_pct": 0.41
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN95",
+      "jp_share_pct": 0.52
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN95",
+      "jp_share_pct": 0.37
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN95",
+      "jp_share_pct": 0.4
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN95",
+      "jp_share_pct": 0.61
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN95",
+      "jp_share_pct": 0.65
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN95",
+      "jp_share_pct": 1.07
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN95",
+      "jp_share_pct": 0.54
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN95",
+      "jp_share_pct": 0.36
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN95",
+      "jp_share_pct": 0.48
     }
   ],
   "epa_comparison": [
     {
-      "cn_code": "CN03",
-      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
-      "post": 0.98,
-      "pre": 1.9,
-      "pct_change": -48,
-      "direction": "down"
-    },
-    {
-      "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "post": 1.43,
-      "pre": 1.35,
-      "pct_change": 6,
-      "direction": "up"
-    },
-    {
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "post": 3.21,
-      "pre": 0.12,
-      "pct_change": 2575,
-      "direction": "up"
-    },
-    {
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "post": 1.08,
-      "pre": 1.24,
-      "pct_change": -13,
-      "direction": "down"
-    },
-    {
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "post": 6.41,
-      "pre": 3.29,
-      "pct_change": 95,
-      "direction": "up"
-    },
-    {
       "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "post": 50.89,
-      "pre": 36.25,
-      "pct_change": 40,
-      "direction": "up"
-    },
-    {
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "post": 3.22,
-      "pre": 0.61,
-      "pct_change": 428,
-      "direction": "up"
+      "pre": 36.252,
+      "post": 48.892,
+      "avg_post_clean_mln": 54.549,
+      "pct_change": 35.0,
+      "direction": "up",
+      "yoy_2018_2019": 1.1,
+      "cagr_before_pct": 7.4,
+      "cagr_after_pct": -1.2,
+      "cagr_clean_pct": 22.0,
+      "world_pct_change": 47.0,
+      "cn_name": "Wood & wood articles"
     },
     {
       "cn_code": "CN85",
-      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
-      "post": 14.63,
-      "pre": 9.23,
-      "pct_change": 59,
-      "direction": "up"
+      "pre": 9.229,
+      "post": 13.147,
+      "avg_post_clean_mln": 14.601,
+      "pct_change": 42.0,
+      "direction": "up",
+      "yoy_2018_2019": -38.7,
+      "cagr_before_pct": -8.7,
+      "cagr_after_pct": 7.4,
+      "cagr_clean_pct": 76.9,
+      "world_pct_change": 4.0,
+      "cn_name": "Electrical machinery"
+    },
+    {
+      "cn_code": "CN28",
+      "pre": 3.29,
+      "post": 5.865,
+      "avg_post_clean_mln": 4.084,
+      "pct_change": 78.0,
+      "direction": "up",
+      "yoy_2018_2019": -38.6,
+      "cagr_before_pct": -2.9,
+      "cagr_after_pct": 7.3,
+      "cagr_clean_pct": 68.1,
+      "world_pct_change": 66.0,
+      "cn_name": "Inorganic chemicals"
+    },
+    {
+      "cn_code": "CN71",
+      "pre": 0.037,
+      "post": 10.614,
+      "avg_post_clean_mln": 7.239,
+      "pct_change": 28586.0,
+      "direction": "up",
+      "yoy_2018_2019": 736.4,
+      "cagr_before_pct": null,
+      "cagr_after_pct": 67.6,
+      "cagr_clean_pct": 126.1,
+      "world_pct_change": 110.0,
+      "cn_name": "Precious metals & stones"
     },
     {
       "cn_code": "CN90",
-      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
-      "post": 5.51,
-      "pre": 4.11,
-      "pct_change": 34,
-      "direction": "up"
+      "pre": 4.113,
+      "post": 5.25,
+      "avg_post_clean_mln": 5.721,
+      "pct_change": 28.0,
+      "direction": "up",
+      "yoy_2018_2019": 52.7,
+      "cagr_before_pct": -8.8,
+      "cagr_after_pct": -2.0,
+      "cagr_clean_pct": 18.1,
+      "world_pct_change": 47.0,
+      "cn_name": "Optical instruments"
     },
     {
       "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "post": 3.9,
-      "pre": 3.1,
-      "pct_change": 26,
-      "direction": "up"
+      "pre": 3.099,
+      "post": 3.975,
+      "avg_post_clean_mln": 3.833,
+      "pct_change": 28.0,
+      "direction": "up",
+      "yoy_2018_2019": 23.8,
+      "cagr_before_pct": -8.1,
+      "cagr_after_pct": 5.2,
+      "cagr_clean_pct": 10.2,
+      "world_pct_change": 17.0,
+      "cn_name": "Furniture & lighting"
+    },
+    {
+      "cn_code": "CN03",
+      "pre": 1.899,
+      "post": 0.973,
+      "avg_post_clean_mln": 1.098,
+      "pct_change": -49.0,
+      "direction": "down",
+      "yoy_2018_2019": 131.3,
+      "cagr_before_pct": 78.8,
+      "cagr_after_pct": -3.8,
+      "cagr_clean_pct": 3.8,
+      "world_pct_change": 19.0,
+      "cn_name": "Fish & seafood"
+    },
+    {
+      "cn_code": "CN04",
+      "pre": 1.352,
+      "post": 1.227,
+      "avg_post_clean_mln": 1.517,
+      "pct_change": -9.0,
+      "direction": "down",
+      "yoy_2018_2019": -28.5,
+      "cagr_before_pct": null,
+      "cagr_after_pct": -33.8,
+      "cagr_clean_pct": -7.5,
+      "world_pct_change": 60.0,
+      "cn_name": "Dairy products"
     },
     {
       "cn_code": "CN95",
-      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
-      "post": 0.76,
-      "pre": 0.3,
-      "pct_change": 153,
-      "direction": "up"
+      "pre": 0.297,
+      "post": 0.752,
+      "avg_post_clean_mln": 0.805,
+      "pct_change": 153.0,
+      "direction": "up",
+      "yoy_2018_2019": 60.5,
+      "cagr_before_pct": 2.4,
+      "cagr_after_pct": 7.6,
+      "cagr_clean_pct": 15.4,
+      "world_pct_change": 79.0,
+      "cn_name": "Toys & games"
+    }
+  ],
+  "epa_comparison_imports": [
+    {
+      "cn_code": "CN87",
+      "pre": 129.933,
+      "post": 218.39,
+      "avg_post_clean_mln": 189.68,
+      "pct_change": 68.0,
+      "direction": "up",
+      "yoy_2018_2019": 28.6,
+      "cagr_before_pct": 7.2,
+      "cagr_after_pct": 6.8,
+      "cagr_clean_pct": 2.3,
+      "cn_name": "Vehicles"
+    },
+    {
+      "cn_code": "CN84",
+      "pre": 28.806,
+      "post": 57.64,
+      "avg_post_clean_mln": 47.966,
+      "pct_change": 100.0,
+      "direction": "up",
+      "yoy_2018_2019": 10.0,
+      "cagr_before_pct": 0.1,
+      "cagr_after_pct": 19.1,
+      "cagr_clean_pct": 35.5,
+      "cn_name": "Machinery & boilers"
+    },
+    {
+      "cn_code": "CN85",
+      "pre": 21.136,
+      "post": 22.597,
+      "avg_post_clean_mln": 23.959,
+      "pct_change": 7.0,
+      "direction": "up",
+      "yoy_2018_2019": -4.6,
+      "cagr_before_pct": 16.5,
+      "cagr_after_pct": -6.0,
+      "cagr_clean_pct": 0.4,
+      "cn_name": "Electrical machinery"
+    },
+    {
+      "cn_code": "CN90",
+      "pre": 8.017,
+      "post": 13.216,
+      "avg_post_clean_mln": 14.264,
+      "pct_change": 65.0,
+      "direction": "up",
+      "yoy_2018_2019": 25.2,
+      "cagr_before_pct": 13.8,
+      "cagr_after_pct": -3.8,
+      "cagr_clean_pct": 10.7,
+      "cn_name": "Optical instruments"
+    },
+    {
+      "cn_code": "CN32",
+      "pre": 1.982,
+      "post": 5.638,
+      "avg_post_clean_mln": 6.235,
+      "pct_change": 184.0,
+      "direction": "up",
+      "yoy_2018_2019": 77.2,
+      "cagr_before_pct": 17.7,
+      "cagr_after_pct": -11.4,
+      "cagr_clean_pct": -9.0,
+      "cn_name": "Dyes & paints"
+    },
+    {
+      "cn_code": "CN33",
+      "pre": 1.289,
+      "post": 2.567,
+      "avg_post_clean_mln": 2.097,
+      "pct_change": 99.0,
+      "direction": "up",
+      "yoy_2018_2019": 2.3,
+      "cagr_before_pct": 80.8,
+      "cagr_after_pct": 6.4,
+      "cagr_clean_pct": -3.4,
+      "cn_name": "Perfumery & cosmetics"
     }
   ],
   "index_vs_2018": [
     {
-      "year": 2014,
-      "cn_code": "CN03",
-      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
-      "index_vs_2018": 9.9
+      "year": 2010,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 84.4,
+      "idx_world": 51.8
     },
     {
-      "year": 2015,
-      "cn_code": "CN03",
-      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
-      "index_vs_2018": 121.6
+      "year": 2011,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 90.7,
+      "idx_world": 60.5
     },
     {
-      "year": 2016,
-      "cn_code": "CN03",
-      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
-      "index_vs_2018": 813.7
+      "year": 2012,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 84.1,
+      "idx_world": 60.3
     },
     {
-      "year": 2017,
-      "cn_code": "CN03",
-      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
-      "index_vs_2018": 931.9
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN03",
-      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
-      "index_vs_2018": 100
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN03",
-      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
-      "index_vs_2018": 231.2
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN03",
-      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
-      "index_vs_2018": 81.3
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN03",
-      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
-      "index_vs_2018": 343.9
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN03",
-      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
-      "index_vs_2018": 258.2
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN03",
-      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
-      "index_vs_2018": 110.9
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN03",
-      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
-      "index_vs_2018": 190.4
-    },
-    {
-      "year": 2015,
-      "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "index_vs_2018": 28.6
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "index_vs_2018": 9.1
-    },
-    {
-      "year": 2017,
-      "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "index_vs_2018": 77.3
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "index_vs_2018": 100
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "index_vs_2018": 71.5
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "index_vs_2018": 83.3
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "index_vs_2018": 29.7
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "index_vs_2018": 56.5
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "index_vs_2018": 42.4
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN04",
-      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
-      "index_vs_2018": 9.1
-    },
-    {
-      "year": 2015,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN08",
-      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
-    },
-    {
-      "year": 2014,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "index_vs_2018": 113.4
-    },
-    {
-      "year": 2015,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "index_vs_2018": 203.6
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "index_vs_2018": 148.9
-    },
-    {
-      "year": 2017,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "index_vs_2018": 130.2
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "index_vs_2018": 100
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "index_vs_2018": 41.2
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "index_vs_2018": 65.9
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "index_vs_2018": 137
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "index_vs_2018": 231.8
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "index_vs_2018": 131.2
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN27",
-      "cn_name": "MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES",
-      "index_vs_2018": 116
-    },
-    {
-      "year": 2014,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "index_vs_2018": 112.7
-    },
-    {
-      "year": 2015,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "index_vs_2018": 57.7
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "index_vs_2018": 114.3
-    },
-    {
-      "year": 2017,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "index_vs_2018": 73.3
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "index_vs_2018": 100
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "index_vs_2018": 61.4
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "index_vs_2018": 26.4
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "index_vs_2018": 75.3
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "index_vs_2018": 291.7
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "index_vs_2018": 437.9
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN28",
-      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "index_vs_2018": 87.1
+      "year": 2013,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 100.5,
+      "idx_world": 69.0
     },
     {
       "year": 2014,
       "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "index_vs_2018": 75.3
+      "flow": "Export",
+      "idx_japan": 75.3,
+      "idx_world": 72.4
     },
     {
       "year": 2015,
       "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "index_vs_2018": 79.9
+      "flow": "Export",
+      "idx_japan": 79.9,
+      "idx_world": 75.0
     },
     {
       "year": 2016,
       "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "index_vs_2018": 87.9
+      "flow": "Export",
+      "idx_japan": 87.9,
+      "idx_world": 79.2
     },
     {
       "year": 2017,
       "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "index_vs_2018": 101
+      "flow": "Export",
+      "idx_japan": 101.0,
+      "idx_world": 90.3
     },
     {
       "year": 2018,
       "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "index_vs_2018": 100
+      "flow": "Export",
+      "idx_japan": 100.0,
+      "idx_world": 100.0
     },
     {
       "year": 2019,
       "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "index_vs_2018": 101.1
+      "flow": "Export",
+      "idx_japan": 101.1,
+      "idx_world": 99.2
     },
     {
       "year": 2020,
       "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "index_vs_2018": 96.2
+      "flow": "Export",
+      "idx_japan": 96.2,
+      "idx_world": 97.3
     },
     {
       "year": 2021,
       "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "index_vs_2018": 153.6
+      "flow": "Export",
+      "idx_japan": 153.6,
+      "idx_world": 130.9
     },
     {
       "year": 2022,
       "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "index_vs_2018": 183.8
+      "flow": "Export",
+      "idx_japan": 183.8,
+      "idx_world": 153.7
     },
     {
       "year": 2023,
       "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "index_vs_2018": 88.8
+      "flow": "Export",
+      "idx_japan": 88.8,
+      "idx_world": 127.0
     },
     {
       "year": 2024,
       "cn_code": "CN44",
-      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
-      "index_vs_2018": 95.4
+      "flow": "Export",
+      "idx_japan": 95.4,
+      "idx_world": 127.6
     },
     {
-      "year": 2014,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "index_vs_2018": 5.6
+      "year": 2010,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 9.3,
+      "idx_world": 63.8
     },
     {
-      "year": 2015,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "index_vs_2018": 39.3
+      "year": 2011,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 27.0,
+      "idx_world": 106.3
     },
     {
-      "year": 2016,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "index_vs_2018": 17.8
+      "year": 2012,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 21.2,
+      "idx_world": 109.5
     },
     {
-      "year": 2017,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "index_vs_2018": 19.4
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "index_vs_2018": 100
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "index_vs_2018": 392.4
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "index_vs_2018": 166.5
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "index_vs_2018": 214.5
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "index_vs_2018": 131
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "index_vs_2018": 53.9
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN84",
-      "cn_name": "NUCLEAR REACTORS, BOILERS, MACHINERY AND MECHANICAL APPLIANCES; PARTS THEREOF",
-      "index_vs_2018": 63.4
+      "year": 2013,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 63.9,
+      "idx_world": 110.3
     },
     {
       "year": 2014,
       "cn_code": "CN85",
-      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
-      "index_vs_2018": 143.6
+      "flow": "Export",
+      "idx_japan": 143.6,
+      "idx_world": 116.4
     },
     {
       "year": 2015,
       "cn_code": "CN85",
-      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
-      "index_vs_2018": 183.6
+      "flow": "Export",
+      "idx_japan": 183.6,
+      "idx_world": 108.7
     },
     {
       "year": 2016,
       "cn_code": "CN85",
-      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
-      "index_vs_2018": 185.4
+      "flow": "Export",
+      "idx_japan": 185.4,
+      "idx_world": 112.4
     },
     {
       "year": 2017,
       "cn_code": "CN85",
-      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
-      "index_vs_2018": 88.4
+      "flow": "Export",
+      "idx_japan": 88.4,
+      "idx_world": 96.9
     },
     {
       "year": 2018,
       "cn_code": "CN85",
-      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
-      "index_vs_2018": 100
+      "flow": "Export",
+      "idx_japan": 100.0,
+      "idx_world": 100.0
     },
     {
       "year": 2019,
       "cn_code": "CN85",
-      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
-      "index_vs_2018": 61.3
+      "flow": "Export",
+      "idx_japan": 61.3,
+      "idx_world": 91.8
     },
     {
       "year": 2020,
       "cn_code": "CN85",
-      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
-      "index_vs_2018": 289.6
+      "flow": "Export",
+      "idx_japan": 289.6,
+      "idx_world": 103.1
     },
     {
       "year": 2021,
       "cn_code": "CN85",
-      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
-      "index_vs_2018": 196.9
+      "flow": "Export",
+      "idx_japan": 196.9,
+      "idx_world": 123.5
     },
     {
       "year": 2022,
       "cn_code": "CN85",
-      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
-      "index_vs_2018": 339.4
+      "flow": "Export",
+      "idx_japan": 339.4,
+      "idx_world": 121.1
     },
     {
       "year": 2023,
       "cn_code": "CN85",
-      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
-      "index_vs_2018": 223.7
+      "flow": "Export",
+      "idx_japan": 223.7,
+      "idx_world": 113.6
     },
     {
       "year": 2024,
       "cn_code": "CN85",
-      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
-      "index_vs_2018": 87.5
+      "flow": "Export",
+      "idx_japan": 87.5,
+      "idx_world": 116.9
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 57.6,
+      "idx_world": 33.2
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 231.8,
+      "idx_world": 117.3
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 356.3,
+      "idx_world": 109.9
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 164.2,
+      "idx_world": 203.2
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 112.7,
+      "idx_world": 73.7
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 57.8,
+      "idx_world": 73.1
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 114.3,
+      "idx_world": 58.9
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 73.3,
+      "idx_world": 81.2
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 100.0,
+      "idx_world": 100.0
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 61.4,
+      "idx_world": 120.5
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 26.4,
+      "idx_world": 121.0
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 75.3,
+      "idx_world": 156.9
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 291.8,
+      "idx_world": 175.9
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 437.9,
+      "idx_world": 129.4
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 87.2,
+      "idx_world": 67.9
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": null,
+      "idx_world": 30.6
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": null,
+      "idx_world": 115.3
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": null,
+      "idx_world": 129.0
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 45.0,
+      "idx_world": 141.8
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": null,
+      "idx_world": 83.7
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 2.3,
+      "idx_world": 81.6
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 4.7,
+      "idx_world": 105.8
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 9.3,
+      "idx_world": 87.8
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 100.0,
+      "idx_world": 100.0
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 836.4,
+      "idx_world": 146.5
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 2841.1,
+      "idx_world": 207.4
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 9096.9,
+      "idx_world": 214.6
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 9672.1,
+      "idx_world": 210.3
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 15861.2,
+      "idx_world": 169.7
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 11059.7,
+      "idx_world": 210.4
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 67.4,
+      "idx_world": 39.0
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 105.4,
+      "idx_world": 60.1
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 169.5,
+      "idx_world": 61.2
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 129.6,
+      "idx_world": 63.7
     },
     {
       "year": 2014,
       "cn_code": "CN90",
-      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 144.6
+      "flow": "Export",
+      "idx_japan": 144.6,
+      "idx_world": 71.7
     },
     {
       "year": 2015,
       "cn_code": "CN90",
-      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 166.7
+      "flow": "Export",
+      "idx_japan": 166.8,
+      "idx_world": 79.8
     },
     {
       "year": 2016,
       "cn_code": "CN90",
-      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 182.5
+      "flow": "Export",
+      "idx_japan": 182.5,
+      "idx_world": 90.5
     },
     {
       "year": 2017,
       "cn_code": "CN90",
-      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 121.7
+      "flow": "Export",
+      "idx_japan": 121.7,
+      "idx_world": 88.0
     },
     {
       "year": 2018,
       "cn_code": "CN90",
-      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 100
+      "flow": "Export",
+      "idx_japan": 100.0,
+      "idx_world": 100.0
     },
     {
       "year": 2019,
       "cn_code": "CN90",
-      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 152.7
+      "flow": "Export",
+      "idx_japan": 152.7,
+      "idx_world": 111.9
     },
     {
       "year": 2020,
       "cn_code": "CN90",
-      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 244.7
+      "flow": "Export",
+      "idx_japan": 244.7,
+      "idx_world": 127.4
     },
     {
       "year": 2021,
       "cn_code": "CN90",
-      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 146.8
+      "flow": "Export",
+      "idx_japan": 146.8,
+      "idx_world": 110.7
     },
     {
       "year": 2022,
       "cn_code": "CN90",
-      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 251.9
+      "flow": "Export",
+      "idx_japan": 251.9,
+      "idx_world": 133.6
     },
     {
       "year": 2023,
       "cn_code": "CN90",
-      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 161.8
+      "flow": "Export",
+      "idx_japan": 161.8,
+      "idx_world": 135.3
     },
     {
       "year": 2024,
       "cn_code": "CN90",
-      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 137.9
+      "flow": "Export",
+      "idx_japan": 137.9,
+      "idx_world": 138.8
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 123.4,
+      "idx_world": 53.7
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 120.5,
+      "idx_world": 63.8
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 154.1,
+      "idx_world": 67.2
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 160.2,
+      "idx_world": 70.9
     },
     {
       "year": 2014,
       "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "index_vs_2018": 140.4
+      "flow": "Export",
+      "idx_japan": 140.4,
+      "idx_world": 74.2
     },
     {
       "year": 2015,
       "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "index_vs_2018": 120.9
+      "flow": "Export",
+      "idx_japan": 120.9,
+      "idx_world": 84.5
     },
     {
       "year": 2016,
       "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "index_vs_2018": 120.9
+      "flow": "Export",
+      "idx_japan": 120.9,
+      "idx_world": 89.5
     },
     {
       "year": 2017,
       "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "index_vs_2018": 85
+      "flow": "Export",
+      "idx_japan": 85.0,
+      "idx_world": 93.3
     },
     {
       "year": 2018,
       "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "index_vs_2018": 100
+      "flow": "Export",
+      "idx_japan": 100.0,
+      "idx_world": 100.0
     },
     {
       "year": 2019,
       "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "index_vs_2018": 123.8
+      "flow": "Export",
+      "idx_japan": 123.8,
+      "idx_world": 101.6
     },
     {
       "year": 2020,
       "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "index_vs_2018": 110.2
+      "flow": "Export",
+      "idx_japan": 110.2,
+      "idx_world": 94.4
     },
     {
       "year": 2021,
       "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "index_vs_2018": 161.3
+      "flow": "Export",
+      "idx_japan": 161.2,
+      "idx_world": 114.5
     },
     {
       "year": 2022,
       "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "index_vs_2018": 165.9
+      "flow": "Export",
+      "idx_japan": 165.9,
+      "idx_world": 120.3
     },
     {
       "year": 2023,
       "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "index_vs_2018": 152.2
+      "flow": "Export",
+      "idx_japan": 152.2,
+      "idx_world": 98.6
     },
     {
       "year": 2024,
       "cn_code": "CN94",
-      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
-      "index_vs_2018": 159.6
+      "flow": "Export",
+      "idx_japan": 159.6,
+      "idx_world": 88.8
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 128.8,
+      "idx_world": 91.3
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 139.8,
+      "idx_world": 112.1
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 37.7,
+      "idx_world": 142.5
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": null,
+      "idx_world": 146.2
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 9.8,
+      "idx_world": 138.0
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 121.7,
+      "idx_world": 130.2
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 814.2,
+      "idx_world": 97.9
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 932.3,
+      "idx_world": 101.5
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 100.0,
+      "idx_world": 100.0
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 231.3,
+      "idx_world": 128.0
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 81.3,
+      "idx_world": 109.6
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 344.2,
+      "idx_world": 121.2
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 258.3,
+      "idx_world": 146.8
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 111.0,
+      "idx_world": 140.0
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 190.4,
+      "idx_world": 166.2
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN04",
+      "flow": "Export",
+      "idx_japan": null,
+      "idx_world": 76.4
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN04",
+      "flow": "Export",
+      "idx_japan": null,
+      "idx_world": 86.3
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN04",
+      "flow": "Export",
+      "idx_japan": null,
+      "idx_world": 89.4
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN04",
+      "flow": "Export",
+      "idx_japan": null,
+      "idx_world": 109.9
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN04",
+      "flow": "Export",
+      "idx_japan": null,
+      "idx_world": 108.3
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN04",
+      "flow": "Export",
+      "idx_japan": 28.6,
+      "idx_world": 77.1
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN04",
+      "flow": "Export",
+      "idx_japan": 9.1,
+      "idx_world": 74.5
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN04",
+      "flow": "Export",
+      "idx_japan": 77.2,
+      "idx_world": 98.1
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN04",
+      "flow": "Export",
+      "idx_japan": 100.0,
+      "idx_world": 100.0
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN04",
+      "flow": "Export",
+      "idx_japan": 71.5,
+      "idx_world": 108.6
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN04",
+      "flow": "Export",
+      "idx_japan": 83.2,
+      "idx_world": 112.1
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN04",
+      "flow": "Export",
+      "idx_japan": 29.7,
+      "idx_world": 122.4
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN04",
+      "flow": "Export",
+      "idx_japan": 56.5,
+      "idx_world": 169.0
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN04",
+      "flow": "Export",
+      "idx_japan": 42.4,
+      "idx_world": 165.5
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN04",
+      "flow": "Export",
+      "idx_japan": 9.1,
+      "idx_world": 199.7
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN95",
+      "flow": "Export",
+      "idx_japan": 143.9,
+      "idx_world": 68.2
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN95",
+      "flow": "Export",
+      "idx_japan": 95.9,
+      "idx_world": 80.3
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN95",
+      "flow": "Export",
+      "idx_japan": 115.9,
+      "idx_world": 83.1
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN95",
+      "flow": "Export",
+      "idx_japan": 138.5,
+      "idx_world": 87.5
     },
     {
       "year": 2014,
       "cn_code": "CN95",
-      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 91.1
+      "flow": "Export",
+      "idx_japan": 91.1,
+      "idx_world": 85.7
     },
     {
       "year": 2015,
       "cn_code": "CN95",
-      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 87
+      "flow": "Export",
+      "idx_japan": 86.9,
+      "idx_world": 85.3
     },
     {
       "year": 2016,
       "cn_code": "CN95",
-      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 109.5
+      "flow": "Export",
+      "idx_japan": 109.6,
+      "idx_world": 83.8
     },
     {
       "year": 2017,
       "cn_code": "CN95",
-      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 85.7
+      "flow": "Export",
+      "idx_japan": 85.7,
+      "idx_world": 93.4
     },
     {
       "year": 2018,
       "cn_code": "CN95",
-      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 100
+      "flow": "Export",
+      "idx_japan": 100.0,
+      "idx_world": 100.0
     },
     {
       "year": 2019,
       "cn_code": "CN95",
-      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 160.6
+      "flow": "Export",
+      "idx_japan": 160.5,
+      "idx_world": 105.4
     },
     {
       "year": 2020,
       "cn_code": "CN95",
-      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 199
+      "flow": "Export",
+      "idx_japan": 199.0,
+      "idx_world": 122.5
     },
     {
       "year": 2021,
       "cn_code": "CN95",
-      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 418.8
+      "flow": "Export",
+      "idx_japan": 419.1,
+      "idx_world": 156.3
     },
     {
       "year": 2022,
       "cn_code": "CN95",
-      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 246.8
+      "flow": "Export",
+      "idx_japan": 246.8,
+      "idx_world": 183.4
     },
     {
       "year": 2023,
       "cn_code": "CN95",
-      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 180.1
+      "flow": "Export",
+      "idx_japan": 180.3,
+      "idx_world": 198.8
     },
     {
       "year": 2024,
       "cn_code": "CN95",
-      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
-      "index_vs_2018": 231.8
+      "flow": "Export",
+      "idx_japan": 231.8,
+      "idx_world": 194.6
     }
   ],
   "regional": [
@@ -3414,6 +4562,1158 @@
       "cn_code": "CN44",
       "region": "O1 Australia and Oceania",
       "value": 6.245
+    }
+  ],
+  "control_vs_treatment": [
+    {
+      "group": "treatment",
+      "label": "CN44 Wood, CN85 Electronics, CN28 Chem, CN71 PreciousMetals, CN90 Optical, CN94 Furniture",
+      "avg_pre": 9.684,
+      "avg_clean": 15.004,
+      "pct_change": 54.9
+    },
+    {
+      "group": "control",
+      "label": "CN03 Fish, CN04 Dairy, CN95 Toys \u2014 minimal EPA tariff change",
+      "avg_pre": 1.104,
+      "avg_clean": 1.14,
+      "pct_change": 3.3
+    }
+  ],
+  "world_exports_timeseries": [
+    {
+      "year": 2004,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 60.595
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 67.714
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 83.387
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 70.375
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 65.403
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 73.963
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 104.178
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 127.884
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 162.565
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 166.891
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 157.512
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 148.565
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 111.717
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 115.79
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 114.115
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 146.102
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 125.073
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 138.321
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 167.549
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 159.81
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
+      "value": 189.656
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 77.922
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 88.455
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 98.26
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 129.008
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 132.197
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 96.294
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 145.177
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 164.001
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 169.98
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 208.915
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 205.897
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 146.441
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 141.5
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 186.477
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 190.056
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 206.314
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 213.137
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 232.647
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 321.153
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 314.493
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN04",
+      "cn_name": "DAIRY PRODUCE; BIRDS' EGGS; NATURAL HONEY; EDIBLE PRODUCTS OF ANIMAL ORIGIN, NOT ELSEWHERE SPECIFIED OR INCLUDED",
+      "value": 379.56
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 25.133
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 26.852
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 31.831
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 32.2
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 48.697
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 13.967
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 20.197
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 71.454
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 66.939
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 123.772
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 44.912
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 44.532
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 35.865
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 49.445
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 60.906
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 73.404
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 73.669
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 95.535
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 107.147
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 78.791
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN28",
+      "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
+      "value": 41.343
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 611.303
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 698.338
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 731.113
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 816.393
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 718.165
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 560.902
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 791.71
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 923.816
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 921.327
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 1053.797
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 1106.182
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 1144.653
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 1209.063
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 1378.488
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 1527.06
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 1514.26
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 1485.622
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 1999.277
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 2346.993
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 1938.742
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN44",
+      "cn_name": "WOOD AND ARTICLES OF WOOD; WOOD CHARCOAL",
+      "value": 1948.068
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 6.744
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 6.169
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 6.185
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 6.502
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 7.214
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 8.477
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 44.17
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 166.437
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 186.156
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 204.664
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 120.773
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 117.737
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 152.775
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 126.665
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 144.342
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 211.412
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 299.325
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 309.728
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 303.551
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 244.952
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
+      "value": 303.661
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 1071.484
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 1429.497
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 1488.755
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 1122.568
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 1255.607
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 837.081
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 1449.09
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 2416.844
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 2490.045
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 2506.925
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 2645.44
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 2471.609
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 2555.723
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 2203.041
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 2272.995
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 2086.111
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 2344.499
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 2807.249
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 2752.805
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 2582.369
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN85",
+      "cn_name": "ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THEREOF; SOUND RECORDERS AND REPRODUCERS, TELEVISION IMAGE AND SOUND RECORDERS AND REPRODUCERS, AND PARTS AND ACCESSORIES OF SUCH ARTICLES",
+      "value": 2656.983
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 92.329
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 108.353
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 114.042
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 120.786
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 141.953
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 113.95
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 159.141
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 244.87
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 249.398
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 259.49
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 292.295
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 325.124
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 368.805
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 358.623
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 407.592
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 456.261
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 519.38
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 451.361
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 544.574
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 551.675
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN90",
+      "cn_name": "OPTICAL, PHOTOGRAPHIC, CINEMATOGRAPHIC, MEASURING, CHECKING, PRECISION, MEDICAL OR SURGICAL INSTRUMENTS AND APPARATUS; PARTS AND ACCESSORIES THEREOF",
+      "value": 565.59
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 407.176
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 448.395
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 502.527
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 559.34
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 543.99
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 476.064
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 591.377
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 702.939
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 739.941
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 780.994
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 816.547
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 930.85
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 985.571
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 1026.858
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 1101.121
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 1118.634
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 1039.271
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 1261.204
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 1324.274
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 1085.685
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN94",
+      "cn_name": "FURNITURE; BEDDING, MATTRESSES, MATTRESS SUPPORTS, CUSHIONS AND SIMILAR STUFFED FURNISHINGS; LUMINAIRES AND LIGHTING FITTINGS, NOT ELSEWHERE SPECIFIED OR INCLUDED; ILLUMINATED SIGNS, ILLUMINATED NAMEPLATES AND THE LIKE; PREFABRICATED BUILDINGS",
+      "value": 977.477
+    },
+    {
+      "year": 2004,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 28.522
+    },
+    {
+      "year": 2005,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 33.933
+    },
+    {
+      "year": 2006,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 44.581
+    },
+    {
+      "year": 2007,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 52.709
+    },
+    {
+      "year": 2008,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 53.405
+    },
+    {
+      "year": 2009,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 43.988
+    },
+    {
+      "year": 2010,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 53.533
+    },
+    {
+      "year": 2011,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 63.065
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 65.233
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 68.748
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 67.323
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 67.008
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 65.786
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 73.382
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 78.533
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 82.799
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 96.198
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 122.71
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 144.024
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 156.127
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN95",
+      "cn_name": "TOYS, GAMES AND SPORTS REQUISITES; PARTS AND ACCESSORIES THEREOF",
+      "value": 152.862
     }
   ]
 }

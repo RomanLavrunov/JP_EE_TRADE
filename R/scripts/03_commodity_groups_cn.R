@@ -6,6 +6,17 @@
 #           clean_data/VKK30_TOTAL.xlsx
 #
 # OUTPUT  : data/commodities.json
+#
+# CHANGES vs original script:
+#   1. selected_cn: CN08, CN27, CN84 removed; CN71 added (EPA-created trade segment)
+#   2. index_vs_2018: produces idx_japan + idx_world + flow (was: index_vs_2018 + cn_name)
+#   3. share: covers all selected_cn, years 2004-2024 (was: 5 groups only, from 2010)
+#   4. epa_comparison exports: adds avg_post_clean_mln, yoy_2018_2019, cagr_before/after/clean,
+#      world_pct_change — all fields present in JSON
+#   5. epa_comparison_imports: new block (CN87, CN84, CN85, CN90, CN32, CN33)
+#   6. exports/imports_timeseries: years 2004-2024 (was: from 2010)
+#   7. control_vs_treatment: new block
+#   8. world_exports_timeseries: new block (Estonia total exports to world, same CN groups)
 
 library(readxl)
 library(tidyverse)
@@ -13,7 +24,7 @@ library(scales)
 library(ggrepel)
 library(jsonlite)
 
-# SHARED EVENT MARKERS
+# ── SHARED AESTHETICS ──────────────────────────────────────────────────────────
 
 event_lines <- list(
   geom_vline(xintercept = 2019, linetype = "dashed",  colour = "#c0392b", linewidth = 0.8),
@@ -33,7 +44,7 @@ theme_trade <- theme_minimal(base_size = 12) +
 
 clean_value <- function(x) suppressWarnings(as.numeric(ifelse(x == "..", NA, x)))
 
-# LOAD DATA
+# ── LOAD DATA ──────────────────────────────────────────────────────────────────
 
 raw_jp <- read_excel("clean_data/VKK30_JP.xlsx", skip = 2, col_names = FALSE)
 years_jp <- as.character(2004:2025)
@@ -93,17 +104,20 @@ total_long <- raw_total %>%
   ) %>%
   filter(year <= 2024)
 
-# SELECTED CN GROUPS
+# ── CN GROUP SELECTION ─────────────────────────────────────────────────────────
+# JSON groups: CN03, CN04, CN28, CN44, CN71, CN85, CN90, CN94, CN95
+# CN71 (Precious metals) replaces CN08/CN27/CN84 — strongest EPA-created flow
+# CN84/CN08/CN27 kept in plots only via selected_cn_plots
 
-selected_cn <- c("CN03","CN04","CN08","CN27","CN28","CN44",
-                 "CN84","CN85","CN90","CN94","CN95")
+selected_cn       <- c("CN03","CN04","CN28","CN44","CN71","CN85","CN90","CN94","CN95")
+selected_cn_plots <- c("CN03","CN04","CN08","CN27","CN28","CN44","CN71","CN84","CN85","CN90","CN94","CN95")
 
-jp_sel    <- jp_long    %>% filter(cn_code %in% selected_cn)
-pow_sel   <- pow_long   %>% filter(cn_code %in% selected_cn)
-total_sel <- total_long %>% filter(cn_code %in% selected_cn)
+# Import groups for epa_comparison_imports (top groups by total import volume)
+selected_cn_imports <- c("CN87","CN84","CN85","CN90","CN32","CN33")
 
-# ANALYTICAL DATASETS
+# ── ANALYTICAL DATASETS ────────────────────────────────────────────────────────
 
+# Japan share in Estonia's total exports
 jp_share <- jp_long %>%
   filter(cn_code %in% selected_cn, !is.na(value)) %>%
   rename(value_jp = value) %>%
@@ -113,19 +127,183 @@ jp_share <- jp_long %>%
   ) %>%
   mutate(jp_share_pct = 100 * value_jp / value_world)
 
+# Index vs 2018 = 100 — Japan AND World, Export only
+# Output fields: year, cn_code, flow, idx_japan, idx_world
 epa_index <- jp_long %>%
-  filter(cn_code %in% selected_cn, !is.na(value)) %>%
-  group_by(cn_code, flow) %>%
+  filter(cn_code %in% selected_cn, flow == "Export", !is.na(value)) %>%
+  group_by(cn_code) %>%
   mutate(
-    base_2018     = mean(value[year == 2018], na.rm = TRUE),
-    index_vs_2018 = 100 * value / base_2018
+    base_jp   = mean(value[year == 2018], na.rm = TRUE),
+    idx_japan = round(100 * value / base_jp, 1)
   ) %>%
-  ungroup()
+  ungroup() %>%
+  left_join(
+    total_long %>%
+      filter(cn_code %in% selected_cn, flow == "Export") %>%
+      group_by(cn_code) %>%
+      mutate(
+        base_world = mean(value[year == 2018], na.rm = TRUE),
+        idx_world  = round(100 * value / base_world, 1)
+      ) %>%
+      ungroup() %>%
+      select(cn_code, year, idx_world),
+    by = c("cn_code", "year")
+  ) %>%
+  mutate(flow = "Export")
 
-# PLOTS
+# Helper: CAGR over n years
+cagr <- function(end_val, start_val, n) {
+  ifelse(is.na(end_val) | is.na(start_val) | start_val <= 0, NA_real_,
+         round(((end_val / start_val)^(1/n) - 1) * 100, 1))
+}
+
+# EPA comparison — EXPORTS
+build_epa_summary <- function(df, cn_codes) {
+  df %>%
+    filter(cn_code %in% cn_codes, flow == "Export", !is.na(value)) %>%
+    group_by(cn_code, cn_name) %>%
+    summarise(
+      pre                = round(mean(value[year >= 2014 & year <= 2018], na.rm = TRUE) / 1e6, 3),
+      post               = round(mean(value[year >= 2019 & year <= 2023], na.rm = TRUE) / 1e6, 3),
+      avg_post_clean_mln = round(mean(value[year >= 2020 & year <= 2024], na.rm = TRUE) / 1e6, 3),
+      v2014 = mean(value[year == 2014], na.rm = TRUE),
+      v2018 = mean(value[year == 2018], na.rm = TRUE),
+      v2019 = mean(value[year == 2019], na.rm = TRUE),
+      v2020 = mean(value[year == 2020], na.rm = TRUE),
+      v2023 = mean(value[year == 2023], na.rm = TRUE),
+      v2024 = mean(value[year == 2024], na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    mutate(
+      pct_change      = round((post - pre) / pre * 100, 0),
+      direction       = if_else(post >= pre, "up", "down"),
+      yoy_2018_2019   = round((v2019 - v2018) / v2018 * 100, 1),
+      cagr_before_pct = cagr(v2018, v2014, 4),
+      cagr_after_pct  = cagr(v2023, v2019, 4),
+      cagr_clean_pct  = cagr(v2024, v2020, 4)
+    ) %>%
+    select(-v2014, -v2018, -v2019, -v2020, -v2023, -v2024)
+}
+
+epa_summary_exports <- build_epa_summary(jp_long, selected_cn)
+
+# Add world_pct_change (same 2014-2018 vs 2019-2023 window, total_long)
+world_pct <- total_long %>%
+  filter(cn_code %in% selected_cn, flow == "Export", !is.na(value)) %>%
+  group_by(cn_code) %>%
+  summarise(
+    world_pre  = mean(value[year >= 2014 & year <= 2018], na.rm = TRUE),
+    world_post = mean(value[year >= 2019 & year <= 2023], na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(world_pct_change = round((world_post - world_pre) / world_pre * 100, 0)) %>%
+  select(cn_code, world_pct_change)
+
+epa_summary_exports <- epa_summary_exports %>%
+  left_join(world_pct, by = "cn_code") %>%
+  select(cn_code, pre, post, avg_post_clean_mln,
+         pct_change, direction, yoy_2018_2019,
+         cagr_before_pct, cagr_after_pct, cagr_clean_pct,
+         world_pct_change, cn_name)
+
+# EPA comparison — IMPORTS (no world_pct_change)
+epa_summary_imports <- jp_long %>%
+  filter(cn_code %in% selected_cn_imports, flow == "Import", !is.na(value)) %>%
+  group_by(cn_code, cn_name) %>%
+  summarise(
+    pre                = round(mean(value[year >= 2014 & year <= 2018], na.rm = TRUE) / 1e6, 3),
+    post               = round(mean(value[year >= 2019 & year <= 2023], na.rm = TRUE) / 1e6, 3),
+    avg_post_clean_mln = round(mean(value[year >= 2020 & year <= 2024], na.rm = TRUE) / 1e6, 3),
+    v2014 = mean(value[year == 2014], na.rm = TRUE),
+    v2018 = mean(value[year == 2018], na.rm = TRUE),
+    v2019 = mean(value[year == 2019], na.rm = TRUE),
+    v2020 = mean(value[year == 2020], na.rm = TRUE),
+    v2023 = mean(value[year == 2023], na.rm = TRUE),
+    v2024 = mean(value[year == 2024], na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    pct_change      = round((post - pre) / pre * 100, 0),
+    direction       = if_else(post >= pre, "up", "down"),
+    yoy_2018_2019   = round((v2019 - v2018) / v2018 * 100, 1),
+    cagr_before_pct = cagr(v2018, v2014, 4),
+    cagr_after_pct  = cagr(v2023, v2019, 4),
+    cagr_clean_pct  = cagr(v2024, v2020, 4)
+  ) %>%
+  select(cn_code, pre, post, avg_post_clean_mln,
+         pct_change, direction, yoy_2018_2019,
+         cagr_before_pct, cagr_after_pct, cagr_clean_pct,
+         cn_name)
+
+# Control vs treatment
+treatment_cn <- c("CN44","CN85","CN28","CN71","CN90","CN94")
+control_cn   <- c("CN03","CN04","CN95")
+
+control_vs_treatment <- jp_long %>%
+  filter(cn_code %in% c(treatment_cn, control_cn), flow == "Export", !is.na(value)) %>%
+  mutate(group = if_else(cn_code %in% treatment_cn, "treatment", "control")) %>%
+  group_by(group, cn_code) %>%
+  summarise(
+    avg_pre   = mean(value[year >= 2014 & year <= 2018], na.rm = TRUE) / 1e6,
+    avg_clean = mean(value[year >= 2020 & year <= 2024], na.rm = TRUE) / 1e6,
+    .groups = "drop"
+  ) %>%
+  group_by(group) %>%
+  summarise(
+    avg_pre   = round(mean(avg_pre),   3),
+    avg_clean = round(mean(avg_clean), 3),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    pct_change = round((avg_clean - avg_pre) / avg_pre * 100, 1),
+    label = if_else(group == "treatment",
+                    "CN44 Wood, CN85 Electronics, CN28 Chem, CN71 PreciousMetals, CN90 Optical, CN94 Furniture",
+                    "CN03 Fish, CN04 Dairy, CN95 Toys — minimal EPA tariff change")
+  ) %>%
+  select(group, label, avg_pre, avg_clean, pct_change)
+
+# Z-score anomaly detection
+# Baseline: mean and SD over 2014–2018. Then score each post-EPA year.
+# Interpretation: |Z| > 2 → statistically anomalous vs pre-EPA distribution.
+# Useful for distinguishing EPA-driven jump from normal year-to-year noise.
+# Note: CN85/CN90 spike in 2020 (not 2019) — EPA effect with one-year lag.
+# CN95 anomaly in control group warrants caution in interpretation.
+
+z_score <- jp_long %>%
+  filter(cn_code %in% selected_cn, flow == "Export", !is.na(value)) %>%
+  group_by(cn_code, cn_name) %>%
+  mutate(
+    mean_pre = mean(value[year >= 2014 & year <= 2018], na.rm = TRUE),
+    sd_pre   = sd(  value[year >= 2014 & year <= 2018], na.rm = TRUE)
+  ) %>%
+  ungroup() %>%
+  filter(year %in% c(2019, 2020, 2021, 2022)) %>%
+  mutate(
+    z = round((value - mean_pre) / sd_pre, 2),
+    anomaly = case_when(
+      abs(z) >  2 ~ "anomaly",
+      abs(z) >= 1 ~ "borderline",
+      TRUE         ~ "normal"
+    ),
+    group = if_else(cn_code %in% c("CN44","CN85","CN28","CN71","CN90","CN94"),
+                    "treatment", "control")
+  ) %>%
+  transmute(
+    cn_code,
+    cn_name,
+    year,
+    value_mln  = round(value / 1e6, 3),
+    mean_pre   = round(mean_pre / 1e6, 3),
+    sd_pre     = round(sd_pre   / 1e6, 3),
+    z_score    = z,
+    anomaly,
+    group
+  )
+
+# ── PLOTS ──────────────────────────────────────────────────────────────────────
 
 top6_exp <- jp_long %>%
-  filter(cn_code %in% selected_cn, flow == "Export", !is.na(value)) %>%
+  filter(cn_code %in% selected_cn_plots, flow == "Export", !is.na(value)) %>%
   group_by(cn_code, cn_name) %>%
   summarise(total = sum(value, na.rm = TRUE), .groups = "drop") %>%
   slice_max(total, n = 6) %>%
@@ -147,7 +325,7 @@ p1 <- jp_long %>%
 print(p1)
 
 top6_imp <- jp_long %>%
-  filter(cn_code %in% selected_cn, flow == "Import", !is.na(value)) %>%
+  filter(cn_code %in% selected_cn_plots, flow == "Import", !is.na(value)) %>%
   group_by(cn_code, cn_name) %>%
   summarise(total = sum(value, na.rm = TRUE), .groups = "drop") %>%
   slice_max(total, n = 6) %>%
@@ -169,7 +347,7 @@ p2 <- jp_long %>%
 print(p2)
 
 p3 <- jp_share %>%
-  filter(flow == "Export", cn_code %in% c("CN03","CN44","CN84","CN85","CN28")) %>%
+  filter(flow == "Export", cn_code %in% c("CN03","CN44","CN71","CN85","CN28")) %>%
   mutate(cn_label = paste0(cn_code, " ", str_trunc(cn_name, 22))) %>%
   ggplot(aes(x = year, y = jp_share_pct, colour = cn_label)) +
   event_lines +
@@ -178,13 +356,13 @@ p3 <- jp_share %>%
   scale_x_continuous(breaks = seq(2004, 2024, 4)) +
   scale_y_continuous(labels = label_percent(scale = 1, accuracy = 0.1)) +
   labs(title = "Japan's share in Estonia's total exports by CN group",
-       subtitle = "CN44 Wood dominates; CN84 Machinery grew post-EPA",
+       subtitle = "CN44 Wood dominates; CN71 Precious metals emerged post-EPA",
        x = NULL, y = "% of Estonia's total world export", colour = NULL) +
   theme_trade
 print(p3)
 
-p4 <- pow_sel %>%
-  filter(flow == "Export", cn_code %in% c("CN03","CN44"), !is.na(value)) %>%
+p4 <- pow_long %>%
+  filter(cn_code %in% c("CN03","CN44"), flow == "Export", !is.na(value)) %>%
   mutate(
     cn_label = recode(cn_code,
                       "CN03" = "CN03 Fish & seafood",
@@ -203,85 +381,50 @@ p4 <- pow_sel %>%
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 print(p4)
 
-# JSON EXPORT
-# Output: data/commodities.json
-
+# ── JSON EXPORT ────────────────────────────────────────────────────────────────
 
 dir.create("data", showWarnings = FALSE)
 
-# Pre/post EPA averages per CN group
-epa_summary <- jp_long %>%
-  filter(cn_code %in% selected_cn, flow == "Export", !is.na(value)) %>%
-  mutate(period = case_when(
-    year >= 2014 & year <= 2018 ~ "pre",
-    year >= 2019 & year <= 2023 ~ "post",
-    TRUE ~ NA_character_
-  )) %>%
-  filter(!is.na(period)) %>%
-  group_by(cn_code, cn_name, period) %>%
-  summarise(avg_mln = round(mean(value, na.rm = TRUE) / 1e6, 2), .groups = "drop") %>%
-  pivot_wider(names_from = period, values_from = avg_mln) %>%
-  mutate(
-    pct_change = round((post - pre) / pre * 100, 0),
-    direction  = if_else(post >= pre, "up", "down")
-  )
-
 commodities_json <- list(
   
-  # Time series exports to Japan by CN group (M€)
   exports_timeseries = jp_long %>%
     filter(cn_code %in% selected_cn, flow == "Export",
-           year >= 2010, year <= 2024) %>%
-    transmute(
-      year    = year,
-      cn_code = cn_code,
-      cn_name = cn_name,
-      value   = round(value / 1e6, 3)
-    ),
+           year >= 2004, year <= 2024) %>%
+    transmute(year, cn_code, cn_name, value = round(value / 1e6, 3)),
   
-  # Time series imports from Japan by CN group (M€)
   imports_timeseries = jp_long %>%
     filter(cn_code %in% selected_cn, flow == "Import",
-           year >= 2010, year <= 2024) %>%
-    transmute(
-      year    = year,
-      cn_code = cn_code,
-      cn_name = cn_name,
-      value   = round(value / 1e6, 3)
-    ),
+           year >= 2004, year <= 2024) %>%
+    transmute(year, cn_code, cn_name, value = round(value / 1e6, 3)),
   
-  # Japan's share in Estonia's total exports per CN group (%)
   share = jp_share %>%
-    filter(flow == "Export", cn_code %in% c("CN03","CN44","CN84","CN85","CN28"),
-           year >= 2010, year <= 2024) %>%
-    transmute(
-      year          = year,
-      cn_code       = cn_code,
-      jp_share_pct  = round(jp_share_pct, 2)
-    ),
+    filter(flow == "Export", cn_code %in% selected_cn,
+           year >= 2004, year <= 2024) %>%
+    transmute(year, cn_code, jp_share_pct = round(jp_share_pct, 2)),
   
-  # Pre vs post EPA averages (M€) + % change
-  epa_comparison = epa_summary,
+  epa_comparison = epa_summary_exports,
   
-  # Growth index vs 2018 = 100
+  epa_comparison_imports = epa_summary_imports,
+  
+  # Fields: year, cn_code, flow, idx_japan, idx_world
   index_vs_2018 = epa_index %>%
-    filter(flow == "Export", year >= 2014, year <= 2024) %>%
-    transmute(
-      year          = year,
-      cn_code       = cn_code,
-      cn_name       = cn_name,
-      index_vs_2018 = round(index_vs_2018, 1)
-    ),
+    filter(year >= 2010, year <= 2024) %>%
+    transmute(year, cn_code, flow, idx_japan, idx_world),
   
-  # Regional breakdown 2020-2024 for CN03 and CN44
   regional = pow_long %>%
     filter(cn_code %in% c("CN03","CN44"), flow == "Export", !is.na(value)) %>%
-    transmute(
-      year    = year,
-      cn_code = cn_code,
-      region  = region,
-      value   = round(value / 1e6, 3)
-    )
+    transmute(year, cn_code, region, value = round(value / 1e6, 3)),
+  
+  control_vs_treatment = control_vs_treatment,
+  
+  # Z-score anomaly detection (2019–2022 vs 2014–2018 baseline)
+  # Fields: cn_code, cn_name, year, value_mln, mean_pre, sd_pre, z_score, anomaly, group
+  z_score = z_score,
+  
+  world_exports_timeseries = total_long %>%
+    filter(cn_code %in% selected_cn, flow == "Export",
+           year >= 2004, year <= 2024) %>%
+    transmute(year, cn_code, cn_name, value = round(value / 1e6, 3))
 )
 
 write_json(commodities_json, "data/commodities.json", pretty = TRUE, auto_unbox = TRUE)

@@ -129,6 +129,32 @@ section ul li { margin-bottom: 5px; line-height: 1.65; }
 .data-table td.up   { color: var(--up);   font-weight: 500; }
 .data-table td.down { color: var(--down); font-weight: 500; }
 
+/* CAGR/YoY table: colored value cells */
+.data-table td.val     { font-family: 'DM Mono', monospace; }
+.data-table td.val.pos { color: var(--up);   font-weight: 500; }
+.data-table td.val.neg { color: var(--down); font-weight: 500; }
+
+/* Signal badges */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11.5px;
+  font-family: 'DM Mono', monospace;
+  white-space: nowrap;
+}
+
+/* Control group rows — muted italic */
+.data-table tr.ctrl td { color: var(--ink3); font-style: italic; }
+.data-table tr.ctrl td.val.pos,
+.data-table tr.ctrl td.val.neg { color: var(--ink3); font-weight: 400; }
+
+/* CN name inside first column — lighter weight */
+.data-table .cn-name { color: var(--ink3); font-size: 12px; font-style: normal; }
+.badge.up      { background: #e8f5e9; color: #2e7d32; }
+.badge.down    { background: #fce4ec; color: #c62828; }
+.badge.neutral { background: #f3f4f6; color: #555;    }
+
 .code-block {
   background: #1a1814;
   color: #c5c0b4;
