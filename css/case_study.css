@@ -248,3 +248,71 @@ section ul li { margin-bottom: 5px; line-height: 1.65; }
   .cw      { height: 240px; }
   .cw.tall { height: 300px; }
 }
+/* ── Pareto Group Badges ──────────────────────────────────────────────────── */
+.badge.group-a {
+  background: #1d3557;
+  color: #fff;
+  border-color: #1d3557;
+}
+
+.badge.group-b {
+  background: #457b9d;
+  color: #fff;
+  border-color: #457b9d;
+}
+
+.badge.spike {
+  background: #d35400;
+  color: #fff;
+  border-color: #d35400;
+}
+
+/* Badge used inline in table cells */
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-family: 'DM Mono', monospace;
+  padding: 2px 7px;
+  border-radius: 3px;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* Spike rows in the EPA table */
+tr.spike-row td {
+  background: rgba(211, 84, 0, 0.04);
+}
+
+/* Pareto summary table */
+.pareto-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.pareto-table th,
+.pareto-table td {
+  padding: 7px 12px;
+  border-bottom: 1px solid var(--border, #d4cfc4);
+  text-align: left;
+}
+
+.pareto-table th {
+  font-weight: 600;
+  background: var(--surface, #edeae0);
+  font-size: 12px;
+}
+
+.pareto-note {
+  font-size: 12px;
+  color: var(--ink3, #8a8478);
+  margin: 4px 0 10px;
+  line-height: 1.6;
+}
+
+/* Badge colours for pareto summary box */
+.badge-a { background: #1d3557; color: #fff; border-color: #1d3557; }
+.badge-b { background: #457b9d; color: #fff; border-color: #457b9d; }
+.badge-spike { background: #d35400; color: #fff; border-color: #d35400; }
