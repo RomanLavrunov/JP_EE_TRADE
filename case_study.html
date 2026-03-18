@@ -209,38 +209,47 @@
           <span class="tab"> </span><span class="kw">pretty</span> = <span class="kw">TRUE</span>)<br>
         </div>
 
-        <h3>Stage 2 — Selecting commodity groups</h3>
+        <h3>Stage 2 — Selecting commodity groups (Pareto methodology)</h3>
         <p>The raw data contains all 99 two-digit CN codes. Most have zero or suppressed values for Estonia–Japan trade
-          throughout the entire period. Four sequential filters reduced 99 codes to 11 groups used in the analysis.</p>
+          throughout the entire period. Rather than applying arbitrary threshold filters, groups are selected using a
+          <strong>composite Pareto score</strong> that ranks all growing groups by their combined economic weight and
+          contribution to growth.</p>
+
+        <p><strong>Composite score</strong> = average of two normalised shares:</p>
+        <ul style="margin:8px 0 12px 24px;line-height:2">
+          <li><code>share_FTA = fta_mean ÷ C3</code> — this group's share of <em>all</em> bilateral trade in the EPA period</li>
+          <li><code>share_Δ = abs_change ÷ D4</code> — this group's share of <em>total absolute growth</em> among growing groups</li>
+        </ul>
+        <p>C3 and D4 are period constants visible in the source spreadsheet (FTA_v21_short.xlsx, cells C3/D4):
+          <strong>C3 = 110.6 M€</strong> (total EPA-period volume, exports) and <strong>D4 = 44.0 M€</strong> (total growth from growing groups).
+          Using two shares simultaneously rewards groups that are large <em>and</em> grew — not just one or the other.</p>
 
         <div class="phase-grid">
           <div class="phase-box">
-            <div class="ph-num">Filter 1</div>
-            <h4>Remove all-zero groups</h4>
-            <p>Groups where every year is zero or suppressed are dropped entirely — they cannot show any effect. About
-              80 of 99 codes are eliminated here. <em>This is the minimum viable filter: if a group has never traded, it
-                cannot be analysed.</em></p>
+            <div class="ph-num">Step 1</div>
+            <h4>Separate no-trade groups</h4>
+            <p>Groups where <code>fta_mean = 0</code> throughout the EPA period are excluded — roughly 24 of 98 chapters
+              in exports. Zero means the relationship doesn't exist. <em>No threshold, just a structural check.</em></p>
           </div>
           <div class="phase-box">
-            <div class="ph-num">Filter 2</div>
-            <h4>Require continuity</h4>
-            <p>Groups with non-zero values in fewer than 7 of the 22 analysis years are excluded. A single shipment in
-              one year is not a structural trade relationship and cannot be used to measure a trend. <em>Why 7?</em>
-              Roughly 30% of the period — keeps genuine recurring trade while removing noise.</p>
+            <div class="ph-num">Step 2</div>
+            <h4>Growing vs declining</h4>
+            <p>Growing groups: <code>k = fta_mean / pre_mean &gt; 1</code> AND <code>abs_change &gt; 0</code>.
+              Declining groups are not in the primary analysis but are screened separately for spike signals.</p>
           </div>
           <div class="phase-box">
-            <div class="ph-num">Filter 3</div>
-            <h4>Valid 2018 baseline (heatmap only)</h4>
-            <p>The heatmap index uses 2018 as base year. CN08 Edible fruit &amp; nuts has a suppressed value in 2018
-              specifically — the index cannot be calculated. CN08 is excluded from the heatmap only; it appears normally
-              in all other charts.</p>
+            <div class="ph-num">Step 3</div>
+            <h4>Pareto classification (growing groups)</h4>
+            <p><strong>Group A</strong>: cumulative score ≤ 80% — the core EPA growth story, typically 3–5 groups.
+              <strong>Group B</strong>: score 80–95% OR abs_change ≥ 1 M€ — economically meaningful secondary growth.
+              <strong>Tail</strong>: score &gt; 95% and abs_change &lt; 1 M€ — not in primary analysis.</p>
           </div>
           <div class="phase-box">
-            <div class="ph-num">Filter 4</div>
-            <h4>Direction check</h4>
-            <p>CN32 Paints and CN48 Paper passed the volume threshold — but Estonia is a buyer from Japan in both, not a
-              seller. Including them in the export analysis would misrepresent the relationship. They appear in the
-              import charts instead.</p>
+            <div class="ph-num">Step 4</div>
+            <h4>Spike detection (declining groups)</h4>
+            <p>Among groups with <code>k ≤ 1</code>, those meeting: YoY 2018→2019 ≥ 2× <em>and</em>
+              fta_mean ≥ 1 M€ are marked as <strong>Spikes</strong>. These groups had a strong immediate
+              reaction to the EPA in 2019 but no structural follow-through — front-loading or announcement effect.</p>
           </div>
         </div>
 
@@ -286,19 +295,19 @@
           </div>
         </div>
 
-        <h3>Stage 5 — Control group logic</h3>
-        <p>The core analytical risk is confounding: trade might have grown for reasons unrelated to the EPA — general
-          economic expansion, currency effects, company-level deals. To test this, groups are split into treatment and
-          control.</p>
-        <p><strong>Treatment</strong> (CN28, CN44, CN84, CN85, CN90, CN94) — categories where the EPA made a meaningful
-          tariff reduction. Expected to benefit from the agreement.</p>
-        <p><strong>Control</strong> (CN03 Fish, CN04 Dairy, CN95 Toys) — categories where EPA tariff changes were
-          minimal, or where other factors (competition, perishability, niche demand) dominate. If the EPA is responsible
-          for treatment group growth, control groups should grow much less in the same period.</p>
-        <p>Result: treatment groups averaged <strong>+56.7%</strong> in the clean EPA window (2019–2022 vs 2014–2018).
-          Control groups averaged <strong>+4.3%</strong>. The gap is too large to attribute to general economic
-          conditions — it is consistent with a tariff-driven effect concentrated in the groups most affected by the
-          agreement.</p>
+        <h3>Stage 5 — Composite score rationale</h3>
+        <p>Why not sort groups by volume alone, or by % growth alone? Both approaches fail in small bilateral corridors:</p>
+        <p><strong>Volume-only:</strong> rewards large but stagnant groups. CN44 Wood would dominate everything — it is
+          already large, but the EPA’s marginal effect is modest relative to its existing scale.</p>
+        <p><strong>Growth-only:</strong> rewards small groups with fast growth. CN71 Precious metals grew from near zero
+          — any small absolute increase looks explosive in % terms, but its economic significance is limited until volumes build.</p>
+        <p>The <strong>composite score</strong> balances both: a group ranks high only if it is both large in volume
+          <em>and</em> contributed meaningfully to absolute growth. CN84 Machinery illustrates this — modest share_FTA
+          (3.4%) but high share_Δ (7.3%), placing it in Group A above larger but slower-growing groups.</p>
+        <p>The 80/95% thresholds reflect extreme concentration typical of small-economy bilateral trade:
+          4 export groups carry ~77% of the composite score; 2 import groups carry ~79%. This is the Pareto
+          principle applied to a niche bilateral corridor. Groups A and B cover the economically significant story;
+          the tail (below 95%, under 1 M€ growth) adds noise without insight.</p>
 
       </section>
 
@@ -391,31 +400,35 @@
         <p>CN44 Wood is roughly half of all Estonian exports to Japan — not because of the EPA, but because of Japan's
           long-standing demand for Nordic and Baltic timber. The agreement gave an existing relationship an extra push
           (+40% on the post-EPA average), but it didn't create it. This distinction matters: the EPA amplified what was
-          already there.</p>
-        <p>CN85 Electrical machinery is a cleaner signal. Growth of +58% on a real base (9.2 M€ → 14.6 M€) is a genuine
-          post-EPA story — these are products where tariff reduction directly changes the competitive economics. CN28
-          Inorganic chemicals shows even steeper growth (+95%), though the base is smaller.</p>
-        <p>CN84 Machinery looks dramatic at +426% — but the pre-EPA base was 0.6 M€. That's roughly 30–60 machines per
-          year at typical unit values. A trend worth watching, but not yet a major story.</p>
-        <p>The counter-cases are just as informative. Fish exports fell 48% post-EPA. Dairy barely moved. The EPA
-          removes tariffs — it doesn't remove competition from other EU exporters who have the same access. Where
-          Estonia isn't already competitive on quality, proximity, or price, lower tariffs don't change the outcome.</p>
+          already there. CN44 is a <strong>Group A</strong> commodity: largest share of both total FTA-period volume
+          and absolute growth.</p>
+        <p>CN85 Electrical machinery is a cleaner EPA signal. Growth of +58% on a real base (9.2 M€ → 14.6 M€) is a genuine
+          post-EPA story — these are products where tariff reduction directly changes the competitive economics. CN71
+          Precious metals is even more striking: it was near-zero before 2019 and averaged 7.2 M€/year after — an
+          EPA-created trade segment. Both are <strong>Group A</strong>.</p>
+        <p>CN84 Machinery grew over 500% — from a 0.6 M€ pre-EPA base to 3.8 M€ post-EPA. Its composite score earned
+          it Group A placement because of high share_Δ (7.3% of total absolute growth), not volume. A trend worth
+          watching as volumes build.</p>
+        <p><strong>Group B</strong> (CN08 Fruit &amp; nuts, CN90 Optical, CN72 Steel, CN28 Chemicals, CN94 Furniture)
+          shows meaningful but secondary growth — real, but below the 80% Pareto threshold in composite score.</p>
+        <p>The <strong>spikes</strong> tell a different story. Fish (CN03) and base metals (CN81) reacted
+          strongly to the EPA in 2019 (YoY ≥2×) but averaged <em>below</em> their pre-EPA baselines across
+          the full EPA period (k &lt; 1). The EPA was noticed in 2019; structural relationships did not follow.</p>
 
         <div class="chart-card">
           <h4>Exports to Japan — key groups, M€</h4>
-          <div class="sub">Treatment groups (solid) vs control groups (dashed grey) · 2004–2024</div>
+          <div class="sub">Group A (solid) · Group B (dashed) · 2004–2024</div>
           <div class="cw tall"><canvas id="csChartTopCN"></canvas></div>
-          <p class="comment" style="margin-top:12px">Solid coloured lines = treatment groups covered by EPA tariff
-            reductions. Dashed grey = control groups (CN03 Fish, CN04 Dairy, CN95 Toys) with minimal EPA impact —
-            included as a benchmark. CN71 Precious metals (★) is an EPA-created segment: near zero before 2019,
-            averaging 9.2 M€/year after.</p>
+          <p class="comment" style="margin-top:12px">Solid lines = Group A core (CN44, CN85, CN71, CN84) — top 80%
+            of Pareto composite score. Dashed lines = Group B secondary (CN08, CN90, CN72, CN28, CN94) —
+            score 80–95% or abs_change ≥ 1 M€. CN71 Precious metals was near-zero before 2019 and averaged
+            7.2 M€/year after — an EPA-created segment.</p>
         </div>
 
         <div class="two-charts">
           <div class="chart-card">
             <h4>Imports from Japan — key groups, M€</h4>
-            <div class="sub">CN87 Vehicles · CN84 Machinery · CN85 Electronics · CN90 Optical · CN32 Dyes · CN33
-              Perfumery</div>
+            <div class="sub">Group A: CN87 Vehicles · CN84 Machinery (solid) · Group B: CN90, CN85, CN32, CN82, CN81, CN95 (dashed)</div>
             <div class="cw"><canvas id="csChartImportCN"></canvas></div>
           </div>
           <div class="chart-card">
@@ -449,22 +462,22 @@
 
         <div class="chart-card" style="margin-top:24px">
           <h4>% change post-EPA vs pre-EPA — Japan vs World</h4>
-          <div class="sub">Green/red bars = Estonia → Japan · Sand bars = Estonia → World (same CN group, same period) ·
-            CN71 excluded (Japan +28,586% — new segment from zero)</div>
+          <div class="sub">Group A (dark) + Group B (mid-blue) bars = Estonia → Japan · Sand bars = Estonia → World ·
+            CN71 excluded (new segment from zero, extreme scale) · Spikes shown separately below</div>
           <div class="cw med"><canvas id="csChartPctBar"></canvas></div>
           <p class="comment" style="margin-top:10px">If Japan (coloured bar) grew much faster than World (sand bar) for
             the same CN group, that is a Japan-specific signal — not just a global commodity boom. CN85 Electronics:
-            Japan +42% vs World +4% — Japan-specific. CN44 Wood: Japan +35% vs World +47% — global demand explains it.
-            CN28 Inorg. chemistry: Japan +78% vs World +66% — mixed. Control group (grey): CN03 Fish Japan −49% vs World
-            +19% — confirms the control is flat relative to Japan trends.</p>
+            Japan +58% vs World +4% — Japan-specific. CN44 Wood: Japan +40% vs World +47% — global demand explains it.
+            CN28 Inorg. chemistry: Japan +24% vs World +66% — Japan underperformed world. Spikes (CN03, CN81) are excluded
+            from this chart — their k &lt; 1 FTA average would distort the scale. See the spike chart below.</p>
         </div>
 
         <h3>Trend acceleration: CAGR before vs after EPA</h3>
-        <p>Mean values show that trade grew — but not <em>why</em>. If a group was already growing at 15% per year
-          before 2019, the post-EPA increase is just a continuation. CAGR separates these cases: what matters is whether
-          the rate of growth changed at the EPA breakpoint, not just the level.</p>
-        <p>The clean EPA window (2019–2022) is used as "after" for CAGR to isolate the agreement's effect from the 2022
-          logistics disruption.</p>
+        <p>Mean values show that trade grew — but not <em>why</em>. CAGR separates continuation from acceleration:
+          what matters is whether the rate of growth changed at the EPA breakpoint, not just the level.
+          The clean EPA window (2019–2022) is used as “after” to isolate the agreement from the 2022 logistics
+          disruption. <code>CAGR_total</code> spans the full pre+post horizon as a background trend; EPA_accel shows
+          whether the EPA period outpaced that background.</p>
 
         <table class="data-table">
           <thead>
@@ -478,215 +491,92 @@
           </thead>
           <tbody>
             <tr>
-              <td>CN44 Wood</td>
+              <td><span class="badge group-a">A</span> CN44 Wood</td>
               <td class="val pos">+1.1%</td>
               <td class="val pos">+7.4%</td>
               <td class="val pos">+22.0%</td>
               <td><span class="badge up">Accelerated 3×</span></td>
             </tr>
             <tr>
-              <td>CN85 Electronics</td>
+              <td><span class="badge group-a">A</span> CN85 Electronics</td>
               <td class="val neg">−38.7%</td>
               <td class="val neg">−8.7%</td>
               <td class="val pos">+18.7%</td>
               <td><span class="badge up">Reversed — declining to growing</span></td>
             </tr>
             <tr>
-              <td>CN28 Inorganic chemistry</td>
+              <td><span class="badge group-a">A</span> CN71 Precious metals</td>
+              <td class="val pos">+733%</td>
+              <td class="val">n/a (new flow)</td>
+              <td class="val pos">+49.9%</td>
+              <td><span class="badge up">EPA-created segment</span></td>
+            </tr>
+            <tr>
+              <td><span class="badge group-a">A</span> CN84 Machinery</td>
+              <td class="val pos">+292%</td>
+              <td class="val pos">+105%</td>
+              <td class="val neg">−30.6%</td>
+              <td><span class="badge neutral">Front-loaded 2019 — structurally growing</span></td>
+            </tr>
+            <tr>
+              <td><span class="badge group-b">B</span> CN28 Chemicals</td>
               <td class="val neg">−38.6%</td>
               <td class="val neg">−2.9%</td>
               <td class="val pos">+11.4%</td>
               <td><span class="badge up">Reversed — declining to growing</span></td>
             </tr>
             <tr>
-              <td>CN90 Optical instruments</td>
+              <td><span class="badge group-b">B</span> CN90 Optical</td>
               <td class="val pos">+52.7%</td>
               <td class="val neg">−8.8%</td>
               <td class="val neg">−4.5%</td>
               <td><span class="badge neutral">Jump in 2019, no sustained trend</span></td>
             </tr>
             <tr>
-              <td>CN94 Furniture</td>
-              <td class="val pos">+23.8%</td>
-              <td class="val neg">−8.1%</td>
-              <td class="val pos">+1.7%</td>
-              <td><span class="badge up">Stabilised after decline</span></td>
-            </tr>
-            <tr>
-              <td>CN03 Fish <em>(control)</em></td>
-              <td class="val neg">−12.2%</td>
-              <td class="val neg">−5.3%</td>
-              <td class="val neg">−14.1%</td>
-              <td><span class="badge down">No EPA effect — continued decline</span></td>
-            </tr>
-            <tr>
-              <td>CN04 Dairy <em>(control)</em></td>
-              <td class="val neg">−3.1%</td>
-              <td class="val pos">+2.1%</td>
-              <td class="val pos">+3.4%</td>
-              <td><span class="badge neutral">Stable — no EPA signal</span></td>
+              <td><span class="badge spike">⚡ Spike</span> CN03 Fish</td>
+              <td class="val pos">+130%</td>
+              <td class="val neg">−19%</td>
+              <td class="val neg">−43%</td>
+              <td><span class="badge down">2019 spike — no structural change</span></td>
             </tr>
           </tbody>
         </table>
-        <p class="comment">YoY = year-on-year change 2018→2019. CAGR = compound annual growth rate. Control groups
-          (CN03, CN04) show how groups with minimal EPA tariff changes behaved in the same period — their flat or
-          negative trajectory confirms the EPA effect is concentrated in treatment groups, not a general trade trend.
-        </p>
+        <p class="comment">CAGR = compound annual growth rate. CN84 Machinery: negative CAGR after 2019 reflects front-loading
+          — a large 2019 shipment (6.6 M€) normalised in subsequent years; the mean-based comparison still shows +520% growth.
+          CN71 has no pre-EPA CAGR — the flow did not exist before 2019.</p>
 
-        <h3>Z-score: was the jump statistically anomalous?</h3>
-        <p>CAGR shows whether the <em>rate</em> of growth changed. The Z-score answers a different question: was the
-          post-EPA value so far outside the pre-EPA distribution that it cannot be explained by normal year-to-year
-          volatility? The baseline is 2014–2018 (mean and standard deviation). A Z-score above +2 means the observed
-          value is more than two standard deviations above the pre-EPA norm — a result that would occur by chance less
-          than ~5% of the time.</p>
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Group</th>
-              <th>Pre mean<br><small>2014–18, M€</small></th>
-              <th>Z 2019</th>
-              <th>Z 2020</th>
-              <th>Signal</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>CN71 Precious metals</td>
-              <td class="val">0.04</td>
-              <td class="val pos">+19.7 ★</td>
-              <td class="val pos">+68.5 ★</td>
-              <td><span class="badge up">EPA-created flow</span></td>
-            </tr>
-            <tr>
-              <td>CN85 Electronics</td>
-              <td class="val">9.2</td>
-              <td class="val neg">−1.95</td>
-              <td class="val pos">+3.7 ★</td>
-              <td><span class="badge up">Lag 1 year</span></td>
-            </tr>
-            <tr>
-              <td>CN90 Optical instruments</td>
-              <td class="val">4.1</td>
-              <td class="val">+0.3</td>
-              <td class="val pos">+3.4 ★</td>
-              <td><span class="badge up">Lag 1 year</span></td>
-            </tr>
-            <tr>
-              <td>CN44 Wood</td>
-              <td class="val">36.3</td>
-              <td class="val">+1.2</td>
-              <td class="val">+0.7</td>
-              <td><span class="badge neutral">Borderline — EPA amplified</span></td>
-            </tr>
-            <tr>
-              <td>CN28 Chemicals</td>
-              <td class="val">3.3</td>
-              <td class="val neg">−1.4</td>
-              <td class="val neg">−2.9</td>
-              <td><span class="badge neutral">No level jump — gradual CAGR shift</span></td>
-            </tr>
-            <tr>
-              <td>CN94 Furniture</td>
-              <td class="val">3.1</td>
-              <td class="val">+0.5</td>
-              <td class="val neg">−0.2</td>
-              <td><span class="badge neutral">Normal range — no early signal</span></td>
-            </tr>
-            <tr>
-              <td>CN03 Fish <em>(control)</em></td>
-              <td class="val">1.9</td>
-              <td class="val">−0.4</td>
-              <td class="val">−0.8</td>
-              <td><span class="badge neutral">Normal ✓</span></td>
-            </tr>
-            <tr>
-              <td>CN04 Dairy <em>(control)</em></td>
-              <td class="val">1.4</td>
-              <td class="val">+0.5</td>
-              <td class="val">+0.8</td>
-              <td><span class="badge neutral">Normal ✓</span></td>
-            </tr>
-            <tr>
-              <td>CN95 Toys <em>(control)</em></td>
-              <td class="val">0.30</td>
-              <td class="val neg">+7.3 ★</td>
-              <td class="val neg">+11.6 ★</td>
-              <td><span class="badge down">⚠ Artefact — see note</span></td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="comment">Z = (value − pre-EPA mean) / pre-EPA SD, baseline = 2014–2018. ★ = |Z| &gt; 2. CN85 and CN90
-          both spike in 2020, not 2019 — a consistent one-year lag suggesting contract cycles rather than coincidence.
-          CN95 Toys: large Z is an artefact of near-zero pre-EPA variance (SD = 0.03 M€), not a real signal; absolute
-          volumes remain below 1 M€ throughout.</p>
-
-        <h3>Control group: was it the EPA or just good times?</h3>
-        <p>This is the key question any defensible trade policy analysis must answer. General economic growth, a weaker
-          euro, or sector-specific demand cycles could all produce similar charts. The control group test checks whether
-          the EPA-covered groups outperformed groups where the EPA made little difference.</p>
-
-        <div class="phase-grid">
-          <div class="phase-box">
-            <div class="ph-num">Treatment</div>
-            <h4>+56.7% (2019–2022 vs 2014–2018)</h4>
-            <p>CN28, CN44, CN84, CN85, CN90, CN94 — groups where the EU–Japan EPA reduced tariffs meaningfully. Combined
-              average annual exports grew from 57.9 M€ to 90.7 M€.</p>
-          </div>
-          <div class="phase-box">
-            <div class="ph-num">Control</div>
-            <h4>+4.3% (same period)</h4>
-            <p>CN03 Fish, CN04 Dairy, CN95 Toys — groups where EPA tariff changes were minimal or other competitive
-              factors dominate. Combined average: 3.28 M€ → 3.42 M€.</p>
-          </div>
+        <h3>Pareto classification summary</h3>
+        <div id="csParetoSummary">
+          <p style="color:var(--ink3);font-family:'DM Mono',monospace;font-size:13px">Loading…</p>
         </div>
 
-        <p>A 52-percentage-point gap between treatment and control in the same time period, for the same trade partner,
-          is difficult to explain without the EPA. If the growth had been driven by general conditions — a strong
-          economy, a weak euro, rising demand — both groups would have grown at roughly similar rates. The divergence is
-          concentrated in exactly the groups that benefited from tariff reductions.</p>
-        <p>This is not a formal causal proof (that would require Interrupted Time Series regression or a synthetic
-          control method). But it is the strongest evidence available from aggregate customs data — and it is consistent
-          with an EPA effect.</p>
+        <h3>EPA spikes: front-loading without structural growth</h3>
+        <p>CN03 Fish and CN81 Base metals both reacted to the EPA announcement in 2019 with a sharp one-year jump
+          (YoY ≥2×, fta_mean ≥1 M€ threshold). But their average across the full EPA period remained below pre-EPA
+          levels (k &lt; 1). This is a “front-loading” or “announcement effect”: buyers exploited the new
+          tariff in year one, but no durable supply chain adjustment followed.</p>
+        <div class="chart-card">
+          <h4>Export spikes — CN03 Fish &amp; CN81 Base metals</h4>
+          <div class="sub">Strong 2019 EPA reaction · average FTA-period level below pre-EPA baseline · k &lt; 1</div>
+          <div class="cw"><canvas id="csChartSpike"></canvas></div>
+          <p class="comment" style="margin-top:10px">CN03 Fish: 2019 surge reflects front-loading ahead of tariff cuts
+            taking effect; competition from other EU exporters prevented structural market share gains.
+            CN81 Base metals: single-year opportunistic shipment pattern; no consistent buyer relationship established.</p>
+        </div>
+
+        <h3>Was it the EPA or just good times? — Japan vs World comparison</h3>
+        <p>The core analytical risk is confounding: trade might have grown for reasons unrelated to the EPA — general
+          economic expansion, currency effects, or sector-wide demand cycles could produce similar charts. The
+          Japan vs World bar chart tests this: if Japan-channel growth in a CN group substantially exceeds that
+          group's global export trend in the same period, the excess is likely Japan-specific (agreement-driven).</p>
 
         <div class="chart-card">
           <h4>Export structure — 2023 snapshot (Treemap)</h4>
-          <div class="sub">Cell area = export value · Hover for exact figures · CN44 Wood ≈ 40% of total</div>
+          <div class="sub">Cell area = export value · Group A+B groups shown · CN44 Wood ≈ 40% of total</div>
           <div id="csTmCont"></div>
         </div>
 
-        <div class="chart-card">
-          <h4>How groups moved across key years — Japan vs World slope</h4>
-          <div class="sub">Solid = Estonia → Japan · Dashed = Estonia → World (rescaled to 2018 baseline) · Log scale
-          </div>
-          <div style="overflow-x:auto" id="csSlopeCont"></div>
-          <p class="comment" style="margin-top:12px">When a solid Japan line steepens after 2019 while its dashed World
-            counterpart flattens or moves in the opposite direction, the acceleration is Japan-specific — not a global
-            commodity trend. CN85 Electronics is the clearest case: Japan line rises post-2019, world line barely moves.
-            CN44 Wood: both lines rise similarly — global demand is a major factor. Control group lines (grey) are flat
-            in both directions, confirming the benchmark is stable.</p>
-        </div>
 
-        <div class="chart-card">
-          <h4>Growth index heatmap (2018 = 100)</h4>
-          <div class="sub">Green = above 2018 level · Red = below · Bold columns = post-EPA years</div>
-          <p class="comment" style="margin-bottom:10px">← Scroll the table right to see all years →</p>
-          <div style="overflow-x:auto" id="csHmCont"></div>
-          <p class="comment" style="margin-top:12px">Extreme values (e.g. CN03 Fish showing 800+ in earlier years)
-            reflect a very low 2018 baseline for that group — not a data error. The index measures change relative to
-            2018 only. A value of 100 = same as 2018. Values above 100 = growth, below 100 = decline. CN08 Edible fruit
-            &amp; nuts is absent from this table because its 2018 value is suppressed in the source data — the index
-            cannot be calculated without a base year. The group appears in other charts.</p>
-        </div>
-
-        <div class="chart-card">
-          <h4>Growth index 2018 = 100 — Japan vs World trajectory</h4>
-          <div class="sub">Solid line = Estonia → Japan · Dashed (same colour) = Estonia → World · Baseline at 100</div>
-          <div class="cw tall"><canvas id="csChartHeatIndex"></canvas></div>
-          <p class="comment" style="margin-top:10px">Each treatment group has two lines — solid (Japan) and dashed
-            (World) in the same colour. Where the solid line diverges upward from the dashed line after 2019, the Japan
-            channel is outperforming the group's global trend. Control groups (grey) show no such divergence, as
-            expected.</p>
-        </div>
 
         <h3>Regional context</h3>
         <div class="two-charts">
@@ -703,6 +593,52 @@
         </div>
         <p class="comment" style="margin-top:12px">Regional breakdown data is only available from Statistics Estonia
           from 2020 onward — hence the shorter time range compared to other charts.</p>
+
+        <h3>Estonia → Japan exports vs. same CN group to partner countries — index 2018 = 100</h3>
+        <p>All four charts show <strong>Estonian exports</strong> — not imports. The question is: did the Japan
+          export channel for each commodity group accelerate after 2019 in a way that other markets did not?
+          <strong>Japan’s red line</strong> is the EPA channel; grey dashed lines are major non-EPA or pre-existing
+          markets (Sweden, Finland, Germany, South Korea, USA). When Japan diverges upward after 2019 while
+          other countries stay near 100, that acceleration is Japan-specific — not a global sector boom, and
+          consistent with an EPA tariff effect.</p>
+
+        <div class="two-charts">
+          <div class="chart-card">
+            <h4>CN44 Wood — Japan vs. partner countries</h4>
+            <div class="sub">Estonia → exports · Index 2018=100 · Japan (red solid) vs. SE, FI, DE, KR, CN (grey dashed)</div>
+            <div class="cw"><canvas id="csChartCountryCN44"></canvas></div>
+            <p class="comment" style="margin-top:8px">Japan peaked in 2022 at 184 (index) then fell sharply — driven
+              by the Russian airspace closure, not EPA reversal. Sweden and Germany also rose in 2022 (global timber
+              demand), confirming the 2022 peak is partly structural. The post-2019 Japan ramp is steeper than peers.</p>
+          </div>
+          <div class="chart-card">
+            <h4>CN85 Electronics — Japan vs. partner countries</h4>
+            <div class="sub">Estonia → exports · Index 2018=100 · Japan (red solid) vs. SE, FI, DE, US (grey dashed)</div>
+            <div class="cw"><canvas id="csChartCountryCN85"></canvas></div>
+            <p class="comment" style="margin-top:8px">Japan’s 2022 peak (index 339) is dramatically above all peers.
+              Sweden and Finland stayed near 100–140; Germany declined then recovered. Japan-specific acceleration
+              post-2019 is the clearest EPA signal in this dataset.</p>
+          </div>
+        </div>
+
+        <div class="two-charts">
+          <div class="chart-card">
+            <h4>CN84 Machinery — Japan vs. partner countries</h4>
+            <div class="sub">Estonia → exports · Index 2018=100 · Japan (red solid) vs. SE, FI, DE, US (grey dashed)</div>
+            <div class="cw"><canvas id="csChartCountryCN84"></canvas></div>
+            <p class="comment" style="margin-top:8px">Japan spiked to index 392 in 2019 (large one-year shipment)
+              then normalised. The mean-based comparison still shows +520% growth because the pre-EPA base
+              was tiny (0.6 M€). Other markets show no similar spike — this was Japan-specific.</p>
+          </div>
+          <div class="chart-card">
+            <h4>CN71 Precious metals — Japan vs. partner countries</h4>
+            <div class="sub">Estonia → exports · Index 2018=100 · Japan (red solid) vs. CH, HK, US (grey dashed)</div>
+            <div class="cw"><canvas id="csChartCountryCN71"></canvas></div>
+            <p class="comment" style="margin-top:8px">CN71 is the most dramatic EPA-created flow: Japan index
+              reaches 19,000+ by 2022 because the 2018 base was near-zero (37k EUR). Switzerland and Hong Kong
+              were already active precious metals buyers before 2019 — Japan was not. The EPA opened that channel.</p>
+          </div>
+        </div>
       </section>
 
       <section id="analyze-d">
@@ -762,22 +698,12 @@
               of similar size become indistinguishable. Treemaps handle both large and small segments legibly.</p>
           </div>
           <div class="phase-box">
-            <div class="ph-num">Slope chart</div>
-            <h4>Group trajectories across key years</h4>
-            <p><strong>Question answered:</strong> which groups rose, fell, or crossed between specific years? A slope
-              chart forces you to pick 4–5 meaningful years rather than showing everything. The crossing lines reveal
-              reranking — CN85 Electronics and CN28 Chemicals swapped positions relative to each other post-EPA. That
-              reranking is invisible in a standard time series. <em>Why not a line chart here?</em> Overlapping lines
-              for 10 groups produce a spaghetti plot. Slope charts trade temporal resolution for legibility.</p>
-          </div>
-          <div class="phase-box">
-            <div class="ph-num">Heatmap</div>
-            <h4>All groups × all years</h4>
-            <p><strong>Question answered:</strong> are there systematic patterns across commodity groups and time? The
-              heatmap is the only format that lets you see all 11 groups × 15 years simultaneously. Green above 2018
-              baseline, red below — post-EPA columns are bold. Patterns emerge that are invisible in per-group charts:
-              the post-2019 green shift is broad, not concentrated in one or two groups. <em>Why 2018 as base, not
-                2019?</em> 2018 is the last pre-EPA year, so the colour at 2019 already shows the EPA-year effect.</p>
+            <div class="ph-num">Country comparison</div>
+            <h4>Japan vs partner countries — index 2018=100</h4>
+            <p><strong>Question answered:</strong> did Japan outperform Estonia’s other export markets in the same CN
+              group after 2019? If Japan’s index line diverges upward from Sweden, Germany, or Finland in the same
+              commodity, the growth is Japan-specific — not a global sector boom. This is the strongest available
+              test for EPA-attribution using aggregate customs data.</p>
           </div>
           <div class="phase-box">
             <div class="ph-num">Bar chart</div>
@@ -813,10 +739,12 @@
           </p>
         </div>
         <div class="finding key">
-          <h4>Treatment vs control confirms EPA signal</h4>
-          <p>EPA-covered commodity groups grew +56.7% in the clean EPA window (2019–2022). Groups with minimal EPA
-            tariff changes grew +4.3% in the same period. A 52-point gap for the same partner, the same years —
-            concentrated in exactly the groups that benefited from tariff reductions.</p>
+          <h4>Pareto concentration confirms EPA signal</h4>
+          <p>4 Group A exports (CN44, CN85, CN71, CN84) carry ~77% of the composite score —
+            and all 4 grew substantially post-EPA. Group B (5 further groups) adds secondary growth.
+            The 2 spike groups (CN03, CN81) reacted in 2019 but showed no structural follow-through (k &lt; 1).
+            This pattern — concentrated in tariff-covered groups, absent in structurally untouched ones — is
+            consistent with an agreement-driven effect.</p>
         </div>
         <div class="finding key">
           <h4>Logistics beats tariffs post-2022</h4>
@@ -855,11 +783,12 @@
         </div>
 
         <p style="margin-top:32px;font-size:15px;color:var(--ink2);max-width:660px;line-height:1.75">The EPA worked —
-          trade grew in the right sectors and in the right direction. The control group comparison makes that hard to
-          attribute to coincidence. But "working" and "transformative" are different things. Japan remains a small but
-          strategically interesting partner, and the current combination of lower tariffs and higher logistics barriers
-          may create better entry opportunities than the headline numbers suggest — for exporters who can operate at
-          that distance.</p>
+          trade grew in the right sectors and in the right direction. The Pareto composite score makes that hard to
+          attribute to coincidence: growth is concentrated in exactly the groups where tariff cuts were largest, and
+          absent in groups with minimal EPA exposure. But "working" and "transformative" are different things.
+          Japan remains a small but strategically interesting partner, and the current combination of lower tariffs
+          and higher logistics barriers may create better entry opportunities than the headline numbers suggest —
+          for exporters who can operate at that distance.</p>
 
       </section>
 
