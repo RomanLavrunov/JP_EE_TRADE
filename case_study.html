@@ -215,14 +215,12 @@
           <strong>composite Pareto score</strong> that ranks all growing groups by their combined economic weight and
           contribution to growth.</p>
 
-        <p><strong>Composite score</strong> = average of two normalised shares:</p>
+        <p>The score is the average of two normalised shares:</p>
         <ul style="margin:8px 0 12px 24px;line-height:2">
-          <li><code>share_FTA = fta_mean ÷ C3</code> — this group's share of <em>all</em> bilateral trade in the EPA period</li>
-          <li><code>share_Δ = abs_change ÷ D4</code> — this group's share of <em>total absolute growth</em> among growing groups</li>
+          <li><code>share_FTA = fta_mean ÷ total_fta_volume</code> — this group's share of total bilateral export volume across all CN groups during the EPA period (2019–2022). Total export volume in this window: <strong>110.6 M€.</strong></li>
+          <li><code>share_Δ = abs_change ÷ total_growth</code> — this group's share of total absolute growth, measured only across groups that actually grew (k > 1). Total growth across those groups: <strong>44 M€.</strong></li>
         </ul>
-        <p>C3 and D4 are period constants visible in the source spreadsheet (FTA_v21_short.xlsx, cells C3/D4):
-          <strong>C3 = 110.6 M€</strong> (total EPA-period volume, exports) and <strong>D4 = 44.0 M€</strong> (total growth from growing groups).
-          Using two shares simultaneously rewards groups that are large <em>and</em> grew — not just one or the other.</p>
+        <p>Using two shares simultaneously rewards groups that are both large in volume and grew meaningfully. A group that dominates trade but barely moved scores lower than a group that is moderately sized but grew strongly. Both denominators are computed directly from the source data and update automatically if the underlying data changes.</p>
 
         <div class="phase-grid">
           <div class="phase-box">
@@ -399,13 +397,12 @@
 
         <p>CN44 Wood is roughly half of all Estonian exports to Japan — not because of the EPA, but because of Japan's
           long-standing demand for Nordic and Baltic timber. The agreement gave an existing relationship an extra push
-          (+40% on the post-EPA average), but it didn't create it. This distinction matters: the EPA amplified what was
+          (+50% on the post-EPA average, 36.3 M€ → 54.6 M€), but it didn't create it. This distinction matters: the EPA amplified what was
           already there. CN44 is a <strong>Group A</strong> commodity: largest share of both total FTA-period volume
           and absolute growth.</p>
         <p>CN85 Electrical machinery is a cleaner EPA signal. Growth of +58% on a real base (9.2 M€ → 14.6 M€) is a genuine
           post-EPA story — these are products where tariff reduction directly changes the competitive economics. CN71
-          Precious metals is even more striking: it was near-zero before 2019 and averaged 7.2 M€/year after — an
-          EPA-created trade segment. Both are <strong>Group A</strong>.</p>
+          Precious metals is even more striking: it was near-zero before 2019 (0.04 M€ pre-EPA average) and averaged 7.2 M€/year in the 2019–2022 window, growing to 12.5 M€/year by 2020–2024 — an EPA-created trade segment. Both are <strong>Group A</strong>.</p>
         <p>CN84 Machinery grew over 500% — from a 0.6 M€ pre-EPA base to 3.8 M€ post-EPA. Its composite score earned
           it Group A placement because of high share_Δ (7.3% of total absolute growth), not volume. A trend worth
           watching as volumes build.</p>
@@ -506,7 +503,7 @@
             </tr>
             <tr>
               <td><span class="badge group-a">A</span> CN71 Precious metals</td>
-              <td class="val pos">+733%</td>
+              <td class="val pos">+734%</td>
               <td class="val">n/a (new flow)</td>
               <td class="val pos">+49.9%</td>
               <td><span class="badge up">EPA-created segment</span></td>
@@ -541,14 +538,14 @@
             </tr>
           </tbody>
         </table>
-        <p class="comment">CAGR = compound annual growth rate. CN84 Machinery: negative CAGR after 2019 reflects front-loading
-          — a large 2019 shipment (6.6 M€) normalised in subsequent years; the mean-based comparison still shows +520% growth.
+        <p class="comment">CAGR = compound annual growth rate. CN84 Machinery: negative CAGR after 2019 reflects front-loading — a large 2019 shipment (6.6 M€) normalised in subsequent years; the mean-based comparison still shows +521% growth (pre 0.6 M€ → post 3.8 M€).
           CN71 has no pre-EPA CAGR — the flow did not exist before 2019.</p>
 
         <h3>Pareto classification summary</h3>
         <div id="csParetoSummary">
           <p style="color:var(--ink3);font-family:'DM Mono',monospace;font-size:13px">Loading…</p>
         </div>
+        <p class="comment">Note: Group A average % change is dominated by CN71 (from near-zero base, +19,000%) and CN08 (+2,474%). Excluding those two: CN44 +50%, CN85 +58%, CN84 +521%.</p>
 
         <h3>EPA spikes: front-loading without structural growth</h3>
         <p>CN03 Fish and CN81 Base metals both reacted to the EPA announcement in 2019 with a sharp one-year jump
@@ -605,15 +602,15 @@
         <div class="two-charts">
           <div class="chart-card">
             <h4>CN44 Wood — Japan vs. partner countries</h4>
-            <div class="sub">Estonia → exports · Index 2018=100 · Japan (red solid) vs. SE, FI, DE, KR, CN (grey dashed)</div>
+            <div class="sub">Estonia → exports · Index 2018=100 · Japan (red solid) vs. SE, DK, DE, KR (grey dashed)</div>
             <div class="cw"><canvas id="csChartCountryCN44"></canvas></div>
-            <p class="comment" style="margin-top:8px">Japan peaked in 2022 at 184 (index) then fell sharply — driven
+            <p class="comment" style="margin-top:8px">Japan peaked in 2022 at index 184 (75 M€ vs 41 M€ in 2018) then fell sharply — driven
               by the Russian airspace closure, not EPA reversal. Sweden and Germany also rose in 2022 (global timber
               demand), confirming the 2022 peak is partly structural. The post-2019 Japan ramp is steeper than peers.</p>
           </div>
           <div class="chart-card">
             <h4>CN85 Electronics — Japan vs. partner countries</h4>
-            <div class="sub">Estonia → exports · Index 2018=100 · Japan (red solid) vs. SE, FI, DE, US (grey dashed)</div>
+            <div class="sub">Estonia → exports · Index 2018=100 · Japan (red solid) vs. SE, FI, US, CN, KR (grey dashed)</div>
             <div class="cw"><canvas id="csChartCountryCN85"></canvas></div>
             <p class="comment" style="margin-top:8px">Japan’s 2022 peak (index 339) is dramatically above all peers.
               Sweden and Finland stayed near 100–140; Germany declined then recovered. Japan-specific acceleration
@@ -624,7 +621,7 @@
         <div class="two-charts">
           <div class="chart-card">
             <h4>CN84 Machinery — Japan vs. partner countries</h4>
-            <div class="sub">Estonia → exports · Index 2018=100 · Japan (red solid) vs. SE, FI, DE, US (grey dashed)</div>
+            <div class="sub">Estonia → exports · Index 2018=100 · Japan (red solid) vs. FI, DE, US, KR (grey dashed)</div>
             <div class="cw"><canvas id="csChartCountryCN84"></canvas></div>
             <p class="comment" style="margin-top:8px">Japan spiked to index 392 in 2019 (large one-year shipment)
               then normalised. The mean-based comparison still shows +520% growth because the pre-EPA base
@@ -632,10 +629,9 @@
           </div>
           <div class="chart-card">
             <h4>CN71 Precious metals — Japan vs. partner countries</h4>
-            <div class="sub">Estonia → exports · Index 2018=100 · Japan (red solid) vs. CH, HK, US (grey dashed)</div>
+            <div class="sub">Estonia → exports · Index 2018=100 · Japan (red solid) vs. CH, SE, BG, KR (grey dashed)</div>
             <div class="cw"><canvas id="csChartCountryCN71"></canvas></div>
-            <p class="comment" style="margin-top:8px">CN71 is the most dramatic EPA-created flow: Japan index
-              reaches 19,000+ by 2022 because the 2018 base was near-zero (37k EUR). Switzerland and Hong Kong
+            <p class="comment" style="margin-top:8px">CN71 is the most dramatic EPA-created flow: Japan index reaches ~9,700 by 2022 (12.5 M€ vs 2018 base of 0.13 M€) because the 2018 base was near-zero (37k EUR). Switzerland and Hong Kong
               were already active precious metals buyers before 2019 — Japan was not. The EPA opened that channel.</p>
           </div>
         </div>
@@ -734,7 +730,7 @@
         <div class="finding key">
           <h4>EPA worked — moderately and selectively</h4>
           <p>Post-EPA average exports +40% vs pre-EPA (36 M€ → 51 M€/year in the clean 2019–2022 window). Real growth in
-            wood (+22% CAGR), chemicals (+95% mean), electrical machinery (reversed from declining to +18.7% CAGR).
+            wood (+50% mean, +22% CAGR), electrical machinery (+58% mean, reversed from declining), chemicals (+24% mean, accelerating to 6.6 M€ by 2020–2024).
             Consistent with policy intent — but concentrated in groups that already had trade relationships before 2019.
           </p>
         </div>
@@ -796,7 +792,7 @@
   </main>
 
   <footer>
-    <p>Data: Statistics Estonia · VKK30, VKK32 · 2004-2024 · R + JS</p>
+    <p>Data: Statistics Estonia · VKK30, VKK32 · 2012–2025 · R + JS</p>
     <a href="index.html">← Summary page</a>
   </footer>
 

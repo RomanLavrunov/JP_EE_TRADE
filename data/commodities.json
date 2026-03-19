@@ -7,6 +7,11 @@
       "value": 0.181
     },
     {
+      "year": 2013,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES"
+    },
+    {
       "year": 2014,
       "cn_code": "CN03",
       "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
@@ -76,19 +81,44 @@
       "year": 2025,
       "cn_code": "CN03",
       "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
-      "value": 0.0
+      "value": 0
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN08",
+      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN08",
+      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN08",
+      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
     },
     {
       "year": 2015,
       "cn_code": "CN08",
       "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
-      "value": 0.0
+      "value": 0
     },
     {
       "year": 2016,
       "cn_code": "CN08",
       "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS",
       "value": 0.238
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN08",
+      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN08",
+      "cn_name": "EDIBLE FRUIT AND NUTS; PEEL OF CITRUS FRUIT OR MELONS"
     },
     {
       "year": 2019,
@@ -301,10 +331,20 @@
       "value": 39.682
     },
     {
+      "year": 2012,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN"
+    },
+    {
       "year": 2013,
       "cn_code": "CN71",
       "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN",
       "value": 0.058
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN71",
+      "cn_name": "NATURAL OR CULTURED PEARLS, PRECIOUS OR SEMI-PRECIOUS STONES, PRECIOUS METALS, METALS CLAD WITH PRECIOUS METAL, AND ARTICLES THEREOF; IMITATION JEWELLERY; COIN"
     },
     {
       "year": 2015,
@@ -373,6 +413,11 @@
       "value": 0.44
     },
     {
+      "year": 2012,
+      "cn_code": "CN72",
+      "cn_name": "IRON AND STEEL"
+    },
+    {
       "year": 2013,
       "cn_code": "CN72",
       "cn_name": "IRON AND STEEL",
@@ -383,6 +428,16 @@
       "cn_code": "CN72",
       "cn_name": "IRON AND STEEL",
       "value": 0.052
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN72",
+      "cn_name": "IRON AND STEEL"
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN72",
+      "cn_name": "IRON AND STEEL"
     },
     {
       "year": 2017,
@@ -954,7 +1009,7 @@
       "year": 2013,
       "cn_code": "CN81",
       "cn_name": "OTHER BASE METALS; CERMETS; ARTICLES THEREOF",
-      "value": 0.0
+      "value": 0
     },
     {
       "year": 2014,
@@ -1541,6 +1596,11 @@
       "value": 0.181
     },
     {
+      "year": 2013,
+      "cn_code": "CN03",
+      "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES"
+    },
+    {
       "year": 2014,
       "cn_code": "CN03",
       "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
@@ -1610,7 +1670,7 @@
       "year": 2025,
       "cn_code": "CN03",
       "cn_name": "FISH AND CRUSTACEANS, MOLLUSCS AND OTHER AQUATIC INVERTEBRATES",
-      "value": 0.0
+      "value": 0
     },
     {
       "year": 2012,
@@ -1761,12 +1821,12 @@
     {
       "year": 2025,
       "cn_code": "CN03",
-      "jp_share_pct": 0.0
+      "jp_share_pct": 0
     },
     {
       "year": 2015,
       "cn_code": "CN08",
-      "jp_share_pct": 0.0
+      "jp_share_pct": 0
     },
     {
       "year": 2016,
@@ -1786,7 +1846,7 @@
     {
       "year": 2021,
       "cn_code": "CN08",
-      "jp_share_pct": 12.0
+      "jp_share_pct": 12
     },
     {
       "year": 2022,
@@ -1846,7 +1906,7 @@
     {
       "year": 2019,
       "cn_code": "CN28",
-      "jp_share_pct": 3.0
+      "jp_share_pct": 3
     },
     {
       "year": 2020,
@@ -1941,7 +2001,7 @@
     {
       "year": 2024,
       "cn_code": "CN44",
-      "jp_share_pct": 2.0
+      "jp_share_pct": 2
     },
     {
       "year": 2025,
@@ -1956,12 +2016,12 @@
     {
       "year": 2015,
       "cn_code": "CN71",
-      "jp_share_pct": 0.0
+      "jp_share_pct": 0
     },
     {
       "year": 2016,
       "cn_code": "CN71",
-      "jp_share_pct": 0.0
+      "jp_share_pct": 0
     },
     {
       "year": 2017,
@@ -2116,7 +2176,7 @@
     {
       "year": 2022,
       "cn_code": "CN81",
-      "jp_share_pct": 4.0
+      "jp_share_pct": 4
     },
     {
       "year": 2023,
@@ -2421,16 +2481,16 @@
       "pre": 36.252,
       "post": 54.55,
       "avg_post_clean_mln": 50.419,
-      "pct_change": 50.0,
+      "pct_change": 50,
       "direction": "up",
       "yoy_2018_2019": 1.1,
       "cagr_before_pct": 7.4,
-      "cagr_after_pct": -3.2,
+      "cagr_after_pct": -4.2,
       "cagr_clean_pct": -0.2,
       "share_fta": 0.4933,
       "abs_change_mln": 18.298,
       "pareto_group": "A",
-      "world_pct_change": 44.0
+      "world_pct_change": 44
     },
     {
       "cn_code": "CN85",
@@ -2438,16 +2498,16 @@
       "pre": 9.229,
       "post": 14.601,
       "avg_post_clean_mln": 14.97,
-      "pct_change": 58.0,
+      "pct_change": 58,
       "direction": "up",
       "yoy_2018_2019": -38.7,
       "cagr_before_pct": -8.7,
-      "cagr_after_pct": 38.2,
+      "cagr_after_pct": 54,
       "cagr_clean_pct": -25.9,
       "share_fta": 0.132,
-      "abs_change_mln": 5.371,
+      "abs_change_mln": 5.372,
       "pareto_group": "A",
-      "world_pct_change": 3.0
+      "world_pct_change": 3
     },
     {
       "cn_code": "CN71",
@@ -2455,16 +2515,15 @@
       "pre": 0.038,
       "post": 7.239,
       "avg_post_clean_mln": 12.521,
-      "pct_change": 19194.0,
+      "pct_change": 18950,
       "direction": "up",
       "yoy_2018_2019": 733.6,
-      "cagr_before_pct": null,
-      "cagr_after_pct": 108.7,
+      "cagr_after_pct": 166.7,
       "cagr_clean_pct": 40.5,
       "share_fta": 0.0655,
       "abs_change_mln": 7.201,
       "pareto_group": "A",
-      "world_pct_change": 112.0
+      "world_pct_change": 112
     },
     {
       "cn_code": "CN84",
@@ -2472,16 +2531,16 @@
       "pre": 0.612,
       "post": 3.8,
       "avg_post_clean_mln": 2.115,
-      "pct_change": 521.0,
+      "pct_change": 521,
       "direction": "up",
       "yoy_2018_2019": 292.4,
       "cagr_before_pct": 105.8,
-      "cagr_after_pct": -39.1,
+      "cagr_after_pct": -48.4,
       "cagr_clean_pct": -21.4,
       "share_fta": 0.0344,
       "abs_change_mln": 3.188,
       "pareto_group": "A",
-      "world_pct_change": 42.0
+      "world_pct_change": 42
     },
     {
       "cn_code": "CN90",
@@ -2489,16 +2548,16 @@
       "pre": 4.113,
       "post": 5.721,
       "avg_post_clean_mln": 5.422,
-      "pct_change": 39.0,
+      "pct_change": 39,
       "direction": "up",
       "yoy_2018_2019": 52.7,
       "cagr_before_pct": -8.8,
-      "cagr_after_pct": 1.5,
+      "cagr_after_pct": 1.9,
       "cagr_clean_pct": -13.4,
       "share_fta": 0.0517,
       "abs_change_mln": 1.608,
       "pareto_group": "B",
-      "world_pct_change": 41.0
+      "world_pct_change": 41
     },
     {
       "cn_code": "CN28",
@@ -2506,16 +2565,16 @@
       "pre": 3.29,
       "post": 4.084,
       "avg_post_clean_mln": 6.597,
-      "pct_change": 24.0,
+      "pct_change": 24,
       "direction": "up",
       "yoy_2018_2019": -38.6,
       "cagr_before_pct": -2.9,
-      "cagr_after_pct": 63.4,
+      "cagr_after_pct": 92.5,
       "cagr_clean_pct": 34.8,
       "share_fta": 0.0369,
       "abs_change_mln": 0.794,
       "pareto_group": "B",
-      "world_pct_change": 86.0
+      "world_pct_change": 86
     },
     {
       "cn_code": "CN94",
@@ -2523,16 +2582,16 @@
       "pre": 3.099,
       "post": 3.833,
       "avg_post_clean_mln": 4.094,
-      "pct_change": 24.0,
+      "pct_change": 24,
       "direction": "up",
       "yoy_2018_2019": 23.8,
       "cagr_before_pct": -8.1,
-      "cagr_after_pct": 5.3,
+      "cagr_after_pct": 7.1,
       "cagr_clean_pct": 9.7,
       "share_fta": 0.0347,
       "abs_change_mln": 0.734,
       "pareto_group": "B",
-      "world_pct_change": 22.0
+      "world_pct_change": 22
     },
     {
       "cn_code": "CN72",
@@ -2540,16 +2599,16 @@
       "pre": 1.662,
       "post": 3.118,
       "avg_post_clean_mln": 1.829,
-      "pct_change": 88.0,
+      "pct_change": 88,
       "direction": "up",
-      "yoy_2018_2019": 36.0,
+      "yoy_2018_2019": 36,
       "cagr_before_pct": 184.5,
-      "cagr_after_pct": -46.9,
+      "cagr_after_pct": -57,
       "cagr_clean_pct": -39.1,
       "share_fta": 0.0282,
       "abs_change_mln": 1.456,
       "pareto_group": "B",
-      "world_pct_change": 49.0
+      "world_pct_change": 49
     },
     {
       "cn_code": "CN08",
@@ -2557,16 +2616,14 @@
       "pre": 0.119,
       "post": 3.063,
       "avg_post_clean_mln": 4.119,
-      "pct_change": 2474.0,
+      "pct_change": 2474,
       "direction": "up",
-      "yoy_2018_2019": null,
-      "cagr_before_pct": null,
-      "cagr_after_pct": 25.6,
+      "cagr_after_pct": 35.5,
       "cagr_clean_pct": 17.6,
       "share_fta": 0.0277,
       "abs_change_mln": 2.944,
       "pareto_group": "B",
-      "world_pct_change": 30.0
+      "world_pct_change": 30
     },
     {
       "cn_code": "CN81",
@@ -2574,16 +2631,16 @@
       "pre": 2.553,
       "post": 2.049,
       "avg_post_clean_mln": 2.17,
-      "pct_change": -20.0,
+      "pct_change": -20,
       "direction": "down",
-      "yoy_2018_2019": 116.0,
+      "yoy_2018_2019": 116,
       "cagr_before_pct": -15.7,
-      "cagr_after_pct": -11.1,
+      "cagr_after_pct": -14.6,
       "cagr_clean_pct": 26.9,
       "share_fta": 0.0185,
       "abs_change_mln": -0.504,
       "pareto_group": "Spike",
-      "world_pct_change": 68.0
+      "world_pct_change": 68
     },
     {
       "cn_code": "CN03",
@@ -2591,16 +2648,16 @@
       "pre": 1.899,
       "post": 1.098,
       "avg_post_clean_mln": 0.946,
-      "pct_change": -42.0,
+      "pct_change": -42,
       "direction": "down",
       "yoy_2018_2019": 131.2,
       "cagr_before_pct": 78.4,
-      "cagr_after_pct": -16.8,
+      "cagr_after_pct": -21.7,
       "cagr_clean_pct": 23.7,
       "share_fta": 0.0099,
       "abs_change_mln": -0.801,
       "pareto_group": "Spike",
-      "world_pct_change": 11.0
+      "world_pct_change": 11
     }
   ],
   "epa_comparison_imports": [
@@ -2610,16 +2667,15 @@
       "pre": 129.933,
       "post": 189.68,
       "avg_post_clean_mln": 221.879,
-      "pct_change": 46.0,
+      "pct_change": 46,
       "direction": "up",
       "yoy_2018_2019": 28.6,
       "cagr_before_pct": 7.2,
-      "cagr_after_pct": 7.9,
+      "cagr_after_pct": 10.7,
       "cagr_clean_pct": 15.3,
       "share_fta": 0.6224,
-      "abs_change_mln": 59.746,
-      "pareto_group": "A",
-      "world_pct_change": 35.0
+      "abs_change_mln": 59.747,
+      "pareto_group": "A"
     },
     {
       "cn_code": "CN84",
@@ -2627,16 +2683,15 @@
       "pre": 28.807,
       "post": 47.966,
       "avg_post_clean_mln": 62.634,
-      "pct_change": 67.0,
+      "pct_change": 67,
       "direction": "up",
-      "yoy_2018_2019": 10.0,
+      "yoy_2018_2019": 10,
       "cagr_before_pct": 0.1,
-      "cagr_after_pct": 23.4,
+      "cagr_after_pct": 32.3,
       "cagr_clean_pct": 22.9,
       "share_fta": 0.1574,
       "abs_change_mln": 19.159,
-      "pareto_group": "A",
-      "world_pct_change": 31.0
+      "pareto_group": "A"
     },
     {
       "cn_code": "CN85",
@@ -2644,16 +2699,15 @@
       "pre": 21.137,
       "post": 23.959,
       "avg_post_clean_mln": 21.552,
-      "pct_change": 13.0,
+      "pct_change": 13,
       "direction": "up",
       "yoy_2018_2019": -4.6,
       "cagr_before_pct": 16.5,
-      "cagr_after_pct": -8.7,
+      "cagr_after_pct": -11.5,
       "cagr_clean_pct": 1.5,
       "share_fta": 0.0786,
-      "abs_change_mln": 2.823,
-      "pareto_group": "B",
-      "world_pct_change": -6.0
+      "abs_change_mln": 2.822,
+      "pareto_group": "B"
     },
     {
       "cn_code": "CN90",
@@ -2661,16 +2715,15 @@
       "pre": 8.018,
       "post": 14.264,
       "avg_post_clean_mln": 13.545,
-      "pct_change": 78.0,
+      "pct_change": 78,
       "direction": "up",
       "yoy_2018_2019": 25.2,
       "cagr_before_pct": 13.8,
-      "cagr_after_pct": 2.4,
+      "cagr_after_pct": 3.2,
       "cagr_clean_pct": -7.8,
       "share_fta": 0.0468,
-      "abs_change_mln": 6.247,
-      "pareto_group": "B",
-      "world_pct_change": 29.0
+      "abs_change_mln": 6.246,
+      "pareto_group": "B"
     },
     {
       "cn_code": "CN32",
@@ -2678,16 +2731,15 @@
       "pre": 1.982,
       "post": 6.235,
       "avg_post_clean_mln": 5.505,
-      "pct_change": 215.0,
+      "pct_change": 215,
       "direction": "up",
       "yoy_2018_2019": 77.2,
       "cagr_before_pct": 17.7,
-      "cagr_after_pct": -3.6,
+      "cagr_after_pct": -4.8,
       "cagr_clean_pct": -19.4,
       "share_fta": 0.0205,
       "abs_change_mln": 4.253,
-      "pareto_group": "B",
-      "world_pct_change": 26.0
+      "pareto_group": "B"
     },
     {
       "cn_code": "CN82",
@@ -2695,16 +2747,15 @@
       "pre": 1.921,
       "post": 3.215,
       "avg_post_clean_mln": 3.152,
-      "pct_change": 67.0,
+      "pct_change": 67,
       "direction": "up",
       "yoy_2018_2019": 8.3,
       "cagr_before_pct": 4.4,
-      "cagr_after_pct": 2.0,
+      "cagr_after_pct": 2.7,
       "cagr_clean_pct": 5.3,
       "share_fta": 0.0105,
       "abs_change_mln": 1.294,
-      "pareto_group": "B",
-      "world_pct_change": 25.0
+      "pareto_group": "B"
     },
     {
       "cn_code": "CN95",
@@ -2712,16 +2763,15 @@
       "pre": 0.805,
       "post": 1.846,
       "avg_post_clean_mln": 2.237,
-      "pct_change": 129.0,
+      "pct_change": 129,
       "direction": "up",
       "yoy_2018_2019": 49.4,
       "cagr_before_pct": 13.6,
-      "cagr_after_pct": 11.9,
+      "cagr_after_pct": 16.2,
       "cagr_clean_pct": 12.2,
       "share_fta": 0.0061,
       "abs_change_mln": 1.041,
-      "pareto_group": "B",
-      "world_pct_change": 52.0
+      "pareto_group": "B"
     },
     {
       "cn_code": "CN81",
@@ -2729,16 +2779,15 @@
       "pre": 0.255,
       "post": 1.581,
       "avg_post_clean_mln": 2.727,
-      "pct_change": 519.0,
+      "pct_change": 520,
       "direction": "up",
       "yoy_2018_2019": 585.7,
       "cagr_before_pct": -51.9,
-      "cagr_after_pct": 97.2,
+      "cagr_after_pct": 147.3,
       "cagr_clean_pct": 103.1,
       "share_fta": 0.0052,
-      "abs_change_mln": 1.325,
-      "pareto_group": "B",
-      "world_pct_change": 154.0
+      "abs_change_mln": 1.326,
+      "pareto_group": "B"
     }
   ],
   "pareto_summary": [
@@ -2746,8 +2795,8 @@
       "pareto_group": "A",
       "n_groups": 4,
       "avg_pre": 11.533,
-      "avg_post": 20.047,
-      "avg_pct_change": 4955.8
+      "avg_post": 20.048,
+      "avg_pct_change": 4894.8
     },
     {
       "pareto_group": "B",
@@ -2761,45 +2810,1020 @@
       "n_groups": 2,
       "avg_pre": 2.226,
       "avg_post": 1.574,
-      "avg_pct_change": -31.0
+      "avg_pct_change": -31
     }
   ],
   "pareto_constants": {
     "period": "SHORT: 2014-2018 vs 2019-2022",
+    "thresh_a": 0.8,
+    "thresh_b": 0.95,
+    "min_abs_b": 1000000,
+    "spike_yoy": 2,
+    "spike_min": 1000000,
     "C3_exp": 110592002,
     "D4_exp": 43970469,
     "C3_imp": 304764588,
     "D4_imp": 99910227,
-    "exp_group_A": [
-      "CN44",
-      "CN85",
-      "CN71",
-      "CN84"
-    ],
-    "exp_group_B": [
-      "CN08",
-      "CN90",
-      "CN72",
-      "CN28",
-      "CN94"
-    ],
-    "exp_spikes": [
-      "CN81",
-      "CN03"
-    ],
-    "imp_group_A": [
-      "CN87",
-      "CN84"
-    ],
-    "imp_group_B": [
-      "CN90",
-      "CN85",
-      "CN32",
-      "CN82",
-      "CN81",
-      "CN95"
-    ]
+    "exp_group_A": ["CN44", "CN85", "CN71", "CN84"],
+    "exp_group_B": ["CN08", "CN90", "CN72", "CN28", "CN94"],
+    "exp_spikes": ["CN03", "CN81"],
+    "imp_group_A": ["CN87", "CN84"],
+    "imp_group_B": ["CN90", "CN85", "CN32", "CN82", "CN81", "CN95"]
   },
+  "index_vs_2018": [
+    {
+      "year": 2012,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 37.7,
+      "idx_world": 142.5
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 9.9,
+      "idx_world": 138
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 121.6,
+      "idx_world": 130.2
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 813.7,
+      "idx_world": 97.9
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 931.9,
+      "idx_world": 101.5
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 100,
+      "idx_world": 100
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 231.2,
+      "idx_world": 128
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 81.3,
+      "idx_world": 109.6
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 343.9,
+      "idx_world": 121.2
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 258.2,
+      "idx_world": 146.8
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 110.9,
+      "idx_world": 140
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 190.4,
+      "idx_world": 166.2
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN03",
+      "flow": "Export",
+      "idx_japan": 0,
+      "idx_world": 175.7
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN08",
+      "flow": "Export",
+      "idx_world": 102.2
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN08",
+      "flow": "Export",
+      "idx_world": 111.5
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN08",
+      "flow": "Export",
+      "idx_world": 131
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN08",
+      "flow": "Export",
+      "idx_world": 135
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN08",
+      "flow": "Export",
+      "idx_world": 163.2
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN08",
+      "flow": "Export",
+      "idx_world": 130.9
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN08",
+      "flow": "Export",
+      "idx_world": 119.5
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN08",
+      "flow": "Export",
+      "idx_world": 141.8
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN08",
+      "flow": "Export",
+      "idx_world": 208.8
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 356.3,
+      "idx_world": 109.9
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 164.2,
+      "idx_world": 203.2
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 112.7,
+      "idx_world": 73.7
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 57.7,
+      "idx_world": 73.1
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 114.3,
+      "idx_world": 58.9
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 73.3,
+      "idx_world": 81.2
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 100,
+      "idx_world": 100
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 61.4,
+      "idx_world": 120.5
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 26.4,
+      "idx_world": 121
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 75.3,
+      "idx_world": 156.9
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 291.7,
+      "idx_world": 175.9
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 437.9,
+      "idx_world": 129.4
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 87.1,
+      "idx_world": 67.9
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN28",
+      "flow": "Export",
+      "idx_japan": 117.5,
+      "idx_world": 70.1
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 84.1,
+      "idx_world": 60.3
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 100.5,
+      "idx_world": 69
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 75.3,
+      "idx_world": 72.4
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 79.9,
+      "idx_world": 75
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 87.9,
+      "idx_world": 79.2
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 101,
+      "idx_world": 90.3
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 100,
+      "idx_world": 100
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 101.1,
+      "idx_world": 99.2
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 96.2,
+      "idx_world": 97.3
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 153.6,
+      "idx_world": 130.9
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 183.8,
+      "idx_world": 153.7
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 88.8,
+      "idx_world": 127
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 95.4,
+      "idx_world": 127.6
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN44",
+      "flow": "Export",
+      "idx_japan": 97.2,
+      "idx_world": 133.3
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 45.2,
+      "idx_world": 141.8
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 1.9,
+      "idx_world": 81.6
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 4.7,
+      "idx_world": 105.8
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 9.3,
+      "idx_world": 87.8
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 100,
+      "idx_world": 100
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 833.6,
+      "idx_world": 146.5
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 2831.9,
+      "idx_world": 207.4
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 9067.4,
+      "idx_world": 214.6
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 9641,
+      "idx_world": 210.3
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 15810.3,
+      "idx_world": 169.7
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 11024.5,
+      "idx_world": 210.4
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN71",
+      "flow": "Export",
+      "idx_japan": 340.2,
+      "idx_world": 410
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN72",
+      "flow": "Export",
+      "idx_japan": 0.6,
+      "idx_world": 86.8
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN72",
+      "flow": "Export",
+      "idx_japan": 1.5,
+      "idx_world": 79.5
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN72",
+      "flow": "Export",
+      "idx_japan": 45.3,
+      "idx_world": 93.7
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN72",
+      "flow": "Export",
+      "idx_japan": 100,
+      "idx_world": 100
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN72",
+      "flow": "Export",
+      "idx_japan": 136,
+      "idx_world": 91.5
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN72",
+      "flow": "Export",
+      "idx_japan": 198.2,
+      "idx_world": 89.4
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN72",
+      "flow": "Export",
+      "idx_japan": 10.3,
+      "idx_world": 143.7
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN72",
+      "flow": "Export",
+      "idx_japan": 22.8,
+      "idx_world": 150.4
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN72",
+      "flow": "Export",
+      "idx_japan": 10.8,
+      "idx_world": 122.7
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN72",
+      "flow": "Export",
+      "idx_japan": 27.2,
+      "idx_world": 107.1
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN72",
+      "flow": "Export",
+      "idx_japan": 14.8,
+      "idx_world": 106.2
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN81",
+      "flow": "Export",
+      "idx_japan": 227,
+      "idx_world": 78.4
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN81",
+      "flow": "Export",
+      "idx_japan": 106.5,
+      "idx_world": 47.3
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN81",
+      "flow": "Export",
+      "idx_japan": 197.6,
+      "idx_world": 45.8
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN81",
+      "flow": "Export",
+      "idx_japan": 137.7,
+      "idx_world": 41.6
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN81",
+      "flow": "Export",
+      "idx_japan": 193.2,
+      "idx_world": 38.9
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN81",
+      "flow": "Export",
+      "idx_japan": 133.2,
+      "idx_world": 52.7
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN81",
+      "flow": "Export",
+      "idx_japan": 100,
+      "idx_world": 100
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN81",
+      "flow": "Export",
+      "idx_japan": 216,
+      "idx_world": 135.4
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN81",
+      "flow": "Export",
+      "idx_japan": 92.3,
+      "idx_world": 69.6
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN81",
+      "flow": "Export",
+      "idx_japan": 72.7,
+      "idx_world": 87.1
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN81",
+      "flow": "Export",
+      "idx_japan": 108,
+      "idx_world": 83.2
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN81",
+      "flow": "Export",
+      "idx_japan": 134.7,
+      "idx_world": 46.9
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN81",
+      "flow": "Export",
+      "idx_japan": 239.5,
+      "idx_world": 63.8
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN81",
+      "flow": "Export",
+      "idx_japan": 84.8,
+      "idx_world": 70.7
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN84",
+      "flow": "Export",
+      "idx_japan": 40.6,
+      "idx_world": 89.9
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN84",
+      "flow": "Export",
+      "idx_japan": 7,
+      "idx_world": 79.7
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN84",
+      "flow": "Export",
+      "idx_japan": 5.6,
+      "idx_world": 73.3
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN84",
+      "flow": "Export",
+      "idx_japan": 39.3,
+      "idx_world": 69.4
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN84",
+      "flow": "Export",
+      "idx_japan": 17.8,
+      "idx_world": 77.4
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN84",
+      "flow": "Export",
+      "idx_japan": 19.4,
+      "idx_world": 89.2
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN84",
+      "flow": "Export",
+      "idx_japan": 100,
+      "idx_world": 100
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN84",
+      "flow": "Export",
+      "idx_japan": 392.4,
+      "idx_world": 108.6
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN84",
+      "flow": "Export",
+      "idx_japan": 166.5,
+      "idx_world": 99.9
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN84",
+      "flow": "Export",
+      "idx_japan": 214.5,
+      "idx_world": 115.7
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN84",
+      "flow": "Export",
+      "idx_japan": 131,
+      "idx_world": 139.4
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN84",
+      "flow": "Export",
+      "idx_japan": 53.9,
+      "idx_world": 140.4
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN84",
+      "flow": "Export",
+      "idx_japan": 63.4,
+      "idx_world": 126.9
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN84",
+      "flow": "Export",
+      "idx_japan": 359.9,
+      "idx_world": 128.5
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 21.2,
+      "idx_world": 109.5
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 63.9,
+      "idx_world": 110.3
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 143.6,
+      "idx_world": 116.4
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 183.6,
+      "idx_world": 108.7
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 185.4,
+      "idx_world": 112.4
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 88.4,
+      "idx_world": 96.9
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 100,
+      "idx_world": 100
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 61.3,
+      "idx_world": 91.8
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 289.6,
+      "idx_world": 103.1
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 196.9,
+      "idx_world": 123.5
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 339.4,
+      "idx_world": 121.1
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 223.7,
+      "idx_world": 113.6
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 87.5,
+      "idx_world": 116.9
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN85",
+      "flow": "Export",
+      "idx_japan": 171.4,
+      "idx_world": 120.9
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 169.5,
+      "idx_world": 61.2
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 129.6,
+      "idx_world": 63.7
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 144.6,
+      "idx_world": 71.7
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 166.7,
+      "idx_world": 79.8
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 182.5,
+      "idx_world": 90.5
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 121.7,
+      "idx_world": 88
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 100,
+      "idx_world": 100
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 152.7,
+      "idx_world": 111.9
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 244.7,
+      "idx_world": 127.4
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 146.8,
+      "idx_world": 110.7
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 251.9,
+      "idx_world": 133.6
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 161.8,
+      "idx_world": 135.3
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 137.9,
+      "idx_world": 138.8
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN90",
+      "flow": "Export",
+      "idx_japan": 115.5,
+      "idx_world": 133.8
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 154.1,
+      "idx_world": 67.2
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 160.2,
+      "idx_world": 70.9
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 140.4,
+      "idx_world": 74.2
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 120.9,
+      "idx_world": 84.5
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 120.9,
+      "idx_world": 89.5
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 85,
+      "idx_world": 93.3
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 100,
+      "idx_world": 100
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 123.8,
+      "idx_world": 101.6
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 110.2,
+      "idx_world": 94.4
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 161.3,
+      "idx_world": 114.5
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 165.9,
+      "idx_world": 120.3
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 152.2,
+      "idx_world": 98.6
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 159.6,
+      "idx_world": 88.8
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN94",
+      "flow": "Export",
+      "idx_japan": 137,
+      "idx_world": 94.6
+    }
+  ],
   "regional": [
     {
       "year": 2020,
@@ -2832,6 +3856,12 @@
       "value": 161.108
     },
     {
+      "year": 2025,
+      "cn_code": "CN03",
+      "region": "EUR Europe",
+      "value": 168.528
+    },
+    {
       "year": 2020,
       "cn_code": "CN03",
       "region": "ASI Asia",
@@ -2862,6 +3892,12 @@
       "value": 25.2
     },
     {
+      "year": 2025,
+      "cn_code": "CN03",
+      "region": "ASI Asia",
+      "value": 29.102
+    },
+    {
       "year": 2020,
       "cn_code": "CN03",
       "region": "AFR Africa",
@@ -2887,6 +3923,12 @@
     },
     {
       "year": 2024,
+      "cn_code": "CN03",
+      "region": "AFR Africa",
+      "value": 0.05
+    },
+    {
+      "year": 2025,
       "cn_code": "CN03",
       "region": "AFR Africa",
       "value": 0.05
@@ -2920,6 +3962,12 @@
       "cn_code": "CN03",
       "region": "AME America",
       "value": 2.926
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN03",
+      "region": "AME America",
+      "value": 2.866
     },
     {
       "year": 2022,
@@ -2964,6 +4012,12 @@
       "value": 1750.21
     },
     {
+      "year": 2025,
+      "cn_code": "CN44",
+      "region": "EUR Europe",
+      "value": 1842.002
+    },
+    {
       "year": 2020,
       "cn_code": "CN44",
       "region": "ASI Asia",
@@ -2992,6 +4046,12 @@
       "cn_code": "CN44",
       "region": "ASI Asia",
       "value": 112.96
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN44",
+      "region": "ASI Asia",
+      "value": 101.908
     },
     {
       "year": 2020,
@@ -3024,6 +4084,12 @@
       "value": 9.948
     },
     {
+      "year": 2025,
+      "cn_code": "CN44",
+      "region": "AFR Africa",
+      "value": 9.528
+    },
+    {
       "year": 2020,
       "cn_code": "CN44",
       "region": "AME America",
@@ -3052,6 +4118,12 @@
       "cn_code": "CN44",
       "region": "AME America",
       "value": 68.671
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN44",
+      "region": "AME America",
+      "value": 77.644
     },
     {
       "year": 2021,
@@ -3094,6 +4166,12 @@
       "cn_code": "CN44",
       "region": "O1 Australia and Oceania",
       "value": 6.245
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN44",
+      "region": "O1 Australia and Oceania",
+      "value": 5.069
     }
   ],
   "world_exports_timeseries": [
@@ -3329,7 +4407,7 @@
       "year": 2022,
       "cn_code": "CN28",
       "cn_name": "INORGANIC CHEMICALS; ORGANIC OR INORGANIC COMPOUNDS OF PRECIOUS METALS, OF RARE-EARTH METALS, OF RADIOACTIVE ELEMENTS OR OF ISOTOPES",
-      "value": 107.147
+      "value": 107.146
     },
     {
       "year": 2023,
@@ -4026,90 +5104,6 @@
     {
       "year": 2012,
       "cn_code": "CN44",
-      "country": "CN China",
-      "value_mln": 6.504
-    },
-    {
-      "year": 2013,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "value_mln": 14.89
-    },
-    {
-      "year": 2014,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "value_mln": 23.506
-    },
-    {
-      "year": 2015,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "value_mln": 21.035
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "value_mln": 32.222
-    },
-    {
-      "year": 2017,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "value_mln": 61.117
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "value_mln": 44.737
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "value_mln": 37.722
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "value_mln": 32.542
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "value_mln": 32.601
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "value_mln": 28.133
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "value_mln": 17.506
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "value_mln": 13.331
-    },
-    {
-      "year": 2025,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "value_mln": 10.672
-    },
-    {
-      "year": 2012,
-      "cn_code": "CN44",
       "country": "DE Germany",
       "value_mln": 83.716
     },
@@ -4183,97 +5177,97 @@
       "year": 2024,
       "cn_code": "CN44",
       "country": "DE Germany",
-      "value_mln": 155.452
+      "value_mln": 155.379
     },
     {
       "year": 2025,
       "cn_code": "CN44",
       "country": "DE Germany",
-      "value_mln": 171.67
+      "value_mln": 171.834
     },
     {
       "year": 2012,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "value_mln": 167.198
+      "country": "DK Denmark",
+      "value_mln": 78.677
     },
     {
       "year": 2013,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "value_mln": 177.358
+      "country": "DK Denmark",
+      "value_mln": 83.585
     },
     {
       "year": 2014,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "value_mln": 161.23
+      "country": "DK Denmark",
+      "value_mln": 105.338
     },
     {
       "year": 2015,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "value_mln": 141.958
+      "country": "DK Denmark",
+      "value_mln": 124.765
     },
     {
       "year": 2016,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "value_mln": 147.888
+      "country": "DK Denmark",
+      "value_mln": 125.106
     },
     {
       "year": 2017,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "value_mln": 148.938
+      "country": "DK Denmark",
+      "value_mln": 149.628
     },
     {
       "year": 2018,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "value_mln": 209.462
+      "country": "DK Denmark",
+      "value_mln": 134.69
     },
     {
       "year": 2019,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "value_mln": 212.946
+      "country": "DK Denmark",
+      "value_mln": 169.231
     },
     {
       "year": 2020,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "value_mln": 182.758
+      "country": "DK Denmark",
+      "value_mln": 184.525
     },
     {
       "year": 2021,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "value_mln": 225.342
+      "country": "DK Denmark",
+      "value_mln": 220.133
     },
     {
       "year": 2022,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "value_mln": 273.535
+      "country": "DK Denmark",
+      "value_mln": 268.958
     },
     {
       "year": 2023,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "value_mln": 280.313
+      "country": "DK Denmark",
+      "value_mln": 233.822
     },
     {
       "year": 2024,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "value_mln": 273.947
+      "country": "DK Denmark",
+      "value_mln": 228.058
     },
     {
       "year": 2025,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "value_mln": 253.215
+      "country": "DK Denmark",
+      "value_mln": 219.198
     },
     {
       "year": 2012,
@@ -4357,7 +5351,7 @@
       "year": 2025,
       "cn_code": "CN44",
       "country": "JP Japan",
-      "value_mln": 39.682
+      "value_mln": 39.662
     },
     {
       "year": 2012,
@@ -4519,13 +5513,97 @@
       "year": 2024,
       "cn_code": "CN44",
       "country": "SE Sweden",
-      "value_mln": 306.776
+      "value_mln": 306.435
     },
     {
       "year": 2025,
       "cn_code": "CN44",
       "country": "SE Sweden",
-      "value_mln": 268.608
+      "value_mln": 269.152
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "value_mln": 10.486
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "value_mln": 15.877
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "value_mln": 8.93
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "value_mln": 14.357
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "value_mln": 11.778
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "value_mln": 10.072
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "value_mln": 14.248
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "value_mln": 15.65
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "value_mln": 31.618
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "value_mln": 52.627
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "value_mln": 58.578
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "value_mln": 75.631
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "value_mln": 147.788
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "value_mln": 287.345
     },
     {
       "year": 2012,
@@ -4612,90 +5690,6 @@
       "value_mln": 43.167
     },
     {
-      "year": 2012,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "value_mln": 0.047
-    },
-    {
-      "year": 2013,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "value_mln": 0.166
-    },
-    {
-      "year": 2014,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "value_mln": 0.219
-    },
-    {
-      "year": 2015,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "value_mln": 0.11
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "value_mln": 0.065
-    },
-    {
-      "year": 2017,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "value_mln": 0.062
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "value_mln": 1.072
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "value_mln": 0.069
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "value_mln": 0.042
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "value_mln": 0.03
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "value_mln": 0.02
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "value_mln": 0.174
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "value_mln": 0.045
-    },
-    {
-      "year": 2025,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "value_mln": 0.154
-    },
-    {
       "year": 2013,
       "cn_code": "CN71",
       "country": "JP Japan",
@@ -4770,86 +5764,122 @@
     {
       "year": 2012,
       "cn_code": "CN71",
-      "country": "US United States",
-      "value_mln": 0.003
-    },
-    {
-      "year": 2013,
-      "cn_code": "CN71",
-      "country": "US United States",
-      "value_mln": 0.016
+      "country": "KR South Korea",
+      "value_mln": 0.112
     },
     {
       "year": 2014,
       "cn_code": "CN71",
-      "country": "US United States",
-      "value_mln": 0.037
+      "country": "KR South Korea",
+      "value_mln": 0.001
     },
     {
       "year": 2015,
       "cn_code": "CN71",
-      "country": "US United States",
-      "value_mln": 0.151
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN71",
-      "country": "US United States",
-      "value_mln": 0.107
+      "country": "KR South Korea",
+      "value_mln": 0.001
     },
     {
       "year": 2017,
       "cn_code": "CN71",
-      "country": "US United States",
-      "value_mln": 0.238
+      "country": "KR South Korea",
+      "value_mln": 0.001
     },
     {
       "year": 2018,
       "cn_code": "CN71",
-      "country": "US United States",
-      "value_mln": 0.271
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN71",
-      "country": "US United States",
-      "value_mln": 0.108
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN71",
-      "country": "US United States",
-      "value_mln": 0.058
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN71",
-      "country": "US United States",
-      "value_mln": 0.05
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN71",
-      "country": "US United States",
-      "value_mln": 0.099
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN71",
-      "country": "US United States",
-      "value_mln": 0.223
+      "country": "KR South Korea",
+      "value_mln": 0.003
     },
     {
       "year": 2024,
       "cn_code": "CN71",
-      "country": "US United States",
-      "value_mln": 0.658
+      "country": "KR South Korea",
+      "value_mln": 0.003
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "value_mln": 13.85
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "value_mln": 17.956
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "value_mln": 9.314
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "value_mln": 14.075
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "value_mln": 24.224
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "value_mln": 13.434
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "value_mln": 12.788
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "value_mln": 14.195
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "value_mln": 21.513
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "value_mln": 20.76
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "value_mln": 32.956
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "value_mln": 15.039
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "value_mln": 11.864
     },
     {
       "year": 2025,
       "cn_code": "CN71",
-      "country": "US United States",
-      "value_mln": 0.281
+      "country": "SE Sweden",
+      "value_mln": 33.281
     },
     {
       "year": 2012,
@@ -4927,13 +5957,13 @@
       "year": 2024,
       "cn_code": "CN84",
       "country": "DE Germany",
-      "value_mln": 109.254
+      "value_mln": 109.277
     },
     {
       "year": 2025,
       "cn_code": "CN84",
       "country": "DE Germany",
-      "value_mln": 117.134
+      "value_mln": 117.362
     },
     {
       "year": 2012,
@@ -5011,13 +6041,13 @@
       "year": 2024,
       "cn_code": "CN84",
       "country": "FI Finland",
-      "value_mln": 293.433
+      "value_mln": 287.315
     },
     {
       "year": 2025,
       "cn_code": "CN84",
       "country": "FI Finland",
-      "value_mln": 269.235
+      "value_mln": 269.724
     },
     {
       "year": 2012,
@@ -5106,86 +6136,86 @@
     {
       "year": 2012,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "value_mln": 66.669
+      "country": "KR South Korea",
+      "value_mln": 15.52
     },
     {
       "year": 2013,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "value_mln": 64.936
+      "country": "KR South Korea",
+      "value_mln": 15.276
     },
     {
       "year": 2014,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "value_mln": 71.851
+      "country": "KR South Korea",
+      "value_mln": 15.887
     },
     {
       "year": 2015,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "value_mln": 93.885
+      "country": "KR South Korea",
+      "value_mln": 5.493
     },
     {
       "year": 2016,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "value_mln": 99.483
+      "country": "KR South Korea",
+      "value_mln": 3.584
     },
     {
       "year": 2017,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "value_mln": 90.534
+      "country": "KR South Korea",
+      "value_mln": 8.269
     },
     {
       "year": 2018,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "value_mln": 92.129
+      "country": "KR South Korea",
+      "value_mln": 5.856
     },
     {
       "year": 2019,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "value_mln": 94.112
+      "country": "KR South Korea",
+      "value_mln": 7.856
     },
     {
       "year": 2020,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "value_mln": 93.057
+      "country": "KR South Korea",
+      "value_mln": 2.705
     },
     {
       "year": 2021,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "value_mln": 114.502
+      "country": "KR South Korea",
+      "value_mln": 3.571
     },
     {
       "year": 2022,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "value_mln": 137.434
+      "country": "KR South Korea",
+      "value_mln": 3.589
     },
     {
       "year": 2023,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "value_mln": 126.088
+      "country": "KR South Korea",
+      "value_mln": 3.059
     },
     {
       "year": 2024,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "value_mln": 109.874
+      "country": "KR South Korea",
+      "value_mln": 2.261
     },
     {
       "year": 2025,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "value_mln": 94.385
+      "country": "KR South Korea",
+      "value_mln": 11.913
     },
     {
       "year": 2012,
@@ -5269,91 +6299,91 @@
       "year": 2025,
       "cn_code": "CN84",
       "country": "US United States",
-      "value_mln": 60.231
+      "value_mln": 60.175
     },
     {
       "year": 2012,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "value_mln": 76.258
+      "country": "CN China",
+      "value_mln": 43.079
     },
     {
       "year": 2013,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "value_mln": 61.844
+      "country": "CN China",
+      "value_mln": 24.419
     },
     {
       "year": 2014,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "value_mln": 51.158
+      "country": "CN China",
+      "value_mln": 29.897
     },
     {
       "year": 2015,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "value_mln": 45.732
+      "country": "CN China",
+      "value_mln": 34.036
     },
     {
       "year": 2016,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "value_mln": 101.869
+      "country": "CN China",
+      "value_mln": 53.34
     },
     {
       "year": 2017,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "value_mln": 212.377
+      "country": "CN China",
+      "value_mln": 74.628
     },
     {
       "year": 2018,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "value_mln": 225.143
+      "country": "CN China",
+      "value_mln": 57.085
     },
     {
       "year": 2019,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "value_mln": 191.403
+      "country": "CN China",
+      "value_mln": 43.342
     },
     {
       "year": 2020,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "value_mln": 145.492
+      "country": "CN China",
+      "value_mln": 84.853
     },
     {
       "year": 2021,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "value_mln": 141.823
+      "country": "CN China",
+      "value_mln": 57.112
     },
     {
       "year": 2022,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "value_mln": 185.716
+      "country": "CN China",
+      "value_mln": 55.964
     },
     {
       "year": 2023,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "value_mln": 228.154
+      "country": "CN China",
+      "value_mln": 71.855
     },
     {
       "year": 2024,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "value_mln": 269.178
+      "country": "CN China",
+      "value_mln": 66.954
     },
     {
       "year": 2025,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "value_mln": 319.401
+      "country": "CN China",
+      "value_mln": 59.179
     },
     {
       "year": 2012,
@@ -5431,13 +6461,13 @@
       "year": 2024,
       "cn_code": "CN85",
       "country": "FI Finland",
-      "value_mln": 561.802
+      "value_mln": 559.109
     },
     {
       "year": 2025,
       "cn_code": "CN85",
       "country": "FI Finland",
-      "value_mln": 517.582
+      "value_mln": 514.98
     },
     {
       "year": 2012,
@@ -5526,6 +6556,90 @@
     {
       "year": 2012,
       "cn_code": "CN85",
+      "country": "KR South Korea",
+      "value_mln": 2.403
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "value_mln": 10.783
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "value_mln": 9
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "value_mln": 5.92
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "value_mln": 5.52
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "value_mln": 7.612
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "value_mln": 9.132
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "value_mln": 4.88
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "value_mln": 8.022
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "value_mln": 3.644
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "value_mln": 3.323
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "value_mln": 2.398
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "value_mln": 17.33
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "value_mln": 1.194
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN85",
       "country": "SE Sweden",
       "value_mln": 995.44
     },
@@ -5605,7 +6719,7 @@
       "year": 2025,
       "cn_code": "CN85",
       "country": "SE Sweden",
-      "value_mln": 361.574
+      "value_mln": 365.916
     },
     {
       "year": 2012,
@@ -5689,108 +6803,10 @@
       "year": 2025,
       "cn_code": "CN85",
       "country": "US United States",
-      "value_mln": 195.528
+      "value_mln": 195.277
     }
   ],
   "country_cn_index": [
-    {
-      "year": 2012,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "index": 14.5,
-      "is_japan": false
-    },
-    {
-      "year": 2013,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "index": 33.3,
-      "is_japan": false
-    },
-    {
-      "year": 2014,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "index": 52.5,
-      "is_japan": false
-    },
-    {
-      "year": 2015,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "index": 47.0,
-      "is_japan": false
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "index": 72.0,
-      "is_japan": false
-    },
-    {
-      "year": 2017,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "index": 136.6,
-      "is_japan": false
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "index": 100.0,
-      "is_japan": false
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "index": 84.3,
-      "is_japan": false
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "index": 72.7,
-      "is_japan": false
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "index": 72.9,
-      "is_japan": false
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "index": 62.9,
-      "is_japan": false
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "index": 39.1,
-      "is_japan": false
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "index": 29.8,
-      "is_japan": false
-    },
-    {
-      "year": 2025,
-      "cn_code": "CN44",
-      "country": "CN China",
-      "index": 23.9,
-      "is_japan": false
-    },
     {
       "year": 2012,
       "cn_code": "CN44",
@@ -5830,14 +6846,14 @@
       "year": 2017,
       "cn_code": "CN44",
       "country": "DE Germany",
-      "index": 93.0,
+      "index": 93,
       "is_japan": false
     },
     {
       "year": 2018,
       "cn_code": "CN44",
       "country": "DE Germany",
-      "index": 100.0,
+      "index": 100,
       "is_japan": false
     },
     {
@@ -5879,112 +6895,112 @@
       "year": 2024,
       "cn_code": "CN44",
       "country": "DE Germany",
-      "index": 126.6,
+      "index": 126.5,
       "is_japan": false
     },
     {
       "year": 2025,
       "cn_code": "CN44",
       "country": "DE Germany",
-      "index": 139.8,
+      "index": 139.9,
       "is_japan": false
     },
     {
       "year": 2012,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "index": 79.8,
+      "country": "DK Denmark",
+      "index": 58.4,
       "is_japan": false
     },
     {
       "year": 2013,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "index": 84.7,
+      "country": "DK Denmark",
+      "index": 62.1,
       "is_japan": false
     },
     {
       "year": 2014,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "index": 77.0,
+      "country": "DK Denmark",
+      "index": 78.2,
       "is_japan": false
     },
     {
       "year": 2015,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "index": 67.8,
+      "country": "DK Denmark",
+      "index": 92.6,
       "is_japan": false
     },
     {
       "year": 2016,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "index": 70.6,
+      "country": "DK Denmark",
+      "index": 92.9,
       "is_japan": false
     },
     {
       "year": 2017,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "index": 71.1,
+      "country": "DK Denmark",
+      "index": 111.1,
       "is_japan": false
     },
     {
       "year": 2018,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "index": 100.0,
+      "country": "DK Denmark",
+      "index": 100,
       "is_japan": false
     },
     {
       "year": 2019,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "index": 101.7,
+      "country": "DK Denmark",
+      "index": 125.6,
       "is_japan": false
     },
     {
       "year": 2020,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "index": 87.3,
+      "country": "DK Denmark",
+      "index": 137,
       "is_japan": false
     },
     {
       "year": 2021,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "index": 107.6,
+      "country": "DK Denmark",
+      "index": 163.4,
       "is_japan": false
     },
     {
       "year": 2022,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "index": 130.6,
+      "country": "DK Denmark",
+      "index": 199.7,
       "is_japan": false
     },
     {
       "year": 2023,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "index": 133.8,
+      "country": "DK Denmark",
+      "index": 173.6,
       "is_japan": false
     },
     {
       "year": 2024,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "index": 130.8,
+      "country": "DK Denmark",
+      "index": 169.3,
       "is_japan": false
     },
     {
       "year": 2025,
       "cn_code": "CN44",
-      "country": "FI Finland",
-      "index": 120.9,
+      "country": "DK Denmark",
+      "index": 162.7,
       "is_japan": false
     },
     {
@@ -6026,14 +7042,14 @@
       "year": 2017,
       "cn_code": "CN44",
       "country": "JP Japan",
-      "index": 101.0,
+      "index": 101,
       "is_japan": true
     },
     {
       "year": 2018,
       "cn_code": "CN44",
       "country": "JP Japan",
-      "index": 100.0,
+      "index": 100,
       "is_japan": true
     },
     {
@@ -6131,7 +7147,7 @@
       "year": 2018,
       "cn_code": "CN44",
       "country": "KR South Korea",
-      "index": 100.0,
+      "index": 100,
       "is_japan": false
     },
     {
@@ -6208,7 +7224,7 @@
       "year": 2015,
       "cn_code": "CN44",
       "country": "SE Sweden",
-      "index": 68.0,
+      "index": 68,
       "is_japan": false
     },
     {
@@ -6229,7 +7245,7 @@
       "year": 2018,
       "cn_code": "CN44",
       "country": "SE Sweden",
-      "index": 100.0,
+      "index": 100,
       "is_japan": false
     },
     {
@@ -6257,7 +7273,7 @@
       "year": 2022,
       "cn_code": "CN44",
       "country": "SE Sweden",
-      "index": 132.0,
+      "index": 132,
       "is_japan": false
     },
     {
@@ -6271,224 +7287,224 @@
       "year": 2024,
       "cn_code": "CN44",
       "country": "SE Sweden",
-      "index": 114.9,
+      "index": 114.8,
       "is_japan": false
     },
     {
       "year": 2025,
       "cn_code": "CN44",
       "country": "SE Sweden",
-      "index": 100.6,
+      "index": 100.8,
+      "is_japan": false
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "index": 73.6,
+      "is_japan": false
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "index": 111.4,
+      "is_japan": false
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "index": 62.7,
+      "is_japan": false
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "index": 100.8,
+      "is_japan": false
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "index": 82.7,
+      "is_japan": false
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "index": 70.7,
+      "is_japan": false
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "index": 100,
+      "is_japan": false
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "index": 109.8,
+      "is_japan": false
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "index": 221.9,
+      "is_japan": false
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "index": 369.4,
+      "is_japan": false
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "index": 411.1,
+      "is_japan": false
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "index": 530.8,
+      "is_japan": false
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "index": 1037.3,
+      "is_japan": false
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN71",
+      "country": "BG Bulgaria",
+      "index": 2016.7,
       "is_japan": false
     },
     {
       "year": 2012,
       "cn_code": "CN71",
       "country": "CH Switzerland",
-      "index": 16800.2,
+      "index": 17160,
       "is_japan": false
     },
     {
       "year": 2013,
       "cn_code": "CN71",
       "country": "CH Switzerland",
-      "index": 4738.7,
+      "index": 4840,
       "is_japan": false
     },
     {
       "year": 2014,
       "cn_code": "CN71",
       "country": "CH Switzerland",
-      "index": 457.6,
+      "index": 465,
       "is_japan": false
     },
     {
       "year": 2015,
       "cn_code": "CN71",
       "country": "CH Switzerland",
-      "index": 818.7,
+      "index": 835,
       "is_japan": false
     },
     {
       "year": 2016,
       "cn_code": "CN71",
       "country": "CH Switzerland",
-      "index": 84.6,
+      "index": 85,
       "is_japan": false
     },
     {
       "year": 2017,
       "cn_code": "CN71",
       "country": "CH Switzerland",
-      "index": 30.9,
+      "index": 30,
       "is_japan": false
     },
     {
       "year": 2018,
       "cn_code": "CN71",
       "country": "CH Switzerland",
-      "index": 100.0,
+      "index": 100,
       "is_japan": false
     },
     {
       "year": 2019,
       "cn_code": "CN71",
       "country": "CH Switzerland",
-      "index": 28876.9,
+      "index": 29495,
       "is_japan": false
     },
     {
       "year": 2020,
       "cn_code": "CN71",
       "country": "CH Switzerland",
-      "index": 35331.9,
+      "index": 36090,
       "is_japan": false
     },
     {
       "year": 2021,
       "cn_code": "CN71",
       "country": "CH Switzerland",
-      "index": 38440.0,
+      "index": 39265,
       "is_japan": false
     },
     {
       "year": 2022,
       "cn_code": "CN71",
       "country": "CH Switzerland",
-      "index": 63860.2,
+      "index": 65225,
       "is_japan": false
     },
     {
       "year": 2023,
       "cn_code": "CN71",
       "country": "CH Switzerland",
-      "index": 97834.6,
+      "index": 99930,
       "is_japan": false
     },
     {
       "year": 2024,
       "cn_code": "CN71",
       "country": "CH Switzerland",
-      "index": 118062.1,
+      "index": 120590,
       "is_japan": false
     },
     {
       "year": 2025,
       "cn_code": "CN71",
       "country": "CH Switzerland",
-      "index": 211313.8,
-      "is_japan": false
-    },
-    {
-      "year": 2012,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "index": 4.3,
-      "is_japan": false
-    },
-    {
-      "year": 2013,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "index": 15.4,
-      "is_japan": false
-    },
-    {
-      "year": 2014,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "index": 20.4,
-      "is_japan": false
-    },
-    {
-      "year": 2015,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "index": 10.3,
-      "is_japan": false
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "index": 6.1,
-      "is_japan": false
-    },
-    {
-      "year": 2017,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "index": 5.8,
-      "is_japan": false
-    },
-    {
-      "year": 2018,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "index": 100.0,
-      "is_japan": false
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "index": 6.4,
-      "is_japan": false
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "index": 3.9,
-      "is_japan": false
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "index": 2.8,
-      "is_japan": false
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "index": 1.9,
-      "is_japan": false
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "index": 16.2,
-      "is_japan": false
-    },
-    {
-      "year": 2024,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "index": 4.2,
-      "is_japan": false
-    },
-    {
-      "year": 2025,
-      "cn_code": "CN71",
-      "country": "HK Hong Kong (CN)",
-      "index": 14.4,
+      "index": 215835,
       "is_japan": false
     },
     {
       "year": 2013,
       "cn_code": "CN71",
       "country": "JP Japan",
-      "index": 45.2,
+      "index": 45,
       "is_japan": true
     },
     {
       "year": 2015,
       "cn_code": "CN71",
       "country": "JP Japan",
-      "index": 1.9,
+      "index": 2.3,
       "is_japan": true
     },
     {
@@ -6509,154 +7525,196 @@
       "year": 2018,
       "cn_code": "CN71",
       "country": "JP Japan",
-      "index": 100.0,
+      "index": 100,
       "is_japan": true
     },
     {
       "year": 2019,
       "cn_code": "CN71",
       "country": "JP Japan",
-      "index": 833.6,
+      "index": 836.4,
       "is_japan": true
     },
     {
       "year": 2020,
       "cn_code": "CN71",
       "country": "JP Japan",
-      "index": 2831.9,
+      "index": 2841.1,
       "is_japan": true
     },
     {
       "year": 2021,
       "cn_code": "CN71",
       "country": "JP Japan",
-      "index": 9067.4,
+      "index": 9096.9,
       "is_japan": true
     },
     {
       "year": 2022,
       "cn_code": "CN71",
       "country": "JP Japan",
-      "index": 9641.0,
+      "index": 9672.1,
       "is_japan": true
     },
     {
       "year": 2023,
       "cn_code": "CN71",
       "country": "JP Japan",
-      "index": 15810.3,
+      "index": 15861.2,
       "is_japan": true
     },
     {
       "year": 2024,
       "cn_code": "CN71",
       "country": "JP Japan",
-      "index": 11024.5,
+      "index": 11059.7,
       "is_japan": true
     },
     {
       "year": 2025,
       "cn_code": "CN71",
       "country": "JP Japan",
-      "index": 340.2,
+      "index": 341.1,
       "is_japan": true
     },
     {
       "year": 2012,
       "cn_code": "CN71",
-      "country": "US United States",
-      "index": 1.0,
-      "is_japan": false
-    },
-    {
-      "year": 2013,
-      "cn_code": "CN71",
-      "country": "US United States",
-      "index": 5.8,
+      "country": "KR South Korea",
+      "index": 3733.3,
       "is_japan": false
     },
     {
       "year": 2014,
       "cn_code": "CN71",
-      "country": "US United States",
-      "index": 13.7,
+      "country": "KR South Korea",
+      "index": 33.3,
       "is_japan": false
     },
     {
       "year": 2015,
       "cn_code": "CN71",
-      "country": "US United States",
-      "index": 55.9,
-      "is_japan": false
-    },
-    {
-      "year": 2016,
-      "cn_code": "CN71",
-      "country": "US United States",
-      "index": 39.6,
+      "country": "KR South Korea",
+      "index": 33.3,
       "is_japan": false
     },
     {
       "year": 2017,
       "cn_code": "CN71",
-      "country": "US United States",
-      "index": 87.8,
+      "country": "KR South Korea",
+      "index": 33.3,
       "is_japan": false
     },
     {
       "year": 2018,
       "cn_code": "CN71",
-      "country": "US United States",
-      "index": 100.0,
-      "is_japan": false
-    },
-    {
-      "year": 2019,
-      "cn_code": "CN71",
-      "country": "US United States",
-      "index": 39.8,
-      "is_japan": false
-    },
-    {
-      "year": 2020,
-      "cn_code": "CN71",
-      "country": "US United States",
-      "index": 21.5,
-      "is_japan": false
-    },
-    {
-      "year": 2021,
-      "cn_code": "CN71",
-      "country": "US United States",
-      "index": 18.6,
-      "is_japan": false
-    },
-    {
-      "year": 2022,
-      "cn_code": "CN71",
-      "country": "US United States",
-      "index": 36.5,
-      "is_japan": false
-    },
-    {
-      "year": 2023,
-      "cn_code": "CN71",
-      "country": "US United States",
-      "index": 82.3,
+      "country": "KR South Korea",
+      "index": 100,
       "is_japan": false
     },
     {
       "year": 2024,
       "cn_code": "CN71",
-      "country": "US United States",
-      "index": 242.9,
+      "country": "KR South Korea",
+      "index": 100,
+      "is_japan": false
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "index": 108.3,
+      "is_japan": false
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "index": 140.4,
+      "is_japan": false
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "index": 72.8,
+      "is_japan": false
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "index": 110.1,
+      "is_japan": false
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "index": 189.4,
+      "is_japan": false
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "index": 105.1,
+      "is_japan": false
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "index": 100,
+      "is_japan": false
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "index": 111,
+      "is_japan": false
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "index": 168.2,
+      "is_japan": false
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "index": 162.3,
+      "is_japan": false
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "index": 257.7,
+      "is_japan": false
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "index": 117.6,
+      "is_japan": false
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN71",
+      "country": "SE Sweden",
+      "index": 92.8,
       "is_japan": false
     },
     {
       "year": 2025,
       "cn_code": "CN71",
-      "country": "US United States",
-      "index": 103.9,
+      "country": "SE Sweden",
+      "index": 260.3,
       "is_japan": false
     },
     {
@@ -6705,7 +7763,7 @@
       "year": 2018,
       "cn_code": "CN84",
       "country": "DE Germany",
-      "index": 100.0,
+      "index": 100,
       "is_japan": false
     },
     {
@@ -6754,7 +7812,7 @@
       "year": 2025,
       "cn_code": "CN84",
       "country": "DE Germany",
-      "index": 181.3,
+      "index": 181.7,
       "is_japan": false
     },
     {
@@ -6803,7 +7861,7 @@
       "year": 2018,
       "cn_code": "CN84",
       "country": "FI Finland",
-      "index": 100.0,
+      "index": 100,
       "is_japan": false
     },
     {
@@ -6845,14 +7903,14 @@
       "year": 2024,
       "cn_code": "CN84",
       "country": "FI Finland",
-      "index": 131.7,
+      "index": 129,
       "is_japan": false
     },
     {
       "year": 2025,
       "cn_code": "CN84",
       "country": "FI Finland",
-      "index": 120.9,
+      "index": 121.1,
       "is_japan": false
     },
     {
@@ -6866,7 +7924,7 @@
       "year": 2013,
       "cn_code": "CN84",
       "country": "JP Japan",
-      "index": 7.0,
+      "index": 7,
       "is_japan": true
     },
     {
@@ -6901,7 +7959,7 @@
       "year": 2018,
       "cn_code": "CN84",
       "country": "JP Japan",
-      "index": 100.0,
+      "index": 100,
       "is_japan": true
     },
     {
@@ -6915,7 +7973,7 @@
       "year": 2020,
       "cn_code": "CN84",
       "country": "JP Japan",
-      "index": 166.5,
+      "index": 166.4,
       "is_japan": true
     },
     {
@@ -6929,7 +7987,7 @@
       "year": 2022,
       "cn_code": "CN84",
       "country": "JP Japan",
-      "index": 131.0,
+      "index": 130.9,
       "is_japan": true
     },
     {
@@ -6956,99 +8014,99 @@
     {
       "year": 2012,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "index": 72.4,
+      "country": "KR South Korea",
+      "index": 265,
       "is_japan": false
     },
     {
       "year": 2013,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "index": 70.5,
+      "country": "KR South Korea",
+      "index": 260.9,
       "is_japan": false
     },
     {
       "year": 2014,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "index": 78.0,
+      "country": "KR South Korea",
+      "index": 271.3,
       "is_japan": false
     },
     {
       "year": 2015,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "index": 101.9,
+      "country": "KR South Korea",
+      "index": 93.8,
       "is_japan": false
     },
     {
       "year": 2016,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "index": 108.0,
+      "country": "KR South Korea",
+      "index": 61.2,
       "is_japan": false
     },
     {
       "year": 2017,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "index": 98.3,
+      "country": "KR South Korea",
+      "index": 141.2,
       "is_japan": false
     },
     {
       "year": 2018,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "index": 100.0,
+      "country": "KR South Korea",
+      "index": 100,
       "is_japan": false
     },
     {
       "year": 2019,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "index": 102.2,
+      "country": "KR South Korea",
+      "index": 134.2,
       "is_japan": false
     },
     {
       "year": 2020,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "index": 101.0,
+      "country": "KR South Korea",
+      "index": 46.2,
       "is_japan": false
     },
     {
       "year": 2021,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "index": 124.3,
+      "country": "KR South Korea",
+      "index": 61,
       "is_japan": false
     },
     {
       "year": 2022,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "index": 149.2,
+      "country": "KR South Korea",
+      "index": 61.3,
       "is_japan": false
     },
     {
       "year": 2023,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "index": 136.9,
+      "country": "KR South Korea",
+      "index": 52.2,
       "is_japan": false
     },
     {
       "year": 2024,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "index": 119.3,
+      "country": "KR South Korea",
+      "index": 38.6,
       "is_japan": false
     },
     {
       "year": 2025,
       "cn_code": "CN84",
-      "country": "SE Sweden",
-      "index": 102.4,
+      "country": "KR South Korea",
+      "index": 203.4,
       "is_japan": false
     },
     {
@@ -7097,7 +8155,7 @@
       "year": 2018,
       "cn_code": "CN84",
       "country": "US United States",
-      "index": 100.0,
+      "index": 100,
       "is_japan": false
     },
     {
@@ -7146,105 +8204,105 @@
       "year": 2025,
       "cn_code": "CN84",
       "country": "US United States",
-      "index": 77.2,
+      "index": 77.1,
       "is_japan": false
     },
     {
       "year": 2012,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "index": 33.9,
+      "country": "CN China",
+      "index": 75.5,
       "is_japan": false
     },
     {
       "year": 2013,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "index": 27.5,
+      "country": "CN China",
+      "index": 42.8,
       "is_japan": false
     },
     {
       "year": 2014,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "index": 22.7,
+      "country": "CN China",
+      "index": 52.4,
       "is_japan": false
     },
     {
       "year": 2015,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "index": 20.3,
+      "country": "CN China",
+      "index": 59.6,
       "is_japan": false
     },
     {
       "year": 2016,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "index": 45.2,
+      "country": "CN China",
+      "index": 93.4,
       "is_japan": false
     },
     {
       "year": 2017,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "index": 94.3,
+      "country": "CN China",
+      "index": 130.7,
       "is_japan": false
     },
     {
       "year": 2018,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "index": 100.0,
+      "country": "CN China",
+      "index": 100,
       "is_japan": false
     },
     {
       "year": 2019,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "index": 85.0,
+      "country": "CN China",
+      "index": 75.9,
       "is_japan": false
     },
     {
       "year": 2020,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "index": 64.6,
+      "country": "CN China",
+      "index": 148.6,
       "is_japan": false
     },
     {
       "year": 2021,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "index": 63.0,
+      "country": "CN China",
+      "index": 100,
       "is_japan": false
     },
     {
       "year": 2022,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "index": 82.5,
+      "country": "CN China",
+      "index": 98,
       "is_japan": false
     },
     {
       "year": 2023,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "index": 101.3,
+      "country": "CN China",
+      "index": 125.9,
       "is_japan": false
     },
     {
       "year": 2024,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "index": 119.6,
+      "country": "CN China",
+      "index": 117.3,
       "is_japan": false
     },
     {
       "year": 2025,
       "cn_code": "CN85",
-      "country": "DE Germany",
-      "index": 141.9,
+      "country": "CN China",
+      "index": 103.7,
       "is_japan": false
     },
     {
@@ -7286,14 +8344,14 @@
       "year": 2017,
       "cn_code": "CN85",
       "country": "FI Finland",
-      "index": 98.0,
+      "index": 98,
       "is_japan": false
     },
     {
       "year": 2018,
       "cn_code": "CN85",
       "country": "FI Finland",
-      "index": 100.0,
+      "index": 100,
       "is_japan": false
     },
     {
@@ -7335,14 +8393,14 @@
       "year": 2024,
       "cn_code": "CN85",
       "country": "FI Finland",
-      "index": 141.3,
+      "index": 140.6,
       "is_japan": false
     },
     {
       "year": 2025,
       "cn_code": "CN85",
       "country": "FI Finland",
-      "index": 130.2,
+      "index": 129.5,
       "is_japan": false
     },
     {
@@ -7391,7 +8449,7 @@
       "year": 2018,
       "cn_code": "CN85",
       "country": "JP Japan",
-      "index": 100.0,
+      "index": 100,
       "is_japan": true
     },
     {
@@ -7446,6 +8504,104 @@
     {
       "year": 2012,
       "cn_code": "CN85",
+      "country": "KR South Korea",
+      "index": 26.3,
+      "is_japan": false
+    },
+    {
+      "year": 2013,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "index": 118.1,
+      "is_japan": false
+    },
+    {
+      "year": 2014,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "index": 98.6,
+      "is_japan": false
+    },
+    {
+      "year": 2015,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "index": 64.8,
+      "is_japan": false
+    },
+    {
+      "year": 2016,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "index": 60.4,
+      "is_japan": false
+    },
+    {
+      "year": 2017,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "index": 83.4,
+      "is_japan": false
+    },
+    {
+      "year": 2018,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "index": 100,
+      "is_japan": false
+    },
+    {
+      "year": 2019,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "index": 53.4,
+      "is_japan": false
+    },
+    {
+      "year": 2020,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "index": 87.8,
+      "is_japan": false
+    },
+    {
+      "year": 2021,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "index": 39.9,
+      "is_japan": false
+    },
+    {
+      "year": 2022,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "index": 36.4,
+      "is_japan": false
+    },
+    {
+      "year": 2023,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "index": 26.3,
+      "is_japan": false
+    },
+    {
+      "year": 2024,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "index": 189.8,
+      "is_japan": false
+    },
+    {
+      "year": 2025,
+      "cn_code": "CN85",
+      "country": "KR South Korea",
+      "index": 13.1,
+      "is_japan": false
+    },
+    {
+      "year": 2012,
+      "cn_code": "CN85",
       "country": "SE Sweden",
       "index": 296.8,
       "is_japan": false
@@ -7475,7 +8631,7 @@
       "year": 2016,
       "cn_code": "CN85",
       "country": "SE Sweden",
-      "index": 301.0,
+      "index": 301,
       "is_japan": false
     },
     {
@@ -7489,7 +8645,7 @@
       "year": 2018,
       "cn_code": "CN85",
       "country": "SE Sweden",
-      "index": 100.0,
+      "index": 100,
       "is_japan": false
     },
     {
@@ -7538,7 +8694,7 @@
       "year": 2025,
       "cn_code": "CN85",
       "country": "SE Sweden",
-      "index": 107.8,
+      "index": 109.1,
       "is_japan": false
     },
     {
@@ -7552,7 +8708,7 @@
       "year": 2013,
       "cn_code": "CN85",
       "country": "US United States",
-      "index": 20.0,
+      "index": 20,
       "is_japan": false
     },
     {
@@ -7587,7 +8743,7 @@
       "year": 2018,
       "cn_code": "CN85",
       "country": "US United States",
-      "index": 100.0,
+      "index": 100,
       "is_japan": false
     },
     {
@@ -7636,7 +8792,7 @@
       "year": 2025,
       "cn_code": "CN85",
       "country": "US United States",
-      "index": 44.2,
+      "index": 44.1,
       "is_japan": false
     }
   ]

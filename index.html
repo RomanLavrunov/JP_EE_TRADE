@@ -71,7 +71,7 @@
   <section id="commodities">
     <div class="sec-label">03 — Commodity groups</div>
     <h2>What Estonia actually sells to Japan</h2>
-    <p>CN44 Wood dominates at ~50% of exports — a pre-existing relationship that the EPA amplified, not created. CN85 Electrical machinery is the cleaner post-EPA signal: +42% on a stable base. The outlier is CN71 Precious metals &amp; stones: essentially zero before 2019, it jumped to an average of 10+ M€/year post-EPA — a trade flow that did not exist before the agreement. Counter-cases — Fish (−48%), Dairy (flat) — are a reminder that tariff removal doesn't override competition. The EPA opens a door, yet it doesn't push you through it.</p>
+    <p>CN44 Wood dominates at ~50% of exports — a pre-existing relationship that the EPA amplified, not created. CN85 Electrical machinery is the cleaner post-EPA signal: +58% on a stable base (9.2 M€ → 14.6 M€). The outlier is CN71 Precious metals &amp; stones: essentially zero before 2019, it averaged 7.2 M€/year in the 2019–2022 window and 12.5 M€/year in 2020–2024 — a trade flow that did not exist before the agreement. Counter-cases — Fish (−42%, Spike group), Dairy (flat) — are a reminder that tariff removal doesn't override competition. The EPA opens a door, yet it doesn't push you through it.</p>
 
     <div class="chart-card">
       <h3>Exports to Japan — top commodity groups</h3>
@@ -82,7 +82,7 @@
 
     <div class="chart-card">
       <h3>Pre vs post-EPA: average annual exports (M€)</h3>
-      <div class="sub">Average 2014–2018 vs 2019–2024 · World % = change in Estonia's exports of the same group to all countries (not just Japan) — context for isolating the EPA effect</div>
+      <div class="sub">Average 2014–2018 vs 2019–2022 (clean EPA window) · World % = Estonia’s exports of the same CN group to all countries — isolates Japan-specific growth from global trends</div>
       <table class="epa-table">
         <thead><tr><th>Commodity group</th><th>Pre-EPA avg, M€</th><th>Post-EPA avg, M€</th><th>Japan %</th><th>World % <span style="font-weight:400;font-style:italic">(all destinations)</span></th></tr></thead>
         <tbody id="epaTableBody">
@@ -95,7 +95,7 @@
   <section id="structure">
     <div class="sec-label">04 — Trade structure</div>
     <h2>Three ways to look at the data</h2>
-    <p>The treemap shows what 2023 exports looked like in one snapshot. The slope chart tracks how individual groups moved across five key years. The heatmap reveals growth patterns across all groups and years at once — green above 2018 baseline, red below.</p>
+    <p>The treemap shows what 2023 exports looked like in one snapshot. The country comparison chart shows how the Japan channel performed vs other markets for the same commodity. The heatmap reveals growth patterns across all groups and years at once — green above 2018 baseline, red below.</p>
 
     <div class="chart-card">
       <h3>Export structure — 2023 snapshot (Treemap)</h3>
@@ -104,10 +104,10 @@
     </div>
 
     <div class="chart-card">
-      <h3>How groups moved across key years (Slope chart)</h3>
-      <div class="sub">Each line = one CN group · 2015 → pre-EPA 2018 → EPA 2019 → peak 2022 → 2024</div>
-      <div class="slope-wrap" id="slopeCont"></div>
-      <p class="comment" style="margin-top:12px">CN44 Wood · CN85 Electrical machinery · CN84 Machinery · CN28 Inorganic chemicals · CN03 Fish · CN04 Dairy · CN90 Optical instruments · CN27 Mineral fuels · CN94 Furniture · CN95 Toys</p>
+      <h3>Estonia → Japan vs. partner countries — CN85 Electronics (index 2018 = 100)</h3>
+      <div class="sub">Exports only · Japan (red solid) vs. Sweden, Finland, Germany, USA (grey dashed) · 2012–2025</div>
+      <div class="cw tall"><canvas id="idxCountryCN85"></canvas></div>
+      <p class="comment" style="margin-top:12px">If Japan’s line diverges upward after 2019 while other markets stay near 100, that is Japan-specific growth — consistent with an EPA tariff effect rather than a global sector trend. Japan’s 2022 peak: index 339 vs Sweden 107, Finland 123, Germany 83.</p>
     </div>
 
     <div class="chart-card">
@@ -152,7 +152,7 @@ All values are growth indices with 2018 = 100. A number > 100 means export volum
 </main>
 
 <footer>
-  <p>Data: Statistics Estonia · VKK30, VKK32 · 2004-2024 · R · JS</p>
+  <p>Data: Statistics Estonia · VKK30, VKK32 · 2012–2025 · R · JS</p>
   <a href="case_study.html">Full methodology &amp; analysis →</a>
 </footer>
 
