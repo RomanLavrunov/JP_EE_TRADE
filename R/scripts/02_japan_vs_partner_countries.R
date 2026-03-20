@@ -96,4 +96,3 @@ partner_json <- list(
 )
 
 write_json(partner_json, "data/partner_countries.json", pretty = TRUE, auto_unbox = TRUE)
-message("✓ data/partner_countries.json written")

@@ -1,18 +1,6 @@
 {
   "index_exports": [
     {
-      "year": 2010,
-      "country": "CH Switzerland",
-      "epa_status": "No EPA",
-      "index": 28.4
-    },
-    {
-      "year": 2011,
-      "country": "CH Switzerland",
-      "epa_status": "No EPA",
-      "index": 32.5
-    },
-    {
       "year": 2012,
       "country": "CH Switzerland",
       "epa_status": "No EPA",
@@ -91,16 +79,10 @@
       "index": 153
     },
     {
-      "year": 2010,
-      "country": "CN China",
+      "year": 2025,
+      "country": "CH Switzerland",
       "epa_status": "No EPA",
-      "index": 67.5
-    },
-    {
-      "year": 2011,
-      "country": "CN China",
-      "epa_status": "No EPA",
-      "index": 122.2
+      "index": 161.8
     },
     {
       "year": 2012,
@@ -181,16 +163,10 @@
       "index": 145.8
     },
     {
-      "year": 2010,
-      "country": "IN India",
+      "year": 2025,
+      "country": "CN China",
       "epa_status": "No EPA",
-      "index": 34.1
-    },
-    {
-      "year": 2011,
-      "country": "IN India",
-      "epa_status": "No EPA",
-      "index": 64.2
+      "index": 135.4
     },
     {
       "year": 2012,
@@ -271,16 +247,10 @@
       "index": 140.7
     },
     {
-      "year": 2010,
-      "country": "JP Japan",
-      "epa_status": "Japan (EPA 2019)",
-      "index": 59.9
-    },
-    {
-      "year": 2011,
-      "country": "JP Japan",
-      "epa_status": "Japan (EPA 2019)",
-      "index": 76.3
+      "year": 2025,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 142.9
     },
     {
       "year": 2012,
@@ -361,16 +331,10 @@
       "index": 116.9
     },
     {
-      "year": 2010,
-      "country": "KR South Korea",
-      "epa_status": "South Korea (EPA 2011)",
-      "index": 41.3
-    },
-    {
-      "year": 2011,
-      "country": "KR South Korea",
-      "epa_status": "South Korea (EPA 2011)",
-      "index": 38.7
+      "year": 2025,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 105.8
     },
     {
       "year": 2012,
@@ -451,16 +415,10 @@
       "index": 137.5
     },
     {
-      "year": 2010,
-      "country": "SG Singapore",
-      "epa_status": "Singapore (EPA 2019)",
-      "index": 3.4
-    },
-    {
-      "year": 2011,
-      "country": "SG Singapore",
-      "epa_status": "Singapore (EPA 2019)",
-      "index": 26.2
+      "year": 2025,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 128.9
     },
     {
       "year": 2012,
@@ -541,16 +499,10 @@
       "index": 227.7
     },
     {
-      "year": 2010,
-      "country": "TW Taiwan (CN)",
-      "epa_status": "No EPA",
-      "index": 54.5
-    },
-    {
-      "year": 2011,
-      "country": "TW Taiwan (CN)",
-      "epa_status": "No EPA",
-      "index": 54.3
+      "year": 2025,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 385.7
     },
     {
       "year": 2012,
@@ -631,16 +583,10 @@
       "index": 123.4
     },
     {
-      "year": 2010,
-      "country": "US United States",
+      "year": 2025,
+      "country": "TW Taiwan (CN)",
       "epa_status": "No EPA",
-      "index": 34
-    },
-    {
-      "year": 2011,
-      "country": "US United States",
-      "epa_status": "No EPA",
-      "index": 77
+      "index": 125.3
     },
     {
       "year": 2012,
@@ -719,21 +665,15 @@
       "country": "US United States",
       "epa_status": "No EPA",
       "index": 71.4
+    },
+    {
+      "year": 2025,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 58.5
     }
   ],
   "index_imports": [
-    {
-      "year": 2010,
-      "country": "CH Switzerland",
-      "epa_status": "No EPA",
-      "index": 46.5
-    },
-    {
-      "year": 2011,
-      "country": "CH Switzerland",
-      "epa_status": "No EPA",
-      "index": 79.9
-    },
     {
       "year": 2012,
       "country": "CH Switzerland",
@@ -813,16 +753,10 @@
       "index": 195.1
     },
     {
-      "year": 2010,
-      "country": "CN China",
+      "year": 2025,
+      "country": "CH Switzerland",
       "epa_status": "No EPA",
-      "index": 51.4
-    },
-    {
-      "year": 2011,
-      "country": "CN China",
-      "epa_status": "No EPA",
-      "index": 83.1
+      "index": 346.9
     },
     {
       "year": 2012,
@@ -903,16 +837,10 @@
       "index": 133.2
     },
     {
-      "year": 2010,
-      "country": "IN India",
+      "year": 2025,
+      "country": "CN China",
       "epa_status": "No EPA",
-      "index": 34.2
-    },
-    {
-      "year": 2011,
-      "country": "IN India",
-      "epa_status": "No EPA",
-      "index": 58.7
+      "index": 153.5
     },
     {
       "year": 2012,
@@ -993,16 +921,10 @@
       "index": 179.6
     },
     {
-      "year": 2010,
-      "country": "JP Japan",
-      "epa_status": "Japan (EPA 2019)",
-      "index": 58.3
-    },
-    {
-      "year": 2011,
-      "country": "JP Japan",
-      "epa_status": "Japan (EPA 2019)",
-      "index": 53.5
+      "year": 2025,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "index": 135.8
     },
     {
       "year": 2012,
@@ -1083,16 +1005,10 @@
       "index": 112
     },
     {
-      "year": 2010,
-      "country": "KR South Korea",
-      "epa_status": "South Korea (EPA 2011)",
-      "index": 23.2
-    },
-    {
-      "year": 2011,
-      "country": "KR South Korea",
-      "epa_status": "South Korea (EPA 2011)",
-      "index": 40.6
+      "year": 2025,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "index": 93.8
     },
     {
       "year": 2012,
@@ -1173,16 +1089,10 @@
       "index": 144.5
     },
     {
-      "year": 2010,
-      "country": "SG Singapore",
-      "epa_status": "Singapore (EPA 2019)",
-      "index": 29.6
-    },
-    {
-      "year": 2011,
-      "country": "SG Singapore",
-      "epa_status": "Singapore (EPA 2019)",
-      "index": 29.3
+      "year": 2025,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "index": 212.5
     },
     {
       "year": 2012,
@@ -1263,16 +1173,10 @@
       "index": 82.5
     },
     {
-      "year": 2010,
-      "country": "TW Taiwan (CN)",
-      "epa_status": "No EPA",
-      "index": 56.9
-    },
-    {
-      "year": 2011,
-      "country": "TW Taiwan (CN)",
-      "epa_status": "No EPA",
-      "index": 106.3
+      "year": 2025,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "index": 28.8
     },
     {
       "year": 2012,
@@ -1353,16 +1257,10 @@
       "index": 85.9
     },
     {
-      "year": 2010,
-      "country": "US United States",
+      "year": 2025,
+      "country": "TW Taiwan (CN)",
       "epa_status": "No EPA",
-      "index": 40.6
-    },
-    {
-      "year": 2011,
-      "country": "US United States",
-      "epa_status": "No EPA",
-      "index": 61.6
+      "index": 95.1
     },
     {
       "year": 2012,
@@ -1441,21 +1339,15 @@
       "country": "US United States",
       "epa_status": "No EPA",
       "index": 137.5
+    },
+    {
+      "year": 2025,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "index": 165.2
     }
   ],
   "abs_exports": [
-    {
-      "year": 2010,
-      "country": "CH Switzerland",
-      "epa_status": "No EPA",
-      "value_mln": 30.9
-    },
-    {
-      "year": 2011,
-      "country": "CH Switzerland",
-      "epa_status": "No EPA",
-      "value_mln": 35.41
-    },
     {
       "year": 2012,
       "country": "CH Switzerland",
@@ -1535,16 +1427,10 @@
       "value_mln": 166.54
     },
     {
-      "year": 2010,
-      "country": "CN China",
+      "year": 2025,
+      "country": "CH Switzerland",
       "epa_status": "No EPA",
-      "value_mln": 112.15
-    },
-    {
-      "year": 2011,
-      "country": "CN China",
-      "epa_status": "No EPA",
-      "value_mln": 203.09
+      "value_mln": 176.15
     },
     {
       "year": 2012,
@@ -1625,16 +1511,10 @@
       "value_mln": 242.28
     },
     {
-      "year": 2010,
-      "country": "IN India",
+      "year": 2025,
+      "country": "CN China",
       "epa_status": "No EPA",
-      "value_mln": 18.46
-    },
-    {
-      "year": 2011,
-      "country": "IN India",
-      "epa_status": "No EPA",
-      "value_mln": 34.77
+      "value_mln": 225.06
     },
     {
       "year": 2012,
@@ -1715,16 +1595,10 @@
       "value_mln": 76.24
     },
     {
-      "year": 2010,
-      "country": "JP Japan",
-      "epa_status": "Japan (EPA 2019)",
-      "value_mln": 47.75
-    },
-    {
-      "year": 2011,
-      "country": "JP Japan",
-      "epa_status": "Japan (EPA 2019)",
-      "value_mln": 60.84
+      "year": 2025,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 77.42
     },
     {
       "year": 2012,
@@ -1805,16 +1679,10 @@
       "value_mln": 93.27
     },
     {
-      "year": 2010,
-      "country": "KR South Korea",
-      "epa_status": "South Korea (EPA 2011)",
-      "value_mln": 21.15
-    },
-    {
-      "year": 2011,
-      "country": "KR South Korea",
-      "epa_status": "South Korea (EPA 2011)",
-      "value_mln": 19.87
+      "year": 2025,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 84.4
     },
     {
       "year": 2012,
@@ -1895,16 +1763,10 @@
       "value_mln": 70.5
     },
     {
-      "year": 2010,
-      "country": "SG Singapore",
-      "epa_status": "Singapore (EPA 2019)",
-      "value_mln": 3.04
-    },
-    {
-      "year": 2011,
-      "country": "SG Singapore",
-      "epa_status": "Singapore (EPA 2019)",
-      "value_mln": 23.72
+      "year": 2025,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 66.09
     },
     {
       "year": 2012,
@@ -1985,16 +1847,10 @@
       "value_mln": 206.19
     },
     {
-      "year": 2010,
-      "country": "TW Taiwan (CN)",
-      "epa_status": "No EPA",
-      "value_mln": 4.16
-    },
-    {
-      "year": 2011,
-      "country": "TW Taiwan (CN)",
-      "epa_status": "No EPA",
-      "value_mln": 4.14
+      "year": 2025,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 349.17
     },
     {
       "year": 2012,
@@ -2075,16 +1931,10 @@
       "value_mln": 9.42
     },
     {
-      "year": 2010,
-      "country": "US United States",
+      "year": 2025,
+      "country": "TW Taiwan (CN)",
       "epa_status": "No EPA",
-      "value_mln": 330.87
-    },
-    {
-      "year": 2011,
-      "country": "US United States",
-      "epa_status": "No EPA",
-      "value_mln": 749.85
+      "value_mln": 9.57
     },
     {
       "year": 2012,
@@ -2163,21 +2013,15 @@
       "country": "US United States",
       "epa_status": "No EPA",
       "value_mln": 695.64
+    },
+    {
+      "year": 2025,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 569.61
     }
   ],
   "abs_imports": [
-    {
-      "year": 2010,
-      "country": "CH Switzerland",
-      "epa_status": "No EPA",
-      "value_mln": 57.98
-    },
-    {
-      "year": 2011,
-      "country": "CH Switzerland",
-      "epa_status": "No EPA",
-      "value_mln": 99.77
-    },
     {
       "year": 2012,
       "country": "CH Switzerland",
@@ -2257,16 +2101,10 @@
       "value_mln": 243.55
     },
     {
-      "year": 2010,
-      "country": "CN China",
+      "year": 2025,
+      "country": "CH Switzerland",
       "epa_status": "No EPA",
-      "value_mln": 281.63
-    },
-    {
-      "year": 2011,
-      "country": "CN China",
-      "epa_status": "No EPA",
-      "value_mln": 455.68
+      "value_mln": 432.98
     },
     {
       "year": 2012,
@@ -2347,16 +2185,10 @@
       "value_mln": 730.37
     },
     {
-      "year": 2010,
-      "country": "IN India",
+      "year": 2025,
+      "country": "CN China",
       "epa_status": "No EPA",
-      "value_mln": 15.61
-    },
-    {
-      "year": 2011,
-      "country": "IN India",
-      "epa_status": "No EPA",
-      "value_mln": 26.76
+      "value_mln": 841.69
     },
     {
       "year": 2012,
@@ -2437,16 +2269,10 @@
       "value_mln": 81.9
     },
     {
-      "year": 2010,
-      "country": "JP Japan",
-      "epa_status": "Japan (EPA 2019)",
-      "value_mln": 27.07
-    },
-    {
-      "year": 2011,
-      "country": "JP Japan",
-      "epa_status": "Japan (EPA 2019)",
-      "value_mln": 24.86
+      "year": 2025,
+      "country": "IN India",
+      "epa_status": "No EPA",
+      "value_mln": 61.94
     },
     {
       "year": 2012,
@@ -2527,16 +2353,10 @@
       "value_mln": 52.01
     },
     {
-      "year": 2010,
-      "country": "KR South Korea",
-      "epa_status": "South Korea (EPA 2011)",
-      "value_mln": 15.48
-    },
-    {
-      "year": 2011,
-      "country": "KR South Korea",
-      "epa_status": "South Korea (EPA 2011)",
-      "value_mln": 27.04
+      "year": 2025,
+      "country": "JP Japan",
+      "epa_status": "Japan (EPA 2019)",
+      "value_mln": 43.59
     },
     {
       "year": 2012,
@@ -2617,16 +2437,10 @@
       "value_mln": 96.2
     },
     {
-      "year": 2010,
-      "country": "SG Singapore",
-      "epa_status": "Singapore (EPA 2019)",
-      "value_mln": 5.7
-    },
-    {
-      "year": 2011,
-      "country": "SG Singapore",
-      "epa_status": "Singapore (EPA 2019)",
-      "value_mln": 5.64
+      "year": 2025,
+      "country": "KR South Korea",
+      "epa_status": "South Korea (EPA 2011)",
+      "value_mln": 141.51
     },
     {
       "year": 2012,
@@ -2707,16 +2521,10 @@
       "value_mln": 15.89
     },
     {
-      "year": 2010,
-      "country": "TW Taiwan (CN)",
-      "epa_status": "No EPA",
-      "value_mln": 26.53
-    },
-    {
-      "year": 2011,
-      "country": "TW Taiwan (CN)",
-      "epa_status": "No EPA",
-      "value_mln": 49.6
+      "year": 2025,
+      "country": "SG Singapore",
+      "epa_status": "Singapore (EPA 2019)",
+      "value_mln": 5.55
     },
     {
       "year": 2012,
@@ -2797,16 +2605,10 @@
       "value_mln": 40.08
     },
     {
-      "year": 2010,
-      "country": "US United States",
+      "year": 2025,
+      "country": "TW Taiwan (CN)",
       "epa_status": "No EPA",
-      "value_mln": 92.83
-    },
-    {
-      "year": 2011,
-      "country": "US United States",
-      "epa_status": "No EPA",
-      "value_mln": 141.1
+      "value_mln": 44.37
     },
     {
       "year": 2012,
@@ -2885,6 +2687,12 @@
       "country": "US United States",
       "epa_status": "No EPA",
       "value_mln": 314.78
+    },
+    {
+      "year": 2025,
+      "country": "US United States",
+      "epa_status": "No EPA",
+      "value_mln": 378.23
     }
   ]
 }

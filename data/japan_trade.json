@@ -1,22 +1,6 @@
 {
   "bilateral": [
     {
-      "year": 2010,
-      "exports": 47.75,
-      "imports": 27.07,
-      "balance": 20.68,
-      "shareExp": 0.55,
-      "shareImp": 0.29
-    },
-    {
-      "year": 2011,
-      "exports": 60.84,
-      "imports": 24.86,
-      "balance": 35.98,
-      "shareExp": 0.51,
-      "shareImp": 0.2
-    },
-    {
       "year": 2012,
       "exports": 66.06,
       "imports": 36.73,
@@ -122,26 +106,6 @@
     }
   ],
   "index": [
-    {
-      "year": 2010,
-      "series": "Japan · Exports",
-      "index": 59.9
-    },
-    {
-      "year": 2010,
-      "series": "Japan · Imports",
-      "index": 58.3
-    },
-    {
-      "year": 2011,
-      "series": "Japan · Exports",
-      "index": 76.3
-    },
-    {
-      "year": 2011,
-      "series": "Japan · Imports",
-      "index": 53.5
-    },
     {
       "year": 2012,
       "series": "Japan · Exports",
@@ -271,26 +235,6 @@
       "year": 2024,
       "series": "Japan · Imports",
       "index": 112
-    },
-    {
-      "year": 2010,
-      "series": "Global · Exports",
-      "index": 60.8
-    },
-    {
-      "year": 2010,
-      "series": "Global · Imports",
-      "index": 57.6
-    },
-    {
-      "year": 2011,
-      "series": "Global · Exports",
-      "index": 83.5
-    },
-    {
-      "year": 2011,
-      "series": "Global · Imports",
-      "index": 79
     },
     {
       "year": 2012,
